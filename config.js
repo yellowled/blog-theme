@@ -18,11 +18,11 @@ module.exports = {
                     'info.txt',
                     'UTF-8/*.php'
               ],
-        dest:       'dist'
+        dest:       'dist/<%= pkg.name %>'
     },
     modernizr: {
         dev:        'src/scripts/modernizr/modernizr.js',
-        dest:       'dist/scripts/modernizr/modernizr.js',
+        dest:       'dist/<%= pkg.name %>/scripts/modernizr/modernizr.js',
         srcfiles: [
                     'src/scss/**/*.scss',
                     'src/scripts/master.js'

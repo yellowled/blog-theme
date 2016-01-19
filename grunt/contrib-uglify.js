@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         },
         deploy: {
             src: 'src/scripts/master.js',
-            dest: 'dist/scripts/master.js'
+            dest: 'dist/<%= pkg.name %>/scripts/master.js'
         }
     });
 };

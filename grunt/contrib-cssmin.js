@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'src',
                 src: ['*.css'],
-                dest: 'dist',
+                dest: 'dist/<%= pkg.name %>',
                 ext: '.css'
             }]
         }
