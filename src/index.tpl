@@ -28,7 +28,7 @@
         <p>{$blogDescription}</p>
     {/if}
     </header>
-{if $template_option.use_corenav}
+    {if $template_option.use_corenav}
     <nav class="navbar">
         <a id="open-nav" class="nav-toggle" href="#site-nav"><span class="icon-menu" aria-hidden="true"></span><span class="fallback-text">Navigation</span></a>
 
@@ -36,7 +36,7 @@
             <ul>{foreach from=$navlinks item="navlink" name="sbnav"}{if $navlink.title!=""&&$navlink.href!=""}<li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>{/if}{/foreach}</ul>
         </div>
     </nav>
-{/if}
+    {/if}
 
     <main>
     {$CONTENT}
@@ -48,8 +48,11 @@
     </aside>
 
     <footer>
-        <small class="sys" lang="en">Powered by <a href="http://s9y.org">Serendipity</a></small>
-        <small class="tpl" lang="en">Template by <a href="http://netzgestaltung.net">Matthias Mees</a></small>
+        <ul>
+            <li class="powered_by"><small lang="en">Powered by <a href="http://s9y.org">Serendipity</a></small></li>
+            <li class="template_by"><small lang="en">Template by <a href="http://netzgestaltung.net">Matthias Mees</a></small></li>
+            <li class="license_cc"><small>Artikel unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International">CC BY-NC-ND 4.0</a></small></li>
+        </ul>
     </footer>
 
     <script src="{serendipity_getFile file="scripts/master.js"}"></script>
