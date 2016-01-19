@@ -1,0 +1,42 @@
+{
+    "name":         "blog theme",
+    "description":  "Serendipity theme for my blog",
+    "version":      "0.1.0",
+    "homepage":     "https://yellowled",
+    "author": {
+        "name":     "Matthias Mees",
+        "url":      "http://yellowled.de"
+    },
+    "license":      "MIT",
+    "repository": {
+        "type":     "git",
+        "url":      "git://github.com/yellowled/blog-theme.git"
+    },
+    "bugs": {
+        "url":      "https://github.com/yellowled/blog-theme/issues/"
+    },
+    "engines": {
+        "node":     ">=4.0.0"
+    },
+    "dependencies": {
+        "responsive-nav":           "^1.0.39",
+        "svg4everybody":            "^2.0.1"
+    },
+    "devDependencies":  {
+        "autoprefixer":             "^6.3.1",
+        "css-mqpacker":             "^4.0.0",
+        "grunt":                    "^0.4.5",
+        "grunt-contrib-clean":      "^0.7.0",
+        "grunt-contrib-concat":     "^0.5.1",
+        "grunt-contrib-copy":       "^0.8.2",
+        "grunt-contrib-cssmin":     "^0.14.0",
+        "grunt-contrib-uglify":     "^0.11.0",
+        "grunt-modernizr":          "^1.0.2",
+        "grunt-postcss":            "^0.7.1",
+        "grunt-sass":               "^1.1.0",
+        "grunt-svgmin":             "^3.1.2",
+        "grunt-svgstore":           "^0.5.0",
+        "jit-grunt":                "^0.9.1",
+        "pixrem":                   "^3.0.0"
+    }
+}
