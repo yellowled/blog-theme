@@ -22,7 +22,7 @@
 {if $is_raw_mode != true}
     <header>
         <h1><a href="{$serendipityBaseURL}">{$blogTitle}</a></h1>
-        <span>{$blogDescription}</span>
+        <p>{$blogDescription}</p>
     </header>
 
     <main>
@@ -35,8 +35,8 @@
     </aside>
 
     <footer>
-        <span class="sys" lang="en">Powered by <a href="http://s9y.org">Serendipity</a></span>
-        <span class="tpl" lang="en">Template</span> by <a href="http://netzgestaltung.net">Matthias Mees</a></span>
+        <small class="sys" lang="en">Powered by <a href="http://s9y.org">Serendipity</a></small>
+        <small class="tpl" lang="en">Template by <a href="http://netzgestaltung.net">Matthias Mees</a></small>
     </footer>
 
     <script src="{serendipity_getFile file="scripts/master.js"}"></script>

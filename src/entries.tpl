@@ -6,10 +6,10 @@
         <header>
             <h2><a href="{$entry.link}">{$entry.title}</a></h2>
 
-            <span class="byline">{$CONST.POSTED_BY} <a href="{$entry.link_author}">{$entry.author}</a> {$CONST.ON} <time datetime="{$entry.timestamp|serendipity_html5time}">{$entry.timestamp|formatTime:$template_option.date_format}</time></span>
+            <p class="byline">{$CONST.POSTED_BY} <a href="{$entry.link_author}">{$entry.author}</a> {$CONST.ON} <time datetime="{$entry.timestamp|serendipity_html5time}">{$entry.timestamp|formatTime:$template_option.date_format}</time></p>
         </header>
 
-        <div class="content">
+        <div class="content clearfix">
         {if $entry.categories}{foreach from=$entry.categories item="entry_category"}{if $entry_category.category_icon}<a href="{$entry_category.category_link}"><img class="serendipity_entryIcon" title="{$entry_category.category_name|escape}{$entry_category.category_description|emptyPrefix}" alt="{$entry_category.category_name|escape}" src="{$entry_category.category_icon}"></a>{/if}{/foreach}{/if}
         {$entry.body}
         {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
@@ -17,14 +17,14 @@
         {/if}
         </div>
         {if $entry.is_extended}
-        <div id="extended" class="content">
+        <div id="extended" class="content clearfix">
         {$entry.extended}
         </div>
         {/if}
 
         <footer>
         {if $entry.categories}
-            <span class="info_label">{$CONST.CATEGORIES}: </span>{foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
+            <span class="visuallyhidden">{$CONST.CATEGORIES}: </span>{foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
         {/if}
         {if $entry.categories and $entry.has_comments} | {/if}
         {if $entry.has_comments}
@@ -49,13 +49,13 @@
         <p class="serendipity_msg_notice">{$CONST.DATA_UNSUBSCRIBED|sprintf:$CONST.UNSUBSCRIBE_OK}</p>
     {/if}
     {if $CONST.DATA_TRACKBACK_DELETED}
-        <p class="serendipity_msg_notice">{$CONST.DATA_TRACKBACK_DELETED|sprintf:$CONST.TRACKBACK_DELETED}</p>
+        <p class="serendipity_msg_important">{$CONST.DATA_TRACKBACK_DELETED|sprintf:$CONST.TRACKBACK_DELETED}</p>
     {/if}
     {if $CONST.DATA_TRACKBACK_APPROVED}
         <p class="serendipity_msg_notice">{$CONST.DATA_TRACKBACK_APPROVED|sprintf:$CONST.TRACKBACK_APPROVED}</p>
     {/if}
     {if $CONST.DATA_COMMENT_DELETED}
-        <p class="serendipity_msg_notice">{$CONST.DATA_COMMENT_DELETED|sprintf:$CONST.COMMENT_DELETED}</p>
+        <p class="serendipity_msg_important">{$CONST.DATA_COMMENT_DELETED|sprintf:$CONST.COMMENT_DELETED}</p>
     {/if}
     {if $CONST.DATA_COMMENT_APPROVED}
         <p class="serendipity_msg_notice">{$CONST.DATA_COMMENT_APPROVED|sprintf:$CONST.COMMENT_APPROVED}</p>
@@ -72,7 +72,7 @@
     <section id="comments">
         <h3>{$CONST.COMMENTS}</h3>
 
-        <span class="comment_view">{$CONST.DISPLAY_COMMENTS_AS} {if $entry.viewmode eq $CONST.VIEWMODE_LINEAR}{$CONST.COMMENTS_VIEWMODE_LINEAR} | <a href="{$entry.link_viewmode_threaded}#comments" rel="nofollow">{$CONST.COMMENTS_VIEWMODE_THREADED}</a>{else}<a rel="nofollow" href="{$entry.link_viewmode_linear}#comments">{$CONST.COMMENTS_VIEWMODE_LINEAR}</a> | {$CONST.COMMENTS_VIEWMODE_THREADED}{/if}</span>
+        <div class="comment_view">{$CONST.DISPLAY_COMMENTS_AS} {if $entry.viewmode eq $CONST.VIEWMODE_LINEAR}{$CONST.COMMENTS_VIEWMODE_LINEAR} | <a href="{$entry.link_viewmode_threaded}#comments" rel="nofollow">{$CONST.COMMENTS_VIEWMODE_THREADED}</a>{else}<a rel="nofollow" href="{$entry.link_viewmode_linear}#comments">{$CONST.COMMENTS_VIEWMODE_LINEAR}</a> | {$CONST.COMMENTS_VIEWMODE_THREADED}{/if}</div>
 
         {serendipity_printComments entry=$entry.id mode=$entry.viewmode}
     {if $entry.is_entry_owner}
@@ -91,7 +91,7 @@
     {if $is_comment_added}
     <p class="serendipity_msg_notice">{$CONST.COMMENT_ADDED}</p>
     {elseif $is_comment_moderate}
-    <p class="serendipity_msg_notice">{$CONST.COMMENT_ADDED}{$CONST.THIS_COMMENT_NEEDS_REVIEW}</p>
+    <p class="serendipity_msg_important">{$CONST.COMMENT_ADDED}{$CONST.THIS_COMMENT_NEEDS_REVIEW}</p>
     {elseif not $entry.allow_comments}
     <p class="serendipity_msg_important">{$CONST.COMMENTS_CLOSED}</p>
     {else}
@@ -115,8 +115,12 @@
         <h2>{$footer_info}</h2>
     {if $footer_prev_page||$footer_next_page}
         <ul>
-            <li class="prev_page">{if $footer_prev_page}<a href="{$footer_prev_page}">{$CONST.PREVIOUS_PAGE}</a>{else}<span>{$CONST.NO_ENTRIES_TO_PRINT}</span>{/if}</li>
-            <li class="next_page">{if $footer_next_page}<a href="{$footer_next_page}">{$CONST.NEXT_PAGE}</a>{else}<span>{$CONST.NO_ENTRIES_TO_PRINT}</span>{/if}</li>
+        {if $footer_prev_page}
+            <li class="prev_page"><a href="{$footer_prev_page}">{$CONST.PREVIOUS_PAGE}</a></li>
+        {/if}
+        {if $footer_next_page}
+            <li class="next_page"><a href="{$footer_next_page}">{$CONST.NEXT_PAGE}</a></li>
+        {/if}
         </ul>
     {/if}
     </nav>
