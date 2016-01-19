@@ -1,7 +1,20 @@
 // GLOBAL STYLES
 // --------------------------------------------------------------------
+body {
+    padding: 1rem;
+}
 
-// GENERIC HELPER CLASSES
+// Hint for live relaunch
+.live-relaunch {
+    @extend %message;
+
+    background: $notice-bg;
+    border-color: $notice-bc;
+    color: $notice-fg;
+    font-size: 1rem;
+}
+
+// Generic helper classes
 .clearfix {
     @include clearfix;
 }

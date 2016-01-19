@@ -21,8 +21,12 @@
 {/if}
 {if $is_raw_mode != true}
     <header>
+        <p class="live-relaunch">Dieses Blog sieht derzeit etwas seltsam aus. Aber nicht, weil es kaputt ist, sondern weil es <a href="http://yellowled.de/archiv/69/LR16-Die-Spielregeln.html">live redesigned</a> wird.</p>
+
         <h1><a href="{$serendipityBaseURL}">{$blogTitle}</a></h1>
+    {if $blogDescription}
         <p>{$blogDescription}</p>
+    {/if}
     </header>
 {if $template_option.use_corenav}
     <nav class="navbar">
