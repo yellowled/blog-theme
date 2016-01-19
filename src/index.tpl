@@ -49,9 +49,9 @@
 
     <footer>
         <ul>
-            <li class="powered_by"><small lang="en">Powered by <a href="http://s9y.org">Serendipity</a></small></li>
-            <li class="template_by"><small lang="en">Template by <a href="http://netzgestaltung.net">Matthias Mees</a></small></li>
-            <li class="license_cc"><small>Artikel unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International">CC BY-NC-ND 4.0</a></small></li>
+            <li><small lang="en">Powered by <a href="http://s9y.org">Serendipity</a></small></li>
+            <li><small lang="en">Template by <a href="http://netzgestaltung.net">Matthias Mees</a></small></li>
+            <li><small>Artikel unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International">CC BY-NC-ND 4.0</a></small></li>
         </ul>
     </footer>
 
