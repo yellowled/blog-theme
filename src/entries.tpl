@@ -110,10 +110,8 @@
     {/if}
 {/foreach}
 {if not $is_preview}
-    {if $staticpage_pagetitle == ''}
-    <nav class="pagination">
-        <p>{$footer_info}</p>
     {if $footer_prev_page||$footer_next_page}
+    <nav class="pagination">
         <ul>
         {if $footer_prev_page}
             <li class="prev_page"><a href="{$footer_prev_page}">{$CONST.PREVIOUS_PAGE}</a></li>
@@ -122,7 +120,6 @@
             <li class="next_page"><a href="{$footer_next_page}">{$CONST.NEXT_PAGE}</a></li>
         {/if}
         </ul>
-    {/if}
     </nav>
     {/if}
 {/if}
