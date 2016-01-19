@@ -16,7 +16,7 @@ module.exports = {
                     '*.php',
                     '*.tpl',
                     'info.txt',
-                    'UTF-8/*'
+                    'UTF-8/*.php'
               ],
         dest:       'dist'
     },
