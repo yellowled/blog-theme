@@ -1,6 +1,6 @@
 # blog-theme
 
-This is the blog theme for [my blog](http://yellowled.de), but you can use it for your [Serendipity](http://s9y.org) (s9y) blog, too.
+This is the [Serendipity](http://s9y.org) (s9y) blog theme for [my blog](http://yellowled.de). It is currently undergoing a [live redesign](http://yellowled.de/archiv/69/LR16-Die-Spielregeln.html) (blog post in German).
 
 ## Requirements
 
