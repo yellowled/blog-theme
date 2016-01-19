@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.config('postcss', {
         options: {
             diff: false,
-            map: true,
+            map: false,
             processors: [
                 require('pixrem')({
                     unitPrecision: 0

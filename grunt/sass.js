@@ -4,8 +4,8 @@ module.exports = function(grunt) {
         build: {
             options: {
                 outputStyle: 'nested',
-                precision: 5,
-                sourceMap: true
+                precision: 4,
+                sourceMap: false
             },
             files: [{
                 expand: true,
