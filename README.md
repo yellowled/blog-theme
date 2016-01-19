@@ -8,4 +8,6 @@ You'll need [node.js](http://nodejs.org) and [Grunt](http://gruntjs.com). Clone 
 
 ## Deploying the theme
 
-`grunt` creates a directory `dist` which contains all the theme's files. `rsync` or `sftp` the contents of `dist` to `/templates/YOURTHEME/` in your s9y installation.
+`grunt` creates a directory `dist` which contains a subdirectory named like the theme. You can set this name by editing the value for `name` in `package.json` (defaults to `blog-theme`).
+
+`rsync` or `sftp` that directory to `/templates/` in your s9y installation (i.e. `/templates/blog-theme/`).
