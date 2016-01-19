@@ -1,0 +1,4 @@
+Name: TEMPLATE_NAME
+Author: Matthias Mees
+Date: 2016-MONTH-DAY
+Require Serendipity: 2.0
