@@ -21,7 +21,7 @@
 {/if}
 {if $is_raw_mode != true}
     <header>
-        <p class="live-redesign">Dieses Blog sieht derzeit etwas seltsam aus. Aber nicht, weil es kaputt ist, sondern weil es <a href="http://yellowled.de/archiv/69/LR16-Die-Spielregeln.html">live redesigned</a> wird.</p>
+        <p class="live-redesign"><b>Hinweis:</b> Dieses Blog sieht derzeit etwas seltsam aus. Aber nicht, weil es kaputt ist, sondern weil es <a href="http://yellowled.de/archiv/69/LR16-Die-Spielregeln.html">live redesigned</a> wird.</p>
 
         <h1><a href="{$serendipityBaseURL}">{$blogTitle}</a></h1>
     {if $blogDescription}
