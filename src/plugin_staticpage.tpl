@@ -1,12 +1,14 @@
 <article id="page_{$staticpage_pagetitle|makeFilename}" class="page">
-    <h2>{if $staticpage_articleformat}{if $staticpage_articleformattitle}{$staticpage_articleformattitle|escape}{else}{$staticpage_pagetitle}{/if}{else}{if $staticpage_headline}{$staticpage_headline|escape}{else}{$staticpage_pagetitle}{/if}{/if}</h2>
-{if is_array($staticpage_childpages)}
-    <ul class="page_children">
-    {foreach from=$staticpage_childpages item="childpage"}
-        <li><a href="{$childpage.permalink|escape}" title="{$childpage.pagetitle|escape}">{$childpage.pagetitle|escape}</a></li>
-    {/foreach}
-    </ul>
-{/if}
+    <header>
+        <h2>{if $staticpage_articleformat}{if $staticpage_articleformattitle}{$staticpage_articleformattitle|escape}{else}{$staticpage_pagetitle}{/if}{else}{if $staticpage_headline}{$staticpage_headline|escape}{else}{$staticpage_pagetitle}{/if}{/if}</h2>
+    {if $staticpage_author || $staticpage_lastchange}
+        <p class="byline">
+        {if $staticpage_author}{$CONST.POSTED_BY} {$staticpage_author|escape}</li>{/if}
+        {if $staticpage_author || $staticpage_lastchange} {$CONST.ON} {/if}
+        {if $staticpage_lastchange}<time datetime="{$staticpage_lastchange|serendipity_html5time}">{$staticpage_lastchange|date_format:$template_option.date_format}</time>{/if}
+        </p>
+    {/if}
+    </header>
 {if $staticpage_pass AND $staticpage_form_pass != $staticpage_pass}
     <form class="staticpage_password_form" action="{$staticpage_form_url}" method="post">
         <label for="serendipity_page_pass">{$CONST.STATICPAGE_PASSWORD_NOTICE}</label>
@@ -25,15 +27,13 @@
     </div>
     {/if}
 {/if}
-{if $staticpage_author or $staticpage_lastchange}
+{if is_array($staticpage_childpages)}
     <footer>
-        {if $staticpage_author}
-            <small>{$CONST.POSTED_BY} {$staticpage_author|escape}</small>
-        {/if}
-        {if $staticpage_lastchange}
-            <small>{$CONST.ON} <time datetime="{$staticpage_lastchange|serendipity_html5time}">{$staticpage_lastchange|date_format:$template_option.date_format}</time></small>
-        {/if}
-        </small>
+        <ul class="page_children">
+        {foreach from=$staticpage_childpages item="childpage"}
+            <li><a href="{$childpage.permalink|escape}" title="{$childpage.pagetitle|escape}">{$childpage.pagetitle|escape}</a></li>
+        {/foreach}
+        </ul>
     </footer>
 {/if}
 </article>
