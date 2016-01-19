@@ -23,6 +23,7 @@ module.exports = function(grunt) {
         'cssmin',
         'uglify',
         'svgstore',
+        'imagemin',
         'svgmin',
         'modernizr'
     ]);
