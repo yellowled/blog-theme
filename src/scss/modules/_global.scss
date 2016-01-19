@@ -1,2 +1,15 @@
 // GLOBAL STYLES
 // --------------------------------------------------------------------
+
+// GENERIC HELPER CLASSES
+.clearfix {
+    @include clearfix;
+}
+
+.visuallyhidden {
+    @include visuallyhidden;
+}
+
+.no-details summary {
+    @include hidden;
+}
