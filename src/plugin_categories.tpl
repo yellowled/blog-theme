@@ -3,7 +3,7 @@
 {/if}
     <ul>
     {foreach from=$categories item="plugin_category"}
-        <li class="category_depth{$plugin_category.catdepth}">
+        <li class="category_depth_{$plugin_category.catdepth}">
         {if $is_form}
             <input type="checkbox" name="serendipity[multiCat][]" value="{$plugin_category.categoryid}">
         {/if}
