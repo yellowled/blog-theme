@@ -30,6 +30,9 @@
             {if $entry.has_comments}
                 <li><a href="{$entry.link}#comments" title="{$entry.comments} {$entry.label_comments}{if $entry.has_trackbacks}, {$entry.trackbacks} {$entry.label_trackbacks}{/if}">{$entry.comments} {$entry.label_comments}</a></li>
             {/if}
+            {if $entry.freetag.tags.tags}
+                <li>{foreach from=$entry.freetag.tags.tags item="tag"}{$tag} {/foreach}</li>
+            {/if}
             </ul>
             {$entry.add_footer}
             {$entry.plugin_display_dat}
