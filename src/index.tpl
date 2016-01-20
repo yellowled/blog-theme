@@ -37,6 +37,14 @@
         </div>
     </nav>
     {/if}
+    <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
+        <input type="hidden" name="serendipity[action]" value="search">
+
+        <label for="searchterm">{$CONST.QUICKSEARCH}</label>
+        <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
+        <input type="submit" name="serendipity[searchButton]"  value="{$CONST.GO}">
+    </form>
+    {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
 
     <main>
     {$CONTENT}
