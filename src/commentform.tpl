@@ -7,18 +7,20 @@
     <form id="serendipity_comment" action="{$commentform_action}#feedback" method="post">
         <input type="hidden" name="serendipity[entry_id]" value="{$commentform_id}">
 
+        {serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry}
+
         <div class="form_field">
-            <label for="serendipity_commentform_name">{$CONST.NAME}</label>
-            <input id="serendipity_commentform_name" type="text" name="serendipity[name]" value="{$commentform_name}">
+            <label for="serendipity_commentform_name">{$CONST.NAME}{if $required_fields.name}*{/if}</label>
+            <input id="serendipity_commentform_name" type="text" name="serendipity[name]" value="{$commentform_name}"{if $required_fields.name} required{/if}>
         </div>
 
         <div class="form_field">
-            <label for="serendipity_commentform_email">{$CONST.EMAIL}</label>
-            <input id="serendipity_commentform_email" type="email" name="serendipity[email]" value="{$commentform_email}">
+            <label for="serendipity_commentform_email">{$CONST.EMAIL}{if $required_fields.email}*{/if}</label>
+            <input id="serendipity_commentform_email" type="email" name="serendipity[email]" value="{$commentform_email}"{if $required_fields.email} required{/if}>
         </div>
 
         <div class="form_field">
-            <label for="serendipity_commentform_url">{$CONST.HOMEPAGE}</label>
+            <label for="serendipity_commentform_url"><abbr title="Uniform Resource Locator" lang="en">URL</abbr>{if $required_fields.url}*{/if}</label>
             <input id="serendipity_commentform_url" type="url" name="serendipity[url]" value="{$commentform_url}">
         </div>
 
@@ -28,19 +30,13 @@
         </div>
 
         <div class="form_area">
-            <label for="serendipity_commentform_comment">{$CONST.COMMENT}</label>
-            <textarea id="serendipity_commentform_comment" rows="10" name="serendipity[comment]">{$commentform_data}</textarea>
+            <label for="serendipity_commentform_comment">{$CONST.COMMENT}{if $required_fields.comment}*{/if}</label>
+            <textarea id="serendipity_commentform_comment" rows="5" name="serendipity[comment]"{if $required_fields.comment} required{/if}>{$commentform_data}</textarea>
         </div>
-
-        {serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry}
     {if $is_commentform_showToolbar}
-        <div class="form_check">
-            <input id="checkbox_remember" type="checkbox" name="serendipity[remember]" {$commentform_remember}> <label for="checkbox_remember">{$CONST.REMEMBER_INFO}</label>
-        </div>
+        <div class="form_check"><input id="checkbox_remember" type="checkbox" name="serendipity[remember]" {$commentform_remember}> <label for="checkbox_remember">{$CONST.REMEMBER_INFO}</label></div>
         {if $is_allowSubscriptions}
-        <div class="form_check">
-            <input id="checkbox_subscribe" type="checkbox" name="serendipity[subscribe]" {$commentform_subscribe}> <label for="checkbox_subscribe">{$CONST.SUBSCRIBE_TO_THIS_ENTRY}</label>
-        </div>
+        <div class="form_check"><input id="checkbox_subscribe" type="checkbox" name="serendipity[subscribe]" {$commentform_subscribe}> <label for="checkbox_subscribe">{$CONST.SUBSCRIBE_TO_THIS_ENTRY}</label></div>
         {/if}
     {/if}
         <div class="form_buttons">
