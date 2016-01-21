@@ -1,5 +1,13 @@
 // PLUGIN STYLES
 // --------------------------------------------------------------------
+.serendipity_plugin_syndication {
+    .content {
+        > ul {
+            margin-top: 0;
+        }
+    }
+}
+
 .serendipity_plugin_categories {
     .content {
         > ul {
