@@ -1,2 +1,26 @@
 // TRACKBACKS, COMMENTS, FORMS
 // --------------------------------------------------------------------
+// Comment + contact forms
+.form_field {
+    margin: .5rem 0;
+
+    label {
+        display: block;
+    }
+}
+
+.form_input {
+    input {
+        width: 100%;
+    }
+}
+
+.form_select {
+    select {
+        width: 100%;
+    }
+}
+
+.form_buttons {
+    margin: 1rem 0;
+}
