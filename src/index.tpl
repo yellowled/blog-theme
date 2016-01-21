@@ -47,7 +47,19 @@
     {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
 
     <main>
-    {$CONTENT}
+    {if $view == '404'}
+        <article class="post post-404">
+            <header>
+                <h2>{$CONST.BT_404_HEAD}</h2>
+            </header>
+
+            <div class="content clearfix">
+                <p>{$CONST.BT_404_TEXT}</p>
+            </div>
+        </article>
+    {else}
+        {$CONTENT}
+    {/if}
     </main>
 
     <aside>
