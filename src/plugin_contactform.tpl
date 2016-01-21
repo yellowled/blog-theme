@@ -19,22 +19,22 @@
             <input type="hidden" name="serendipity[subpage]" value="{$commentform_sname}">
             <input type="hidden" name="serendipity[commentform]" value="true">
 
-             <div class="form_field">
+            {serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry}
+
+             <div class="form_field form_input">
                 <label for="serendipity_commentform_name">{$CONST.NAME}{if $required_fields.name}*{/if}</label>
                 <input id="serendipity_commentform_name" type="text" name="serendipity[name]" value="{$commentform_name}"{if $required_fields.name} required{/if}>
             </div>
 
-            <div class="form_field">
+            <div class="form_field form_input">
                 <label for="serendipity_commentform_email">{$CONST.EMAIL}{if $required_fields.email}*{/if}</label>
                 <input id="serendipity_commentform_email" type="email" name="serendipity[email]" value="{$commentform_email}"{if $required_fields.email} required{/if}>
             </div>
 
-            <div class="form_area">
+            <div class="form_field form_area">
                 <label for="serendipity_commentform_comment">{$CONST.COMMENT}{if $required_fields.comment}*{/if}</label>
                 <textarea id="serendipity_commentform_comment" rows="5" name="serendipity[comment]"{if $required_fields.comment} required{/if}>{$commentform_data}</textarea>
             </div>
-
-            {serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry}
 
             <div class="form_buttons">
                 <input id="serendipity_submit" type="submit" name="serendipity[submit]" value="{$CONST.SUBMIT_COMMENT}">
