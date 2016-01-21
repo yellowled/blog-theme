@@ -31,7 +31,7 @@
 
         <div class="form_field form_area">
             <label for="serendipity_commentform_comment">{$CONST.COMMENT}{if $required_fields.comment}*{/if}</label>
-            <textarea id="serendipity_commentform_comment" rows="5" name="serendipity[comment]"{if $required_fields.comment} required{/if}>{$commentform_data}</textarea>
+            <textarea id="serendipity_commentform_comment" rows="10" name="serendipity[comment]"{if $required_fields.comment} required{/if}>{$commentform_data}</textarea>
         </div>
     {if $is_commentform_showToolbar}
         <div class="form_check"><input id="checkbox_remember" type="checkbox" name="serendipity[remember]" {$commentform_remember}> <label for="checkbox_remember">{$CONST.REMEMBER_INFO}</label></div>

@@ -33,7 +33,7 @@
 
             <div class="form_field form_area">
                 <label for="serendipity_commentform_comment">{$CONST.COMMENT}{if $required_fields.comment}*{/if}</label>
-                <textarea id="serendipity_commentform_comment" rows="5" name="serendipity[comment]"{if $required_fields.comment} required{/if}>{$commentform_data}</textarea>
+                <textarea id="serendipity_commentform_comment" rows="10" name="serendipity[comment]"{if $required_fields.comment} required{/if}>{$commentform_data}</textarea>
             </div>
 
             <div class="form_buttons">
