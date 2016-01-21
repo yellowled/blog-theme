@@ -56,7 +56,7 @@
     </aside>
 
     <footer>
-        <ul>
+        <ul id="credits">
             <li><small lang="en">Powered by <a href="http://s9y.org">Serendipity</a></small></li>
             <li><small lang="en">Template by <a href="http://netzgestaltung.net">Matthias Mees</a></small></li>
         </ul>
