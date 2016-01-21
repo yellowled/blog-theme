@@ -2,7 +2,7 @@
     <div id="serendipity_replyform_0"></div>
     <a id="serendipity_CommentForm"></a>
 {if $is_moderate_comments}
-    <p class="serendipity_msg_important">{$CONST.COMMENTS_WILL_BE_MODERATED}</p>
+    <p class="serendipity_msg_info">{$CONST.COMMENTS_WILL_BE_MODERATED}</p>
 {/if}
     <form id="serendipity_comment" action="{$commentform_action}#feedback" method="post">
         <input type="hidden" name="serendipity[entry_id]" value="{$commentform_id}">

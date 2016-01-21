@@ -90,12 +90,12 @@
 
     <a id="feedback"></a>
     {foreach from=$comments_messagestack item="message"}
-    <p class="serendipity_msg_important">{$message}</p>
+    <p class="serendipity_msg_info">{$message}</p>
     {/foreach}
     {if $is_comment_added}
     <p class="serendipity_msg_notice">{$CONST.COMMENT_ADDED}</p>
     {elseif $is_comment_moderate}
-    <p class="serendipity_msg_important">{$CONST.COMMENT_ADDED}{$CONST.THIS_COMMENT_NEEDS_REVIEW}</p>
+    <p class="serendipity_msg_info">{$CONST.COMMENT_ADDED}{$CONST.THIS_COMMENT_NEEDS_REVIEW}</p>
     {elseif not $entry.allow_comments}
     <p class="serendipity_msg_important">{$CONST.COMMENTS_CLOSED}</p>
     {else}
@@ -110,7 +110,7 @@
     {/foreach}
 {foreachelse}
     {if not $plugin_clean_page}
-    <p class="serendipity_msg_notice">{$CONST.NO_ENTRIES_TO_PRINT}</p>
+    <p class="serendipity_msg_info">{$CONST.NO_ENTRIES_TO_PRINT}</p>
     {/if}
 {/foreach}
 {if not $is_preview}

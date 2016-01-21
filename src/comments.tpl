@@ -15,5 +15,5 @@
     {/if}
     </article>
 {foreachelse}
-    <p class="serendipity_msg_notice">{$CONST.NO_COMMENTS}</p>
+    <p class="serendipity_msg_info">{$CONST.NO_COMMENTS}</p>
 {/foreach}
