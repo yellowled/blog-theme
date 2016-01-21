@@ -23,7 +23,7 @@
         {/if}
 
         <footer>
-            <ul>
+            <ul class="post_meta">
             {if $entry.categories}
                 <li><span class="visuallyhidden">{$CONST.CATEGORIES}: </span>{foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}</li>
             {/if}
