@@ -1,8 +1,8 @@
 // PLUGIN STYLES
 // --------------------------------------------------------------------
-.serendipity_plugin_syndication {
+.widget {
     .content {
-        > ul {
+        > ul:first-child {
             margin-top: 0;
         }
     }
