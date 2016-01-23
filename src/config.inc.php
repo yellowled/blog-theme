@@ -75,6 +75,30 @@ $template_config = array(
         'default' => ''
     ),
     array(
+        'var' => 'privacy_txt',
+        'name' => BT_PRIVACY_TXT,
+        'type' => 'string',
+        'default' => BT_PRIVACY_TXT_DEFAULT
+    ),
+    array(
+        'var' => 'privacy_url',
+        'name' => BT_PRIVACY_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'legal_txt',
+        'name' => BT_LEGAL_TXT,
+        'type' => 'string',
+        'default' => BT_LEGAL_TXT_DEFAULT
+    ),
+    array(
+        'var' => 'legal_url',
+        'name' => BT_LEGAL_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
        'var' => 'use_corenav',
        'name' => USE_CORENAV,
        'type' => 'boolean',
@@ -94,6 +118,7 @@ for ($i = 0; $i < $template_loaded_config['amount']; $i++) {
 $template_config_groups = array(
     BT_SETTINGS      => array('date_format'),
     BT_INFOBOX       => array('infobox_title', 'infobox_img', 'infobox_txt', 'infobox_more_txt', 'infobox_more_url'),
+    BT_FOOTERLINKS   => array('privacy_txt', 'privacy_url', 'legal_txt', 'legal_url'),
     BT_NAVIGATION    => $navlinks_collapse
 );
 

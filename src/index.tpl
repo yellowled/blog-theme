@@ -79,6 +79,18 @@
     </aside>
 
     <footer>
+        {if $template_option.privacy_url || $template_option.legal_url}
+        <nav>
+            <ul>
+            {if $template_option.privacy_url}
+                <li><a href="{$template_option.privacy_url}">{$template_option.privacy_txt}</a></li>
+            {/if}
+            {if $template_option.legal_url}
+                <li><a href="{$template_option.legal_url}">{$template_option.legal_txt}</a></li>
+            {/if}
+            </ul>
+        </nav>
+        {/if}
         <ul id="credits">
             <li><small lang="en">Powered by <a href="http://s9y.org">Serendipity</a></small></li>
             <li><small lang="en">Template by <a href="http://netzgestaltung.net">Matthias Mees</a></small></li>

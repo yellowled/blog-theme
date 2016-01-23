@@ -9,6 +9,7 @@
 // Theme options - groups
 @define('BT_SETTINGS', 'Settings');
 @define('BT_INFOBOX', 'Infobox');
+@define('BT_FOOTERLINKS', 'Footer links');
 @define('BT_NAVIGATION', 'Navigation');
 
 // Infobox
@@ -19,3 +20,11 @@
 @define('BT_INFOBOX_MORE_TXT', 'Text for link to info page');
 @define('BT_INFOBOX_MORE_TXT_DEFAULT', 'More');
 @define('BT_INFOBOX_MORE_URL', 'URL to info page');
+
+// Footer links
+@define('BT_PRIVACY_TXT', 'Text for link to privacy policy');
+@define('BT_PRIVACY_TXT_DEFAULT', 'privacy policy');
+@define('BT_PRIVACY_URL', 'URL to privacy policy');
+@define('BT_LEGAL_TXT', 'Text for link to legal info');
+@define('BT_LEGAL_TXT_DEFAULT', 'legal info');
+@define('BT_LEGAL_URL', 'URL to legal info');
