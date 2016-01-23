@@ -63,10 +63,10 @@
     </main>
 
     <aside>
-        <section id="about">
+        <section id="about" class="widget">
             <h3>{$template_option.infobox_title}</h3>
 
-            <div class="content clearfix">
+            <div class="content">
                 <img src="{$template_option.infobox_img}" alt="">
 
                 {$template_option.infobox_txt}

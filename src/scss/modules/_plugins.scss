@@ -1,18 +1,9 @@
 // PLUGIN STYLES
 // --------------------------------------------------------------------
-.widget {
-    .content {
-        > ul:first-child {
-            margin-top: 0;
-        }
-    }
-}
-
 .serendipity_plugin_categories {
     .content {
         > ul {
             list-style: none;
-            margin-top: 0;
             padding: 0;
         }
     }
