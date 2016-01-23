@@ -123,8 +123,8 @@ $template_config = array(
         'default' => ''
     ),
     array(
-        'var' => 'dribbble_url',
-        'name' => BT_DRIBBBLE_URL,
+        'var' => 'flickr_url',
+        'name' => BT_FLICKR_URL,
         'type' => 'string',
         'default' => ''
     ),
@@ -172,7 +172,7 @@ for ($i = 0; $i < $template_loaded_config['amount']; $i++) {
 $template_config_groups = array(
     BT_SETTINGS      => array('date_format'),
     BT_INFOBOX       => array('infobox_title', 'infobox_img', 'infobox_txt', 'infobox_more_txt', 'infobox_more_url'),
-    BT_SOCIALLINKS   => array('twitter_url', 'facebook_url', 'instagram_url', 'github_url', 'dribbble_url', 'xing_url', 'pinboard_url', 'lastfm_url', 'amazon_url'),
+    BT_SOCIALLINKS   => array('twitter_url', 'facebook_url', 'instagram_url', 'github_url', 'flickr_url', 'xing_url', 'pinboard_url', 'lastfm_url', 'amazon_url'),
     BT_FOOTERLINKS   => array('privacy_txt', 'privacy_url', 'legal_txt', 'legal_url'),
     BT_NAVIGATION    => $navlinks_collapse
 );
