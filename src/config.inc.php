@@ -46,9 +46,9 @@ $template_config = array(
     ),
     array(
         'var' => 'infobox_title',
-        'name' => BT_INFOBOX_HEADER,
+        'name' => BT_INFOBOX_TITLE,
         'type' => 'string',
-        'default' => BT_INFOBOX_HEADER_DEFAULT
+        'default' => BT_INFOBOX_TITLE_DEFAULT
     ),
     array(
         'var' => 'infobox_img',
@@ -63,8 +63,14 @@ $template_config = array(
         'default' => ''
     ),
     array(
-        'var' => 'infobox_more',
-        'name' => BT_INFOBOX_MORE,
+        'var' => 'infobox_more_txt',
+        'name' => BT_INFOBOX_MORE_TXT,
+        'type' => 'string',
+        'default' => BT_INFOBOX_MORE_TXT_DEFAULT
+    ),
+    array(
+        'var' => 'infobox_more_url',
+        'name' => BT_INFOBOX_MORE_URL,
         'type' => 'string',
         'default' => ''
     ),
@@ -87,7 +93,7 @@ for ($i = 0; $i < $template_loaded_config['amount']; $i++) {
 
 $template_config_groups = array(
     BT_SETTINGS      => array('date_format'),
-    BT_INFOBOX       => array('infobox_title', 'infobox_img', 'infobox_txt', 'infobox_more'),
+    BT_INFOBOX       => array('infobox_title', 'infobox_img', 'infobox_txt', 'infobox_more_txt', 'infobox_more_url'),
     BT_NAVIGATION    => $navlinks_collapse
 );
 

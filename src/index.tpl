@@ -63,6 +63,17 @@
     </main>
 
     <aside>
+        <section id="about">
+            <h3>{$template_option.infobox_title}</h3>
+
+            <div class="content clearfix">
+                <img src="{$template_option.infobox_img}" alt="">
+
+                {$template_option.infobox_txt}
+
+                <a href="{$template_option.infobox_more_url}">{$template_option.infobox_more_txt}</a>
+            </div>
+        </section>
     {if $leftSidebarElements > 0}{serendipity_printSidebar side="left"}{/if}
     {if $rightSidebarElements > 0}{serendipity_printSidebar side="right"}{/if}
     </aside>

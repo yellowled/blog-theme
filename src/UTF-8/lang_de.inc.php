@@ -12,8 +12,10 @@
 @define('BT_NAVIGATION', 'Navigation');
 
 // Infobox
-@define('BT_INFOBOX_HEADER', 'Überschrift');
-@define('BT_INFOBOX_HEADER_DEFAULT', 'Über dieses Blog');
+@define('BT_INFOBOX_TITLE', 'Überschrift');
+@define('BT_INFOBOX_TITLE_DEFAULT', 'Über dieses Blog');
 @define('BT_INFOBOX_IMG', 'Infobild');
 @define('BT_INFOBOX_TXT', 'Infotext');
-@define('BT_INFOBOX_MORE', 'URL zu Info-Seite');
+@define('BT_INFOBOX_MORE_TXT', 'Linktext zur Info-Seite');
+@define('BT_INFOBOX_MORE_TXT_DEFAULT', 'Mehr');
+@define('BT_INFOBOX_MORE_URL', 'URL zur Info-Seite');
