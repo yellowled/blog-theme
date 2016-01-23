@@ -89,31 +89,31 @@
 
             <ul>
             {if $template_option.twitter_url}
-                <li><a href="{$template_option.twitter_url}">Twitter</a></li>
+                <li><a href="{$template_option.twitter_url}"><svg class="icon-twitter" role="img" title="Twitter" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#twitter"></use></svg><span class="svg-fallback">Twitter</span></a></li>
             {/if}
             {if $template_option.facebook_url}
-                <li><a href="{$template_option.facebook_url}">Facebook</a></li>
+                <li><a href="{$template_option.facebook_url}"><svg class="icon-facebook" role="img" title="Facebook" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#facebook"></use></svg><span class="svg-fallback">Facebook</span></a></li>
             {/if}
             {if $template_option.instagram_url}
-                <li><a href="{$template_option.instagram_url}">Instagram</a></li>
+                <li><a href="{$template_option.instagram_url}"><svg class="icon-instagram" role="img" title="Instagram" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#instagram"></use></svg><span class="svg-fallback">Instagram</span></a></li>
             {/if}
             {if $template_option.github_url}
-                <li><a href="{$template_option.github_url}">GitHub</a></li>
+                <li><a href="{$template_option.github_url}"><svg class="icon-github" role="img" title="Github" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#github"></use></svg><span class="svg-fallback">GitHub</span></a></li>
             {/if}
             {if $template_option.dribbble_url}
-                <li><a href="{$template_option.dribbble_url}">Dribbble</a></li>
+                <li><a href="{$template_option.dribbble_url}"><svg class="icon-dribbble" role="img" title="Dribbble" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#dribbble"></use></svg><span class="svg-fallback">Dribbble</span></a></li>
             {/if}
             {if $template_option.xing_url}
-                <li><a href="{$template_option.xing_url}">Xing</a></li>
+                <li><a href="{$template_option.xing_url}"><svg class="icon-xing" role="img" title="Xing" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#xing"></use></svg><span class="svg-fallback">Xing</span></a></li>
             {/if}
             {if $template_option.pinboard_url}
-                <li><a href="{$template_option.pinboard_url}">Pinboard</a></li>
+                <li><a href="{$template_option.pinboard_url}"><svg class="icon-pinboard" role="img" title="Pinboard" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#pinboard"></use></svg><span class="svg-fallback">Pinboard</span></a></li>
             {/if}
             {if $template_option.lastfm_url}
-                <li><a href="{$template_option.lastfm_url}">Last.fm</a></li>
+                <li><a href="{$template_option.lastfm_url}"><svg class="icon-lastfm" role="img" title="Last.fm" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#lastfm"></use></svg><span class="svg-fallback">Last.fm</span></a></li>
             {/if}
             {if $template_option.amazon_url}
-                <li><a href="{$template_option.amazon_url}">Amazon</a></li>
+                <li><a href="{$template_option.amazon_url}"><svg class="icon-amazon" role="img" title="Amazon" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#amazon"></use></svg><span class="svg-fallback">Amazon</span></a></li>
             {/if}
             </ul>
         </section>
