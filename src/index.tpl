@@ -30,10 +30,10 @@
         <nav id="quick-nav">
             <ul>
             {if $template_option.use_corenav}
-                <li><a id="show-nav" class="nav-toggle" href="#site-nav">Navigation</a></li>
+                <li><a id="show-nav" class="nav-toggle" href="#site-nav"><svg class="icon-bars" role="img" title="Navigation" viewbox="0 0 2048 2048" width="2048" height="2048"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#bars"></use></svg><span class="svg-fallback">Navigation</span></a></li>
             {/if}
-                <li><a id="show-search" href="#search">{$CONST.QUICKSEARCH}</a></li>
-                <li><a id="show-feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2">RSS</a></li>
+                <li><a id="show-search" href="#search"><svg class="icon-search" role="img" title="{$CONST.QUICKSEARCH}" viewbox="0 0 2048 2048" width="2048" height="2048"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#search"></use></svg><span class="svg-fallback">{$CONST.QUICKSEARCH}</span></a></li>
+                <li><a id="show-feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2"><svg class="icon-rss" role="img" title="RSS" viewbox="0 0 2048 2048" width="2048" height="2048"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#rss"></use></svg><span class="svg-fallback">RSS</span></a></li>
             </ul>
         </nav>
     </header>
@@ -72,6 +72,7 @@
                 <a href="{$template_option.infobox_more_url}">{$template_option.infobox_more_txt}</a>
             </div>
         </section>
+
         <section id="search" class="widget">
             <form action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
                 <input type="hidden" name="serendipity[action]" value="search">
@@ -82,8 +83,12 @@
             </form>
             {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
         </section>
-    {if $leftSidebarElements > 0}{serendipity_printSidebar side="left"}{/if}
-    {if $rightSidebarElements > 0}{serendipity_printSidebar side="right"}{/if}
+    {if $leftSidebarElements > 0}
+        {serendipity_printSidebar side="left"}
+    {/if}
+    {if $rightSidebarElements > 0}
+        {serendipity_printSidebar side="right"}
+    {/if}
     </aside>
 
     <footer>
