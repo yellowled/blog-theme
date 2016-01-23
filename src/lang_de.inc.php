@@ -9,6 +9,7 @@
 // Theme options - groups
 @define('BT_SETTINGS', 'Einstellungen');
 @define('BT_INFOBOX', 'Infobox');
+@define('BT_SOCIALLINKS', 'Social Media');
 @define('BT_FOOTERLINKS', 'Links im Footer');
 @define('BT_NAVIGATION', 'Navigation');
 
@@ -20,6 +21,17 @@
 @define('BT_INFOBOX_MORE_TXT', 'Linktext zur Info-Seite');
 @define('BT_INFOBOX_MORE_TXT_DEFAULT', 'Mehr');
 @define('BT_INFOBOX_MORE_URL', 'URL zur Info-Seite');
+
+// Social media
+@define('BT_TWITTER_URL', 'URL zu Twitter');
+@define('BT_FACEBOOK_URL', 'URL zu Facebook');
+@define('BT_INSTAGRAM_URL', 'URL zu Instagram');
+@define('BT_GITHUB_URL', 'URL zu GitHub');
+@define('BT_DRIBBBLE_URL', 'URL zu Dribbble');
+@define('BT_XING_URL', 'URL zu Xing');
+@define('BT_PINBOARD_URL', 'URL zu Pinboard');
+@define('BT_LASTFM_URL', 'URL zu Last.fm');
+@define('BT_AMAZON_URL', 'URL zu Amazon');
 
 // Footer links
 @define('BT_PRIVACY_TXT', 'Linktext zum Datenschutz');

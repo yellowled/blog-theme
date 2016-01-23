@@ -99,6 +99,60 @@ $template_config = array(
         'default' => ''
     ),
     array(
+        'var' => 'twitter_url',
+        'name' => BT_TWITTER_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'facebook_url',
+        'name' => BT_FACEBOOK_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'instagram_url',
+        'name' => BT_INSTAGRAM_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'github_url',
+        'name' => BT_GITHUB_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'dribbble_url',
+        'name' => BT_DRIBBBLE_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'xing_url',
+        'name' => BT_XING_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'pinboard_url',
+        'name' => BT_PINBOARD_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'lastfm_url',
+        'name' => BT_LASTFM_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
+        'var' => 'amazon_url',
+        'name' => BT_AMAZON_URL,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
        'var' => 'use_corenav',
        'name' => USE_CORENAV,
        'type' => 'boolean',
@@ -118,6 +172,7 @@ for ($i = 0; $i < $template_loaded_config['amount']; $i++) {
 $template_config_groups = array(
     BT_SETTINGS      => array('date_format'),
     BT_INFOBOX       => array('infobox_title', 'infobox_img', 'infobox_txt', 'infobox_more_txt', 'infobox_more_url'),
+    BT_SOCIALLINKS   => array('twitter_url', 'facebook_url', 'instagram_url', 'github_url', 'dribbble_url', 'xing_url', 'pinboard_url', 'lastfm_url', 'amazon_url'),
     BT_FOOTERLINKS   => array('privacy_txt', 'privacy_url', 'legal_txt', 'legal_url'),
     BT_NAVIGATION    => $navlinks_collapse
 );

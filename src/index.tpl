@@ -83,7 +83,41 @@
                 <a href="{$template_option.infobox_more_url}">{$template_option.infobox_more_txt}</a>
             </div>
         </section>
+    {if $template_option.twitter_url || $template_option.facebook_url || $template_option.instagram_url || $template_option.github_url || $template_option.dribbble_url || $template_option.xing_url || $template_option.pinboard_url || $template_option.lastfm_url || $template_option.amazon_url}
+        <section id="social-media" class="widget">
+            <h3>{$CONST.BT_SOCIALLINKS}</h3>
 
+            <ul>
+            {if $template_option.twitter_url}
+                <li><a href="{$template_option.twitter_url}">Twitter</a></li>
+            {/if}
+            {if $template_option.facebook_url}
+                <li><a href="{$template_option.facebook_url}">Facebook</a></li>
+            {/if}
+            {if $template_option.instagram_url}
+                <li><a href="{$template_option.instagram_url}">Instagram</a></li>
+            {/if}
+            {if $template_option.github_url}
+                <li><a href="{$template_option.github_url}">GitHub</a></li>
+            {/if}
+            {if $template_option.dribbble_url}
+                <li><a href="{$template_option.dribbble_url}">Dribbble</a></li>
+            {/if}
+            {if $template_option.xing_url}
+                <li><a href="{$template_option.xing_url}">Xing</a></li>
+            {/if}
+            {if $template_option.pinboard_url}
+                <li><a href="{$template_option.pinboard_url}">Pinboard</a></li>
+            {/if}
+            {if $template_option.lastfm_url}
+                <li><a href="{$template_option.lastfm_url}">Last.fm</a></li>
+            {/if}
+            {if $template_option.amazon_url}
+                <li><a href="{$template_option.amazon_url}">Amazon</a></li>
+            {/if}
+            </ul>
+        </section>
+    {/if}
         <section id="search" class="widget">
             <form action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
                 <input type="hidden" name="serendipity[action]" value="search">
