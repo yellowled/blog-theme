@@ -44,15 +44,6 @@
         </div>
     </nav>
     {/if}
-    <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
-        <input type="hidden" name="serendipity[action]" value="search">
-
-        <label for="searchterm">{$CONST.QUICKSEARCH}</label>
-        <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
-        <input type="submit" name="serendipity[searchButton]"  value="{$CONST.GO}">
-    </form>
-    {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
-
     <main>
     {if $view == '404'}
         <article class="post post-404">
@@ -80,6 +71,16 @@
 
                 <a href="{$template_option.infobox_more_url}">{$template_option.infobox_more_txt}</a>
             </div>
+        </section>
+        <section id="search" class="widget">
+            <form action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
+                <input type="hidden" name="serendipity[action]" value="search">
+
+                <label for="searchterm">{$CONST.QUICKSEARCH}</label>
+                <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
+                <input type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
+            </form>
+            {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
         </section>
     {if $leftSidebarElements > 0}{serendipity_printSidebar side="left"}{/if}
     {if $rightSidebarElements > 0}{serendipity_printSidebar side="right"}{/if}
