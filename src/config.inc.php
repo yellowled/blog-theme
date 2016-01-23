@@ -45,6 +45,30 @@ $template_config = array(
                                 '%Y-%m-%d' => '%Y-%m-%d')
     ),
     array(
+        'var' => 'infobox_title',
+        'name' => BT_INFOBOX_HEADER,
+        'type' => 'string',
+        'default' => BT_INFOBOX_HEADER_DEFAULT
+    ),
+    array(
+        'var' => 'infobox_img',
+        'name' => BT_INFOBOX_IMG,
+        'type' => 'media',
+        'default' => serendipity_getTemplateFile('me.jpg')
+    ),
+    array(
+        'var' => 'infobox_txt',
+        'name' => BT_INFOBOX_TXT,
+        'type' => 'text',
+        'default' => ''
+    ),
+    array(
+        'var' => 'infobox_more',
+        'name' => BT_INFOBOX_MORE,
+        'type' => 'string',
+        'default' => ''
+    ),
+    array(
        'var' => 'use_corenav',
        'name' => USE_CORENAV,
        'type' => 'boolean',
@@ -63,6 +87,7 @@ for ($i = 0; $i < $template_loaded_config['amount']; $i++) {
 
 $template_config_groups = array(
     BT_SETTINGS      => array('date_format'),
+    BT_INFOBOX       => array('infobox_title', 'infobox_img', 'infobox_txt', 'infobox_more'),
     BT_NAVIGATION    => $navlinks_collapse
 );
 
