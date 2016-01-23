@@ -56,6 +56,16 @@ $template_global_config = array('navigation' => true);
 $template_loaded_config = serendipity_loadThemeOptions($template_config, $serendipity['smarty_vars']['template_option'], true);
 serendipity_loadGlobalThemeOptions($template_config, $template_loaded_config, $template_global_config);
 
+$navlinks_collapse = array( 'use_corenav', 'amount');
+for ($i = 0; $i < $template_loaded_config['amount']; $i++) {
+	array_push($navlinks_collapse, 'navlink' . $i . 'text' ,'navlink' . $i . 'url');
+}
+
+$template_config_groups = array(
+    BT_SETTINGS      => array('date_format'),
+    BT_NAVIGATION    => $navlinks_collapse
+);
+
 if ($_SESSION['serendipityUseTemplate']) {
     $template_loaded_config['use_corenav'] = false;
 }
