@@ -27,11 +27,18 @@
     {if $blogDescription}
         <p>{$blogDescription}</p>
     {/if}
+        <nav id="quick-nav">
+            <ul>
+            {if $template_option.use_corenav}
+                <li><a id="show-nav" class="nav-toggle" href="#site-nav">Navigation</a></li>
+            {/if}
+                <li><a id="show-search" href="#search">{$CONST.QUICKSEARCH}</a></li>
+                <li><a id="show-feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2">RSS</a></li>
+            </ul>
+        </nav>
     </header>
     {if $template_option.use_corenav}
     <nav class="navbar">
-        <a id="open-nav" class="nav-toggle" href="#site-nav"><span class="icon-menu" aria-hidden="true"></span><span class="fallback-text">Navigation</span></a>
-
         <div id="site-nav" class="nav-collapse">
             <ul>{foreach from=$navlinks item="navlink" name="sbnav"}{if $navlink.title!=""&&$navlink.href!=""}<li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>{/if}{/foreach}</ul>
         </div>
