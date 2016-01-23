@@ -1,7 +1,46 @@
 // HEADER STYLES
 // --------------------------------------------------------------------
+#site-head {
+    @include grid-row;
+
+    > .navbar {
+        @include grid-box(12);
+    }
+}
+
+#identity {
+    @include grid-box(12);
+
+    @media screen and (min-width: $md) {
+        @include grid-box(8);
+    }
+}
+
 #quick-nav {
+    @include grid-box(12);
+
+    @media screen and (min-width: $md) {
+        @include grid-box(4);
+    }
+
+    ul {
+        @media screen and (min-width: $md) {
+            margin-top: 1.75rem;
+        }
+    }
+
     li {
         display: inline-block;
+    }
+}
+
+#site-nav {
+    li {
+        display: inline-block;
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

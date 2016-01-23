@@ -1,17 +1,18 @@
 // GLOBAL STYLES
 // --------------------------------------------------------------------
-body {
-    padding: 0 1rem;
-}
-
 // Hint for live relaunch
-.live-redesign {
-    @extend %message;
+#live-redesign {
+    @include grid-box(12);
 
-    background: $notice-bg;
-    border-color: $notice-bc;
-    color: $notice-fg;
-    font-size: 1rem;
+    p {
+        @extend %message;
+
+        background: $notice-bg;
+        border-color: $notice-bc;
+        color: $notice-fg;
+        font-size: 1rem;
+        margin: 0;
+    }
 }
 
 // Generic helper classes

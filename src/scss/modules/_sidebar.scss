@@ -1,5 +1,13 @@
 // SIDEBAR STYLES
 // --------------------------------------------------------------------
+#sidebar {
+    @include grid-box(12);
+
+    @media screen and (min-width: $md) {
+        @include grid-box(4);
+    }
+}
+
 #social-media {
     ul {
         list-style: none;
@@ -13,13 +21,6 @@
         &:last-child {
             margin: 0 0 .5rem;
         }
-    }
-
-    [class^="icon-"],
-    [class*="icon-"] {
-        fill: $off-black;
-        height: 3rem;
-        width: 3rem;
     }
 }
 
