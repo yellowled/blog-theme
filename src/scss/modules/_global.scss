@@ -1,9 +1,11 @@
 // GLOBAL STYLES
 // --------------------------------------------------------------------
+body {
+    padding: 0 1rem;
+}
+
 // Hint for live relaunch
 #live-redesign {
-    @include grid-box(12);
-
     p {
         @extend %message;
 

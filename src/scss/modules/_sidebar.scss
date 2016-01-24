@@ -1,13 +1,5 @@
 // SIDEBAR STYLES
 // --------------------------------------------------------------------
-#sidebar {
-    @include grid-box(12);
-
-    @media screen and (min-width: $md) {
-        @include grid-box(4);
-    }
-}
-
 #social-media {
     ul {
         list-style: none;

@@ -1,28 +1,11 @@
 // FOOTER STYLES
 // --------------------------------------------------------------------
-#site-info {
-    @include grid-row;
-
+#service {
     small {
         font-size: 1rem;
     }
-}
-
-#service-nav {
-    @include grid-box(12);
 
     ul {
         margin: 1rem 0;
-    }
-
-    li {
-        @media screen and (min-width: $md) {
-            display: inline-block;
-            margin-right: 1rem;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
 }

@@ -1,14 +1,2 @@
 // GENERIC CONTENT STYLES
 // --------------------------------------------------------------------
-// Layout
-#page {
-    @include grid-row;
-}
-
-#main-content {
-    @include grid-box(12);
-
-    @media screen and (min-width: $md) {
-        @include grid-box(8);
-    }
-}
