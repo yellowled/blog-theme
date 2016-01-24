@@ -94,9 +94,6 @@
             {if $template_option.github_url}
                 <li><a href="{$template_option.github_url}"><svg class="icon-github" role="img" title="Github" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#github"></use></svg><span class="svg-fallback">GitHub</span></a></li>
             {/if}
-            {if $template_option.flickr_url}
-                <li><a href="{$template_option.flickr_url}"><svg class="icon-flickr" role="img" title="flickr" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#flickr"></use></svg><span class="svg-fallback">flickr</span></a></li>
-            {/if}
             {if $template_option.xing_url}
                 <li><a href="{$template_option.xing_url}"><svg class="icon-xing" role="img" title="Xing" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#xing"></use></svg><span class="svg-fallback">Xing</span></a></li>
             {/if}

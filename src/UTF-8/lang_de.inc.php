@@ -14,8 +14,8 @@
 @define('BT_NAVIGATION', 'Navigation');
 
 // Infobox
-@define('BT_INFOBOX_TITLE', 'Ãberschrift');
-@define('BT_INFOBOX_TITLE_DEFAULT', 'Ãber dieses Blog');
+@define('BT_INFOBOX_TITLE', 'Überschrift');
+@define('BT_INFOBOX_TITLE_DEFAULT', 'Über dieses Blog');
 @define('BT_INFOBOX_IMG', 'Infobild');
 @define('BT_INFOBOX_TXT', 'Infotext');
 @define('BT_INFOBOX_MORE_TXT', 'Linktext zur Info-Seite');
@@ -27,7 +27,6 @@
 @define('BT_FACEBOOK_URL', 'URL zu Facebook');
 @define('BT_INSTAGRAM_URL', 'URL zu Instagram');
 @define('BT_GITHUB_URL', 'URL zu GitHub');
-@define('BT_FLICKR_URL', 'URL zu flickr');
 @define('BT_XING_URL', 'URL zu Xing');
 @define('BT_PINBOARD_URL', 'URL zu Pinboard');
 @define('BT_LASTFM_URL', 'URL zu Last.fm');

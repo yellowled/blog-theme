@@ -27,7 +27,6 @@
 @define('BT_FACEBOOK_URL', 'URL to Facebook');
 @define('BT_INSTAGRAM_URL', 'URL to Instagram');
 @define('BT_GITHUB_URL', 'URL to GitHub');
-@define('BT_FLICKR_URL', 'URL to flickr');
 @define('BT_XING_URL', 'URL to Xing');
 @define('BT_PINBOARD_URL', 'URL to Pinboard');
 @define('BT_LASTFM_URL', 'URL to Last.fm');
