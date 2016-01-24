@@ -1,4 +1,3 @@
-{if $is_embedded != true}
 <!DOCTYPE html>
 <html class="no-js" lang="{$lang}">
 <head>
@@ -21,13 +20,11 @@ window.onload = function() {ldelim}
 {rdelim}
 </script>
 </head>
-<body style="padding: 0; margin: 0;">
-    <div id="main" style="padding: 0; margin: 0 auto; width: 98%;">
+<body>
+    <div id="main" class="clearfix" style="padding: 0; margin: 0 auto; width: 98%;">
         <main>
         {$preview}
         </main>
     </div>
-
-    <script src="{serendipity_getFile file="scripts/master.js"}"></script>
 </body>
 </html>
