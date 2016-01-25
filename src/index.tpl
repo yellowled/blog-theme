@@ -47,6 +47,17 @@
         <ul>{foreach from=$navlinks item="navlink" name="sbnav"}{if $navlink.title!=""&&$navlink.href!=""}<li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>{/if}{/foreach}</ul>
     </nav>
     {/if}
+    <div id="search">
+        <form action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
+            <input type="hidden" name="serendipity[action]" value="search">
+
+            <label for="searchterm">{$CONST.QUICKSEARCH}</label>
+            <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
+            <input type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
+        </form>
+        {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
+    </div>
+
     <main>
     {if $view == '404'}
         <article class="post post-404">
@@ -104,17 +115,6 @@
                 <li><a href="{$template_option.amazon_url}"><svg class="icon-amazon" role="img" title="Amazon" viewbox="0 0 30 30" width="30" height="30"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#amazon"></use></svg><span class="svg-fallback">Amazon</span></a></li>
             {/if}
             </ul>
-        </section>
-
-        <section id="search" class="widget">
-            <form action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
-                <input type="hidden" name="serendipity[action]" value="search">
-
-                <label for="searchterm">{$CONST.QUICKSEARCH}</label>
-                <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
-                <input type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
-            </form>
-            {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
         </section>
     {if $leftSidebarElements > 0}
         {serendipity_printSidebar side="left"}
