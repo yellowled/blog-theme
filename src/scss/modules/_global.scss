@@ -30,6 +30,13 @@ blockquote {
     @include smart-blockquotes;
 }
 
+pre,
+code,
+samp,
+kbd {
+    font-size: 100%;
+}
+
 // Generic helper classes
 .clearfix {
     @include clearfix;
