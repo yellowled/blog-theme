@@ -51,7 +51,7 @@
         <form action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
             <input type="hidden" name="serendipity[action]" value="search">
 
-            <label for="searchterm">{$CONST.QUICKSEARCH}</label>
+            <label for="searchterm" class="visuallyhidden">{$CONST.QUICKSEARCH}</label>
             <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
             <input type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
         </form>
