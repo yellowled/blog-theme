@@ -72,8 +72,8 @@
     {/if}
     </main>
 
-    <aside id="sidebar">
-        <div class="container">
+    <aside id="site-info">
+        <div class="sidebar clearfix">
             <section id="about" class="widget">
                 <h3>{$template_option.infobox_title}</h3>
 
@@ -118,17 +118,19 @@
                 </ul>
             </section>
         </div>
-    {if $leftSidebarElements > 0}
-        <div class="container">
-        {serendipity_printSidebar side="left"}
-        </div>
-    {/if}
-    {if $rightSidebarElements > 0}
-        <div class="container">
-        {serendipity_printSidebar side="right"}
-        </div>
-    {/if}
     </aside>
+    {if $leftSidebarElements > 0 || $rightSidebarElements > 0}
+    <aside id="sidebar">
+        <div class="sidebar clearfix">
+        {if $leftSidebarElements > 0}
+            {serendipity_printSidebar side="left"}
+        {/if}
+        {if $rightSidebarElements > 0}
+            {serendipity_printSidebar side="right"}
+        {/if}
+        </div>
+    </aside>
+    {/if}
     {if $template_option.privacy_url || $template_option.legal_url}
     <footer id="service">
         <nav>
