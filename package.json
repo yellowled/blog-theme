@@ -19,7 +19,6 @@
         "node":     ">=4.0.0"
     },
     "dependencies": {
-        "responsive-nav":           "^1.0.39",
         "svg4everybody":            "^2.0.1"
     },
     "devDependencies":  {
