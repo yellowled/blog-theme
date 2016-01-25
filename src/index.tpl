@@ -41,14 +41,13 @@
         <a href="{$serendipityBaseURL}">
             {$template_option.identity}
         </a>
+    {if $template_option.use_corenav}
+        <a id="show-nav" class="nav-toggle" href="#site-nav"><span class="icon-menu"></span><span class="fallback-text">Navigation</span></a>
+    {/if}
     </header>
     {if $template_option.use_corenav}
-    <nav class="navbar">
-        <a id="show-nav" class="nav-toggle" href="#site-nav"><span class="icon-menu"></span><span class="fallback-text">Navigation</span></a>
-
-        <div id="site-nav" class="nav-collapse">
-            <ul>{foreach from=$navlinks item="navlink" name="sbnav"}{if $navlink.title!=""&&$navlink.href!=""}<li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>{/if}{/foreach}</ul>
-        </div>
+    <nav id="site-nav" class="nav-collapse">
+        <ul>{foreach from=$navlinks item="navlink" name="sbnav"}{if $navlink.title!=""&&$navlink.href!=""}<li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>{/if}{/foreach}</ul>
     </nav>
     {/if}
     <main>
