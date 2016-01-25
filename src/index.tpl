@@ -38,10 +38,9 @@
     </div>
 
     <header id="identity">
-        <h1><a href="{$serendipityBaseURL}">{$blogTitle}</a></h1>
-    {if $blogDescription}
-        <p>{$blogDescription}</p>
-    {/if}
+        <a href="{$serendipityBaseURL}">
+            {$template_option.identity}
+        </a>
     </header>
     {if $template_option.use_corenav}
     <nav class="navbar">

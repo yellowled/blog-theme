@@ -8,6 +8,7 @@
 
 // Theme options - groups
 @define('BT_SETTINGS', 'Einstellungen');
+@define('BT_IDENTITY', 'Markup für Blog-Header');
 @define('BT_INFOBOX', 'Infobox');
 @define('BT_SOCIALLINKS', 'Social Media');
 @define('BT_FOOTERLINKS', 'Links im Footer');
