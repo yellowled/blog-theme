@@ -73,7 +73,7 @@
     </main>
 
     <aside id="sidebar">
-        <div class="sidebar-section">
+        <div class="container">
             <section id="about" class="widget">
                 <h3>{$template_option.infobox_title}</h3>
 
@@ -119,12 +119,12 @@
             </section>
         </div>
     {if $leftSidebarElements > 0}
-        <div class="sidebar-section">
+        <div class="container">
         {serendipity_printSidebar side="left"}
         </div>
     {/if}
     {if $rightSidebarElements > 0}
-        <div class="sidebar-section">
+        <div class="container">
         {serendipity_printSidebar side="right"}
         </div>
     {/if}

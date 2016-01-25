@@ -1,6 +1,6 @@
 // SIDEBAR STYLES
 // --------------------------------------------------------------------
-.sidebar-section {
+#sidebar .container {
     @media screen and (min-width: $sm) {
         @include center-horizontal;
 
