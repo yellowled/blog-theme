@@ -12,11 +12,11 @@ main {
     }
 
     @media screen and (min-width: $md) {
-        max-width: 42.8125rem;
+        max-width: 42rem;
         text-align: justify;
     }
 
     @media screen and (min-width: $lg) {
-        max-width: 51.875rem;
+        max-width: 50rem;
     }
 }
