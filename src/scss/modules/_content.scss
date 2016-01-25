@@ -1,2 +1,22 @@
 // GENERIC CONTENT STYLES
 // --------------------------------------------------------------------
+main {
+    @media screen and (min-width: $sm) {
+        @include center-horizontal;
+
+        max-width: 25rem;
+    }
+
+    @media screen and (min-width: 37.5em) {
+        max-width: 35rem;
+    }
+
+    @media screen and (min-width: $md) {
+        max-width: 42.8125rem;
+        text-align: justify;
+    }
+
+    @media screen and (min-width: $lg) {
+        max-width: 51.875rem;
+    }
+}

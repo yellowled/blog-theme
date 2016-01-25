@@ -10,11 +10,20 @@
         color: $notice-fg;
         font-size: 1rem;
         margin: 0;
+
+        @media screen and (min-width: $md) {
+            text-align: center;
+        }
     }
 }
 
 body {
     padding: 0 1rem;
+
+    @media screen and (min-width: $lg) {
+        font-size: 112.5%;
+        line-height: 1.6666;
+    }
 }
 
 blockquote {

@@ -1,6 +1,8 @@
 // HEADER STYLES
 // --------------------------------------------------------------------
 #identity {
+    text-align: center;
+
     a {
         &,
         &:visited,
@@ -12,6 +14,11 @@
     }
 }
 
+#site-nav {
+    text-align: center;
+}
+
 #search {
     margin: 1rem 0;
+    text-align: center;
 }
