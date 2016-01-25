@@ -1,9 +1,5 @@
 // GLOBAL STYLES
 // --------------------------------------------------------------------
-body {
-    padding: 0 1rem;
-}
-
 // Hint for live relaunch
 #live-redesign {
     p {
@@ -15,6 +11,14 @@ body {
         font-size: 1rem;
         margin: 0;
     }
+}
+
+body {
+    padding: 0 1rem;
+}
+
+blockquote {
+    @include smart-blockquotes;
 }
 
 // Generic helper classes
