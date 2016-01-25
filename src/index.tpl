@@ -47,16 +47,14 @@
         <ul>{foreach from=$navlinks item="navlink" name="sbnav"}{if $navlink.title!=""&&$navlink.href!=""}<li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>{/if}{/foreach}</ul>
     </nav>
     {/if}
-    <div id="search">
-        <form action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
-            <input type="hidden" name="serendipity[action]" value="search">
+    <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
+        <input type="hidden" name="serendipity[action]" value="search">
 
-            <label for="searchterm" class="visuallyhidden">{$CONST.QUICKSEARCH}</label>
-            <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
-            <input type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
-        </form>
-        {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
-    </div>
+        <label for="searchterm" class="visuallyhidden">{$CONST.QUICKSEARCH}</label>
+        <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
+        <input type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
+    </form>
+    {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
 
     <main>
     {if $view == '404'}
