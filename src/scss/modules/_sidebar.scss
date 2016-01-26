@@ -4,7 +4,15 @@
     @extend %container;
 }
 
+#about {
+    h3 {
+        text-align: center;
+    }
+}
+
 #social-media {
+    text-align: center;
+
     ul {
         list-style: none;
         padding: 0;
@@ -12,10 +20,10 @@
 
     li {
         display: inline-block;
-        margin: 0 .5rem .5rem 0;
+        margin-right: .5rem;
 
         &:last-child {
-            margin: 0 0 .5rem;
+            margin-right: 0;
         }
     }
 }
