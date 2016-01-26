@@ -1,23 +1,7 @@
 // SIDEBAR STYLES
 // --------------------------------------------------------------------
 .sidebar {
-    @media screen and (min-width: $sm) {
-        @include center-horizontal;
-
-        max-width: 25rem;
-    }
-
-    @media screen and (min-width: 37.5em) {
-        max-width: 35rem;
-    }
-
-    @media screen and (min-width: $md) {
-        max-width: 42rem;
-    }
-
-    @media screen and (min-width: $lg) {
-        max-width: 50rem;
-    }
+    @extend %container;
 }
 
 #social-media {
