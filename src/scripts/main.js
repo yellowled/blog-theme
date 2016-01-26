@@ -3,19 +3,14 @@
     svg4everybody();
 
     // Collapsible search form
-    $('#search').collapse({
-        open: function() {
-            this.slideDown(250);
-            $('#searchterm').focus();
-        },
-        close: function() {
-            this.slideUp(250);
-            $('#searchterm').blur();
-        }
-    });
-
-    $('.show_search').click(function(e) {
+    $('#show_search').click(function(e) {
         e.preventDefault();
         $(this.hash).trigger("toggle");
+    });
+    $('#search').bind('opened', function() {
+        $('#searchterm').focus();
+    });
+    $('#search').bind('closed', function() {
+        $('#searchterm').blur();
     });
 })(jQuery);

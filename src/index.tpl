@@ -50,11 +50,11 @@
             <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
         {/if}
         {/foreach}
-            <li><a class="show_search" href="#search">{$CONST.QUICKSEARCH}</a></li>
+            <li><a id="show_search" href="#search">{$CONST.QUICKSEARCH}</a></li>
         </ul>
     </nav>
     {/if}
-    <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
+    <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get" data-collapse>
         <input type="hidden" name="serendipity[action]" value="search">
 
         <div id="search_inputs">
@@ -72,8 +72,6 @@
 
             <div class="content clearfix">
                 <p>{$CONST.BT_404_TEXT}</p>
-
-                <a class="show_search" href="#search">{$CONST.QUICKSEARCH}</a>
             </div>
         </article>
     {else}
