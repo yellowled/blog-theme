@@ -18,6 +18,8 @@
 }
 
 body {
+    @include ligatures;
+
     padding: 0 1rem;
 
     @media screen and (min-width: $sm) {
