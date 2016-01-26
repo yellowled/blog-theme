@@ -44,7 +44,14 @@
     </header>
     {if $template_option.use_corenav}
     <nav id="site-nav">
-        <ul>{foreach from=$navlinks item="navlink" name="sbnav"}{if $navlink.title!=""&&$navlink.href!=""}<li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>{/if}{/foreach}</ul>
+        <ul>
+        {foreach from=$navlinks item="navlink" name="sbnav"}
+        {if $navlink.title!=""&&$navlink.href!=""}
+            <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
+        {/if}
+            <li><a class="show_search" href="#search">{$CONST.QUICKSEARCH}</a></li>
+        {/foreach}
+        </ul>
     </nav>
     {/if}
     <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
@@ -63,6 +70,8 @@
 
             <div class="content clearfix">
                 <p>{$CONST.BT_404_TEXT}</p>
+
+                <a class="show_search" href="#search">{$CONST.QUICKSEARCH}</a>
             </div>
         </article>
     {else}
