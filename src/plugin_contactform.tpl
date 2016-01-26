@@ -1,7 +1,9 @@
 <article class="page">
-    <h2>{if $plugin_contactform_articleformat}{$plugin_contactform_name}{else}{$plugin_contactform_pagetitle}{/if}</h2>
+    <header>
+        <h2>{if $plugin_contactform_articleformat}{$plugin_contactform_name}{else}{$plugin_contactform_pagetitle}{/if}</h2>
+    </header>
 
-    <div class="content preface clearfix">
+    <div class="content preface">
     {$plugin_contactform_preface}
     </div>
 {if $is_contactform_sent}

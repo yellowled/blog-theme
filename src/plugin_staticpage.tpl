@@ -10,7 +10,7 @@
     </form>
 {else}
     {if $staticpage_precontent}
-    <div class="content preface clearfix">
+    <div class="content preface">
     {$staticpage_precontent}
     </div>
     {/if}
