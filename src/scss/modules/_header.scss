@@ -19,6 +19,27 @@
 }
 
 #search {
+    background-color: $lite-grey;
+    border-top: 1px solid $silver;
+    border-bottom: 1px solid $silver;
     margin: 1rem 0;
+    padding: 1rem 0;
     text-align: center;
+}
+
+#search_inputs {
+    position: relative;
+}
+
+#searchterm {
+    background-color: inherit;
+    border: 0;
+    border-bottom: 2px dashed $greyed-out;
+    font-size: 2rem;
+    text-align: center;
+
+    &:focus {
+        border-bottom: 2px solid $greyed-out;
+        box-shadow: none;
+    }
 }

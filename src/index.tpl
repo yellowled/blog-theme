@@ -57,9 +57,11 @@
     <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
         <input type="hidden" name="serendipity[action]" value="search">
 
-        <label for="searchterm" class="visuallyhidden">{$CONST.QUICKSEARCH}</label>
-        <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
-        <input type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
+        <div id="search_inputs">
+            <label for="searchterm" class="visuallyhidden">{$CONST.QUICKSEARCH}</label>
+            <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
+            <input class="visuallyhidden" type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
+        </div>
     </form>
     {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
 
