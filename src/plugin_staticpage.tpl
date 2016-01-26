@@ -1,13 +1,6 @@
 <article id="page_{$staticpage_pagetitle|makeFilename}" class="page">
     <header>
         <h2>{if $staticpage_articleformat}{if $staticpage_articleformattitle}{$staticpage_articleformattitle|escape}{else}{$staticpage_pagetitle}{/if}{else}{if $staticpage_headline}{$staticpage_headline|escape}{else}{$staticpage_pagetitle}{/if}{/if}</h2>
-    {if $staticpage_author || $staticpage_lastchange}
-        <p class="byline">
-        {if $staticpage_author}{$CONST.POSTED_BY} {$staticpage_author|escape}</li>{/if}
-        {if $staticpage_author || $staticpage_lastchange} {$CONST.ON} {/if}
-        {if $staticpage_lastchange}<time datetime="{$staticpage_lastchange|serendipity_html5time}">{$staticpage_lastchange|date_format:$template_option.date_format}</time>{/if}
-        </p>
-    {/if}
     </header>
 {if $staticpage_pass AND $staticpage_form_pass != $staticpage_pass}
     <form class="staticpage_password_form" action="{$staticpage_form_url}" method="post">
