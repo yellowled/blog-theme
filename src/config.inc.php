@@ -45,6 +45,12 @@ $template_config = array(
                                 '%Y-%m-%d' => '%Y-%m-%d')
     ),
     array(
+       'var' => 'multiuser',
+       'name' => BT_MULTIUSER,
+       'type' => 'boolean',
+       'default' => false
+    )
+    array(
         'var' => 'identity',
         'name' => BT_IDENTITY,
         'type' => 'text',

@@ -8,6 +8,7 @@
 
 // Theme options - groups
 @define('BT_SETTINGS', 'Settings');
+@define('BT_MULTIUSER', 'Multiuser blog?');
 @define('BT_IDENTITY', 'Markup for blog header');
 @define('BT_INFOBOX', 'Infobox');
 @define('BT_SOCIALLINKS', 'Social Media');
