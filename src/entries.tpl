@@ -66,8 +66,6 @@
     <section id="trackbacks">
         <h3>{$entry.trackbacks} {$CONST.TRACKBACKS}</h3>
 
-        <a class="trackback-url" rel="nofollow" href="{$entry.link_trackback}" onclick="alert('{$CONST.TRACKBACK_SPECIFIC_ON_CLICK|escape:'htmlall'}'); return false;" title="{$CONST.TRACKBACK_SPECIFIC_ON_CLICK|escape:'htmlall'}">{$CONST.TRACKBACK_SPECIFIC}</a>
-
         {serendipity_printTrackbacks entry=$entry.id}
     </section>
 {/if}
