@@ -64,7 +64,7 @@
         <p class="serendipity_msg_notice">{$CONST.DATA_COMMENT_APPROVED|sprintf:$CONST.COMMENT_APPROVED}</p>
     {/if}
     <section id="trackbacks">
-        <h3>{$CONST.TRACKBACKS}</h3>
+        <h3>{$entry.trackbacks} {$CONST.TRACKBACKS}</h3>
 
         <a class="trackback-url" rel="nofollow" href="{$entry.link_trackback}" onclick="alert('{$CONST.TRACKBACK_SPECIFIC_ON_CLICK|escape:'htmlall'}'); return false;" title="{$CONST.TRACKBACK_SPECIFIC_ON_CLICK|escape:'htmlall'}">{$CONST.TRACKBACK_SPECIFIC}</a>
 
@@ -73,7 +73,7 @@
 {/if}
 {if $is_single_entry and not $is_preview}
     <section id="comments">
-        <h3>{$CONST.COMMENTS}</h3>
+        <h3>{$entry.comments} {$CONST.COMMENTS}</h3>
 
         <div class="comment_view">{$CONST.DISPLAY_COMMENTS_AS} {if $entry.viewmode eq $CONST.VIEWMODE_LINEAR}{$CONST.COMMENTS_VIEWMODE_LINEAR} | <a href="{$entry.link_viewmode_threaded}#comments" rel="nofollow">{$CONST.COMMENTS_VIEWMODE_THREADED}</a>{else}<a rel="nofollow" href="{$entry.link_viewmode_linear}#comments">{$CONST.COMMENTS_VIEWMODE_LINEAR}</a> | {$CONST.COMMENTS_VIEWMODE_THREADED}{/if}</div>
 
