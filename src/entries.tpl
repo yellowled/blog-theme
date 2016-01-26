@@ -4,7 +4,7 @@
     {assign var="entry" value=$entry scope=parent}
     <article class="post{if $dategroup.is_sticky} is_sticky{/if}">
         <header>
-            <h2><a href="{$entry.link}">{$entry.title}</a></h2>
+            <h2>{if not $is_single_entry}<a href="{$entry.link}">{/if}{$entry.title}{if not $is_single_entry}</a>{/if}</h2>
 
             <p class="byline">{if $template_option.multiuser}{$CONST.POSTED_BY} <a href="{$entry.link_author}">{$entry.author}</a> {$CONST.ON} {/if}<time datetime="{$entry.timestamp|serendipity_html5time}">{$entry.timestamp|formatTime:$template_option.date_format}</time></p>
         </header>
