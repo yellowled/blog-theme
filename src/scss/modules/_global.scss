@@ -12,6 +12,7 @@
         margin: 0;
 
         @media screen and (min-width: $md) {
+            border-radius: 0;
             text-align: center;
         }
     }
