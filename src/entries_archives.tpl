@@ -2,6 +2,8 @@
 <article class="archive">
     <h2>{$CONST.ARCHIVES}</h2>
 
+    {serendipity_showPlugin class="serendipity_plugin_categories"}
+    {serendipity_showPlugin class="serendipity_plugin_freetag"}
 {foreach from=$archives item="archive"}
     <section id="archive-{$archive.year}" class="archive-year">
         <h3>{$archive.year}</h3>
