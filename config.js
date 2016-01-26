@@ -5,8 +5,8 @@ module.exports = {
     },
     concat: {
         src: [
+                    'node_modules/jquery-collapse/src/jquery.collapse.js',
                     'node_modules/svg4everybody/dist/svg4everybody.js',
-                    'node_modules/responsive-nav/responsive-nav.js',
                     'src/scripts/main.js'
               ],
         dest:       'src/scripts/master.js'

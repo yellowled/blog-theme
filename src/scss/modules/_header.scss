@@ -19,16 +19,15 @@
 }
 
 #search {
-    background-color: $lite-grey;
-    border-top: 1px solid $silver;
-    border-bottom: 1px solid $silver;
     margin: 1rem 0;
-    padding: 1rem 0;
     text-align: center;
 }
 
 #search_inputs {
-    position: relative;
+    background-color: $lite-grey;
+    border-top: 1px solid $silver;
+    border-bottom: 1px solid $silver;
+    padding: 1rem 0;
 }
 
 #searchterm {
