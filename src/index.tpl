@@ -42,18 +42,20 @@
             {$template_option.identity}
         </a>
     </header>
-    {if $template_option.use_corenav}
+
     <nav id="site-nav">
         <ul>
+        {if $template_option.use_corenav}
         {foreach from=$navlinks item="navlink" name="sbnav"}
-        {if $navlink.title!=""&&$navlink.href!=""}
+            {if $navlink.title!=""&&$navlink.href!=""}
             <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
-        {/if}
+            {/if}
         {/foreach}
+        {/if}
             <li><a class="show_search" href="#search">{$CONST.QUICKSEARCH}</a></li>
         </ul>
     </nav>
-    {/if}
+
     <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
         <input type="hidden" name="serendipity[action]" value="search">
 
