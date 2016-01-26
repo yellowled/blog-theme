@@ -1,5 +1,5 @@
 {if $staticpage_results}
-<div class="search_pages clearfix">
+<div class="search_pages">
     <h3>{$CONST.STATICPAGE_SEARCHRESULTS|sprintf:$staticpage_searchresults}</h3>
 
     <ul>
