@@ -18,6 +18,10 @@
     @media screen and (min-width: $lg) {
         max-width: 50rem;
     }
+
+    @media screen and (min-width: $xx) {
+        max-width: 51.875rem;
+    }
 }
 main {
     @extend %container;

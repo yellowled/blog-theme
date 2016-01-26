@@ -28,6 +28,11 @@ body {
         font-size: 112.5%;
         line-height: 1.6666;
     }
+
+    @media screen and (min-width: $xx) {
+        font-size: 125%;
+        line-height: 1.6;
+    }
 }
 
 blockquote {
