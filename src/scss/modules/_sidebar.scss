@@ -53,16 +53,32 @@
     text-align: center;
 
     ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         list-style: none;
+        margin: 1rem auto .5rem;
+        max-width: 15rem;
         padding: 0;
+
+        @media screen and (min-width: $md) {
+            flex-wrap: nowrap;
+            margin: 1rem auto;
+            max-width: 35rem;
+        }
     }
 
     li {
-        display: inline-block;
-        margin-right: .5rem;
+        margin-bottom: .5rem;
+        width: 33%;
 
-        &:last-child {
-            margin-right: 0;
+        @media screen and (min-width: $md) {
+            margin-bottom: 0;
+            width: auto;
         }
+    }
+
+    a {
+        display: block;
     }
 }
