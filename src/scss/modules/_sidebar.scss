@@ -4,7 +4,7 @@
     @extend %container;
 }
 
-#about {
+#info {
     min-height: 9rem;
 
     h3 {
@@ -24,7 +24,7 @@
     }
 }
 
-#about-img {
+#info-img {
     background-color: #fcfcfc;
     border: 1px solid $greyed-out;
     border-radius: 50%;

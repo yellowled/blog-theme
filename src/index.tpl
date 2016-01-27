@@ -81,11 +81,11 @@
 
     <aside id="site-info">
         <div class="sidebar clearfix">
-            <section id="about" class="widget">
+            <section id="info" class="widget">
                 <h3>{$template_option.infobox_title}</h3>
 
                 <div class="content">
-                    <img id="about-img" src="{$template_option.infobox_img}" alt="">
+                    <img id="info-img" src="{$template_option.infobox_img}" alt="">
 
                     <p>{$template_option.infobox_txt} &mdash; <a href="{$template_option.infobox_more_url}">{$template_option.infobox_more_txt}</a></p>
                 </div>
