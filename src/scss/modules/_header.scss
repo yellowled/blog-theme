@@ -15,11 +15,11 @@
 }
 
 #site-nav {
-    @extend %container;
-
-    text-align: center;
-
     ul {
+        @extend %container;
+
+        text-align: center;
+
         @media screen and (min-width: $md) {
             display: flex;
             justify-content: center;
