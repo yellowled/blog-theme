@@ -1,6 +1,8 @@
 // ARTICLE STYLES
 // --------------------------------------------------------------------
 .post_meta {
-    list-style: none;
-    padding: 0;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 }

@@ -24,8 +24,8 @@
         </div>
         {/if}
 
-        <footer>
-            <ul class="post_meta">
+        <footer class="post_meta">
+            <ul>
             {if $entry.has_comments}
                 <li class="post_comments"><a href="{$entry.link}#comments" title="{$entry.comments} {$entry.label_comments}{if $entry.has_trackbacks}, {$entry.trackbacks} {$entry.label_trackbacks}{/if}">{$entry.comments} {$entry.label_comments}</a></li>
             {/if}
