@@ -82,3 +82,21 @@
         display: block;
     }
 }
+
+#sidebar {
+    .sidebar {
+        @media screen and (min-width: $md) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .widget {
+        box-sizing: border-box;
+
+        @media screen and (min-width: $md) {
+            width: 33%;
+        }
+    }
+}
