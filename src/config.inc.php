@@ -51,6 +51,12 @@ $template_config = array(
        'default' => false
     ),
     array(
+       'var' => 'show_categories',
+       'name' => BT_SHOW_CATEGORIES,
+       'type' => 'boolean',
+       'default' => false
+    ),
+    array(
         'var' => 'identity',
         'name' => BT_IDENTITY,
         'type' => 'text',

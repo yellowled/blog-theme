@@ -9,6 +9,7 @@
 // Theme options - groups
 @define('BT_SETTINGS', 'Einstellungen');
 @define('BT_MULTIUSER', 'Multiuser-Blog?');
+@define('BT_SHOW_CATEGORIES', 'Kategorie(n) anzeigen?');
 @define('BT_IDENTITY', 'Markup für Blog-Header');
 @define('BT_INFOBOX', 'Infobox');
 @define('BT_SOCIALLINKS', 'Social Media');
