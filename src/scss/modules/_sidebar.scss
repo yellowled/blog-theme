@@ -87,7 +87,7 @@
     .sidebar {
         @media screen and (min-width: $md) {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
         }
     }
