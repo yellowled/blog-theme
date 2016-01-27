@@ -7,9 +7,6 @@
             <h2>{if not $is_single_entry}<a href="{$entry.link}">{/if}{$entry.title}{if not $is_single_entry}</a>{/if}</h2>
 
             <p class="post_byline">{if $template_option.multiuser}{$CONST.POSTED_BY} <a href="{$entry.link_author}">{$entry.author}</a> {$CONST.ON} {/if}<time datetime="{$entry.timestamp|serendipity_html5time}">{$entry.timestamp|formatTime:$template_option.date_format}</time></p>
-        {if $entry.categories && $template_option.show_categories}
-            <p class="post_categories"><span class="visuallyhidden">{$CONST.CATEGORIES}: </span>{foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}</li>
-        {/if}
         </header>
 
         <div class="content clearfix">
@@ -26,6 +23,9 @@
 
         <footer class="post_meta">
             <ul>
+            {if $entry.categories && $template_option.show_categories}
+                <li class="post_categories"><span class="visuallyhidden">{$CONST.CATEGORIES}: </span>{foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}</li>
+            {/if}
             {if $entry.has_comments}
                 <li class="post_comments"><a href="{$entry.link}#comments" title="{$entry.comments} {$entry.label_comments}{if $entry.has_trackbacks}, {$entry.trackbacks} {$entry.label_trackbacks}{/if}">{$entry.comments} {$entry.label_comments}</a></li>
             {/if}
