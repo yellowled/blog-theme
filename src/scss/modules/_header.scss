@@ -20,8 +20,8 @@
     text-align: center;
 
     ul {
-        border-top: 1px solid $silver;
-        border-bottom: 1px solid $silver;
+        border-top: 1px solid $seperator-color;
+        border-bottom: 1px solid $seperator-color;
 
         @media screen and (min-width: $md) {
             border: 0;
@@ -33,7 +33,7 @@
 
     li {
         box-sizing: border-box;
-        border-bottom: 1px solid $silver;
+        border-bottom: 1px solid $seperator-color;
 
         &:last-child {
             border: 0;
@@ -41,7 +41,7 @@
 
         @media screen and (min-width: $md) {
             border: 0;
-            border-right: 1px solid $silver;
+            border-right: 1px solid $seperator-color;
             width: 20%;
         }
     }
