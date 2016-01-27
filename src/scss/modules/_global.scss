@@ -18,6 +18,11 @@
     }
 }
 
+html {
+    background: $off-white;
+    color: $off-black;
+}
+
 body {
     @include ligatures;
 
