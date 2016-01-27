@@ -85,15 +85,13 @@
                 <h3>{$template_option.infobox_title}</h3>
 
                 <div class="content">
-                    <img src="{$template_option.infobox_img}" alt="">
+                    <img id="about-img" src="{$template_option.infobox_img}" alt="">
 
-                    {$template_option.infobox_txt}
-
-                    <a href="{$template_option.infobox_more_url}">{$template_option.infobox_more_txt}</a>
+                    <p>{$template_option.infobox_txt} &mdash; <a href="{$template_option.infobox_more_url}">{$template_option.infobox_more_txt}</a></p>
                 </div>
             </section>
 
-            <section id="social-media" class="widget">
+            <section id="social" class="widget">
                 <h3>{$CONST.BT_SOCIALLINKS}</h3>
 
                 <ul>

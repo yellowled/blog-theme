@@ -5,12 +5,51 @@
 }
 
 #about {
+    min-height: 9rem;
+
     h3 {
         text-align: center;
     }
+
+    .content {
+        text-align: center;
+
+        @media screen and (min-width: $md) {
+            text-align: left;
+        }
+
+        @media screen and (min-width: $xl) {
+            position: relative;
+        }
+    }
 }
 
-#social-media {
+#about-img {
+    background-color: #fcfcfc;
+    border: 1px solid $greyed-out;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 96px;
+    padding: .5rem;
+    width: 96px;
+
+    @media screen and (min-width: $md) {
+        float: left;
+        margin: 0 1rem 0 0;
+        position: relative;
+        top: -.75rem;
+    }
+
+    @media screen and (min-width: $xl) {
+        float: none;
+        margin: 0;
+        position: absolute;
+        top: -.25rem;
+        left: -8rem;
+    }
+}
+
+#social {
     text-align: center;
 
     ul {
