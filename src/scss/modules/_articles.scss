@@ -1,8 +1,31 @@
 // ARTICLE STYLES
 // --------------------------------------------------------------------
+.post {
+    margin-bottom: 2rem;
+}
+
 .post_meta {
     ul {
         list-style: none;
         padding: 0;
     }
+}
+
+.pagination {
+    min-height: 2.5rem;
+    position: relative;
+}
+
+.prev_page,
+.next_page {
+    position: absolute;
+    top: 0;
+}
+
+.prev_page {
+    left: 0;
+}
+
+.next_page {
+    right: 0;
 }
