@@ -29,6 +29,10 @@
         li {
             margin-bottom: 0;
             margin-right: 1rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
