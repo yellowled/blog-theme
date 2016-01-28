@@ -14,6 +14,4 @@
         <div id="serendipity_replyform_{$comment.id}"></div>
     {/if}
     </article>
-{foreachelse}
-    <p class="serendipity_msg_info">{$CONST.NO_COMMENTS}</p>
 {/foreach}
