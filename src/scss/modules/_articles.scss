@@ -8,6 +8,19 @@
     ul {
         list-style: none;
         padding: 0;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $md) {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        li {
+            margin-right: 1rem;
+        }
     }
 }
 
