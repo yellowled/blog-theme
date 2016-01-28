@@ -1,7 +1,5 @@
-<article class="page">
-    <header>
-        <h2>{if $plugin_contactform_articleformat}{$plugin_contactform_name}{else}{$plugin_contactform_pagetitle}{/if}</h2>
-    </header>
+<article id="page_{$staticpage_pagetitle|makeFilename|lower}" class="page">
+    <h2>{if $plugin_contactform_articleformat}{$plugin_contactform_name}{else}{$plugin_contactform_pagetitle}{/if}</h2>
 
     <div class="content preface">
     {$plugin_contactform_preface}

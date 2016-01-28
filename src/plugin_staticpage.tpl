@@ -1,7 +1,5 @@
 <article id="page_{$staticpage_pagetitle|makeFilename}" class="page">
-    <header>
-        <h2>{if $staticpage_articleformat}{if $staticpage_articleformattitle}{$staticpage_articleformattitle|escape}{else}{$staticpage_pagetitle}{/if}{else}{if $staticpage_headline}{$staticpage_headline|escape}{else}{$staticpage_pagetitle}{/if}{/if}</h2>
-    </header>
+    <h2>{if $staticpage_articleformat}{if $staticpage_articleformattitle}{$staticpage_articleformattitle|escape}{else}{$staticpage_pagetitle}{/if}{else}{if $staticpage_headline}{$staticpage_headline|escape}{else}{$staticpage_pagetitle}{/if}{/if}</h2>
 {if $staticpage_pass AND $staticpage_form_pass != $staticpage_pass}
     <form class="staticpage_password_form" action="{$staticpage_form_url}" method="post">
         <label for="serendipity_page_pass">{$CONST.STATICPAGE_PASSWORD_NOTICE}</label>
