@@ -11,6 +11,14 @@
         text-align: center;
     }
 
+    li {
+        margin-bottom: .25rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     @media screen and (min-width: $md) {
         ul {
             display: flex;
@@ -19,6 +27,7 @@
         }
 
         li {
+            margin-bottom: 0;
             margin-right: 1rem;
         }
     }
