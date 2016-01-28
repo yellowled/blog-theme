@@ -48,19 +48,19 @@
 }
 
 #search {
-    margin: 1rem 0;
     text-align: center;
-
-    @media screen and (min-width: $md) {
-        margin: 2rem 0;
-    }
 }
 
 #search_inputs {
     background-color: $lite-grey;
     border-top: 1px solid $silver;
     border-bottom: 1px solid $silver;
+    margin: 1rem 0;
     padding: 1rem 0;
+
+    @media screen and (min-width: $md) {
+        margin: 2rem 0;
+    }
 }
 
 #searchterm {
