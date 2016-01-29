@@ -69,12 +69,11 @@
     }
 
     li {
+        flex-basis: 33%;
         margin-bottom: .5rem;
-        width: 33%;
 
         @media screen and (min-width: $md) {
             margin-bottom: 0;
-            width: auto;
         }
     }
 
