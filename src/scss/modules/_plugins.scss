@@ -1,5 +1,6 @@
 // PLUGIN STYLES
 // --------------------------------------------------------------------
+// Categories
 .serendipity_plugin_categories {
     .content {
         > ul {
@@ -7,4 +8,14 @@
             padding: 0;
         }
     }
+}
+
+// Freetags
+.serendipity_freetag_taglist {
+    text-align: center;
+}
+
+.serendipity_freetag_taglist_related {
+    font-size: 1.17em;
+    font-weight: bold;
 }
