@@ -55,16 +55,15 @@ del {
     color: $greyed-out;
 }
 
-pre,
-code,
-samp,
-kbd {
+pre {
     font-size: 100%;
 }
 
 code,
 samp,
 kbd {
+    font-size: 93.75%;
+
     p &,
     li &,
     td & {
