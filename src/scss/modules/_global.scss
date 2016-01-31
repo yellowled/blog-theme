@@ -47,6 +47,14 @@ blockquote {
     @include smart-blockquotes;
 }
 
+ins {
+    text-decoration: none;
+}
+
+del {
+    color: $greyed-out;
+}
+
 pre,
 code,
 samp,
