@@ -101,6 +101,10 @@ main {
     text-align: center;
 }
 
+.gallery {
+    @include clearfix;
+}
+
 // Archive
 .archive {
     h2,
