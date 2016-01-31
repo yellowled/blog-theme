@@ -47,6 +47,60 @@ main {
     text-align: center;
 }
 
+// Images
+.serendipity_image_left,
+.serendipity_image_center,
+.serendipity_image_right {
+    border: 0;
+    padding: 0;
+}
+
+.serendipity_image_left,
+.serendipity_imageComment_left {
+    float: left;
+    margin: 1.5rem 1rem .5rem 0;
+}
+
+.serendipity_image_center,
+.serendipity_imageComment_center {
+    margin: 1rem auto;
+}
+
+.serendipity_imageComment_center {
+    @include responsive-media;
+}
+
+.serendipity_image_right,
+.serendipity_imageComment_right {
+    float: right;
+    margin: 1.5rem 0 .5rem 1rem;
+}
+
+.serendipity_imageComment_center,
+.serendipity_imageComment_left,
+.serendipity_imageComment_right {
+    border: 0;
+    background-color: inherit;
+    padding: 0;
+    text-align: center;
+}
+
+.serendipity_imageComment_img,
+.serendipity_imageComment_img img {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.serendipity_imageComment_txt {
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    font-size: .875rem;
+    text-align: center;
+}
+
 // Archive
 .archive {
     h2,
