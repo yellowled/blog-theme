@@ -32,12 +32,12 @@
             </div>
 
             <div class="form_field form_area">
-                <label for="serendipity_commentform_comment">{$CONST.COMMENT}{if $required_fields.comment}*{/if}</label>
+                <label for="serendipity_commentform_comment">{$CONST.BT_FORM_MESSAGE}{if $required_fields.comment}*{/if}</label>
                 <textarea id="serendipity_commentform_comment" rows="10" name="serendipity[comment]"{if $required_fields.comment} required{/if}>{$commentform_data}</textarea>
             </div>
 
             <div class="form_buttons">
-                <input id="serendipity_submit" type="submit" name="serendipity[submit]" value="{$CONST.SUBMIT_COMMENT}">
+                <input id="serendipity_submit" type="submit" name="serendipity[submit]" value="{$CONST.BT_FORM_SEND}">
             </div>
         </form>
     </div>

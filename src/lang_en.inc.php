@@ -10,6 +10,10 @@
 @define('BT_CHRONOLOGICAL', 'Chronological');
 @define('BT_SUMMARY', 'Articles in');
 
+// Forms
+@define('BT_FORM_MESSAGE', 'Message');
+@define('BT_FORM_SEND', 'Send');
+
 // Theme options - groups
 @define('BT_SETTINGS', 'Settings');
 @define('BT_MULTIUSER', 'Multiuser blog?');
