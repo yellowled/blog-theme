@@ -1,6 +1,6 @@
 {serendipity_hookPlugin hook="entries_header"}
 <article class="archive archive-summary">
-	<h2>{$dateRange.0|formatTime:"%B %Y"}</h2>
+	<h2>{$CONST.BT_SUMMARY} {$dateRange.0|formatTime:"%B %Y"}</h2>
 
 	<ul>
 	{foreach from=$entries item="sentries"}

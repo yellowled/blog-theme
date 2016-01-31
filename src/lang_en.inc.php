@@ -8,6 +8,7 @@
 
 // Archive pages
 @define('BT_CHRONOLOGICAL', 'Chronological');
+@define('BT_SUMMARY', 'Articles in');
 
 // Theme options - groups
 @define('BT_SETTINGS', 'Settings');
