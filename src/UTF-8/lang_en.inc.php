@@ -6,6 +6,9 @@
 @define('BT_404_HEAD', 'Error: 404');
 @define('BT_404_TEXT', 'The requested URL was not found on this server.');
 
+// Archive pages
+@define('BT_CHRONOLOGICAL', 'Chronological');
+
 // Theme options - groups
 @define('BT_SETTINGS', 'Settings');
 @define('BT_MULTIUSER', 'Multiuser blog?');

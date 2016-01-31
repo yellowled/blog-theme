@@ -1,8 +1,8 @@
 {serendipity_hookPlugin hook="entries_header"}
-<article class="archive">
+<article class="archive archive-summary">
 	<h2>{$dateRange.0|formatTime:"%B %Y"}</h2>
 
-	<ul class="summary">
+	<ul>
 	{foreach from=$entries item="sentries"}
         {foreach from=$sentries.entries item="entry"}
         <li><a href="{$entry.link}">{$entry.title}</a>

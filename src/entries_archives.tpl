@@ -1,12 +1,14 @@
 {serendipity_hookPlugin hook="entries_header"}
-<article class="archive">
+<article class="archive archive-overview">
     <h2>{$CONST.ARCHIVES}</h2>
 
     {serendipity_showPlugin class="serendipity_plugin_categories"}
     {serendipity_showPlugin class="serendipity_plugin_freetag"}
+
+    <h3>{$CONST.BT_CHRONOLOGICAL}</h3>
 {foreach from=$archives item="archive"}
-    <section id="archive-{$archive.year}" class="archive-year">
-        <h3>{$archive.year}</h3>
+    <section class="archive-year">
+        <h4>{$archive.year}</h4>
 
         <ul>
         {foreach from=$archive.months item="month"}
