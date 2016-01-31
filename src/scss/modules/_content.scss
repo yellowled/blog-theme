@@ -84,3 +84,23 @@ main {
         }
     }
 }
+
+.archive-summary {
+    ul {
+        width: 100%;
+    }
+
+    li {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    a {
+        flex-basis: 75%;
+    }
+
+    time {
+        flex-basis: 25%;
+        text-align: right;
+    }
+}
