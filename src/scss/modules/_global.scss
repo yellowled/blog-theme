@@ -65,7 +65,9 @@ kbd {
 code,
 samp,
 kbd {
-    p & {
+    p &,
+    li &,
+    td & {
         background-color: $lite-grey;
         border: 1px solid $grey;
         border-radius: 1px;
