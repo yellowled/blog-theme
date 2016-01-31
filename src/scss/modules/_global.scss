@@ -62,6 +62,17 @@ kbd {
     font-size: 100%;
 }
 
+code,
+samp,
+kbd {
+    p & {
+        background-color: $lite-grey;
+        border: 1px solid $grey;
+        border-radius: 1px;
+        padding: 0 .25rem;
+    }
+}
+
 table {
     @include simple-table;
 }
