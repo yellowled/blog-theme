@@ -1,6 +1,14 @@
 // TRACKBACKS, COMMENTS, FORMS
 // --------------------------------------------------------------------
 // Comment + contact forms
+.serendipity_commentDirection {
+    @extend %message;
+
+    background: $notice-bg;
+    border-color: $notice-bc;
+    color: $notice-fg;
+}
+
 .form_field {
     margin: .5rem 0;
 
