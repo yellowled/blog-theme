@@ -54,6 +54,14 @@ kbd {
     font-size: 100%;
 }
 
+table {
+    @include simple-table;
+}
+
+tr:hover {
+    background-color: $lite-grey;
+}
+
 // Generic helper classes
 .clearfix {
     @include clearfix;
