@@ -43,6 +43,14 @@ body {
     }
 }
 
+ul {
+    padding-left: 1.5rem;
+}
+
+ol {
+    padding-left: 2.25rem;
+}
+
 blockquote {
     @include smart-blockquotes;
 }
