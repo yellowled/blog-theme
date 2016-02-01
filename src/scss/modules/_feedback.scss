@@ -96,6 +96,9 @@ input[type=radio] {
 
 // Gravatars
 .comment_avatar {
+    border: 1px solid $greyed-out;
+    border-radius: 50%;
+    box-sizing: border-box;
     float: right;
     height: 64px;
     margin: 0 0 .5rem 1rem;
