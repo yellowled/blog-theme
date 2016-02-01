@@ -89,6 +89,7 @@ table {
 
 tr:hover {
     background-color: $lite-grey;
+    transition: background-color .25s linear;
 }
 
 // Generic helper classes
