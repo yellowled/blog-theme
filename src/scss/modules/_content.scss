@@ -50,38 +50,56 @@ main {
 // Images
 .serendipity_image_left,
 .serendipity_image_center,
-.serendipity_image_right {
+.serendipity_image_right,
+.serendipity_imageComment_center,
+.serendipity_imageComment_left,
+.serendipity_imageComment_right {
+    background: inherit;
     border: 0;
     padding: 0;
 }
 
 .serendipity_image_left,
 .serendipity_imageComment_left {
-    float: left;
-    margin: 1.5rem 1rem .5rem 0;
+    display: block;
+    float: none;
+    margin: 1rem 0;
+
+    @media screen and (min-width: $md) {
+        float: left;
+        margin: 1.5rem 1rem .5rem 0;
+    }
 }
 
 .serendipity_image_center,
 .serendipity_imageComment_center {
+    display: block;
     margin: 1rem auto;
-}
-
-.serendipity_imageComment_center {
-    @include responsive-media;
 }
 
 .serendipity_image_right,
 .serendipity_imageComment_right {
-    float: right;
-    margin: 1.5rem 0 .5rem 1rem;
+    display: block;
+    float: none;
+    margin: 1rem 0;
+
+    @media screen and (min-width: $md) {
+        float: right;
+        margin: 1.5rem 0 .5rem 1rem;
+    }
+}
+
+.serendipity_imageComment_left,
+.serendipity_imageComment_center,
+.serendipity_imageComment_right {
+    @include responsive-media;
 }
 
 .serendipity_imageComment_center,
 .serendipity_imageComment_left,
-.serendipity_imageComment_right {
-    border: 0;
-    background-color: inherit;
-    padding: 0;
+.serendipity_imageComment_right,
+.serendipity_imageComment_img,
+.serendipity_imageComment_img img {
     text-align: center;
 }
 
@@ -89,7 +107,6 @@ main {
 .serendipity_imageComment_img img {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .serendipity_imageComment_txt {
@@ -103,6 +120,12 @@ main {
 
 .gallery {
     @include clearfix;
+}
+
+// Videos/Embeds
+video,
+audio {
+    margin: 1rem 0;
 }
 
 // Archive
