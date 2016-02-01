@@ -47,6 +47,14 @@ main {
     text-align: center;
 }
 
+.disclaimer {
+    background-color: $lite-grey;
+    border-top: 2px solid $grey;
+    border-bottom: 2px solid $grey;
+    box-sizing: border-box;
+    padding: .375rem .5rem;
+}
+
 // Images
 .serendipity_image_left,
 .serendipity_image_center,
