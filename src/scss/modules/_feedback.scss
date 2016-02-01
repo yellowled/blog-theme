@@ -97,7 +97,9 @@ input[type=radio] {
 // Gravatars
 .comment_avatar {
     float: right;
+    height: 64px;
     margin: 0 0 .5rem 1rem;
+    width: 64px;
 }
 
 .avatar_left {
