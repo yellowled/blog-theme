@@ -38,6 +38,14 @@ input[type=radio] {
 .form_buttons {
     margin: 1rem 0;
     text-align: center;
+
+    input {
+        min-width: 7.5rem;
+    }
+
+    input + input {
+        margin-left: .4rem;
+    }
 }
 
 // Comments
@@ -87,14 +95,19 @@ input[type=radio] {
 }
 
 // Gravatars
+.comment_avatar {
+    float: right;
+    margin: 0 0 .5rem 1rem;
+}
+
 .avatar_left {
     float: left;
-    margin: 0 1rem 1rem 0;
+    margin: 0 1rem .5rem 0;
 }
 
 .avatar_right {
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 .5rem 1rem;
 }
 
 // Trackbacks

@@ -2,7 +2,7 @@
     <article id="c{$comment.id}" class="comment commentlevel_{if $comment.depth > 8}9{else}{$comment.depth}{/if}">
         <h4>{if $comment.url}<a href="{$comment.url}">{/if}{$comment.author|default:$CONST.ANONYMOUS}{if $comment.url}</a>{/if}:</h4>
 
-        <div class="content clearfix">
+        <div class="content">
         {if $comment.body == 'COMMENT_DELETED'}
             <p class="serendipity_msg_important">{$CONST.COMMENT_IS_DELETED}</p>
         {else}
