@@ -14,6 +14,10 @@
 
     label {
         display: block;
+
+        & > abbr {
+            border-bottom: 0;
+        }
     }
 }
 
