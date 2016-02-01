@@ -68,6 +68,14 @@ main {
 }
 
 .serendipity_image_left,
+.serendipity_image_right,
+.serendipity_image_center {
+    box-shadow: 0 0 5px rgba($black, .8);
+
+    .no-boxshadow & { border: 1px solid $greyed-out;}
+}
+
+.serendipity_image_left,
 .serendipity_imageComment_left {
     display: block;
     float: none;
@@ -124,6 +132,11 @@ main {
     clear: both;
     font-size: .875rem;
     text-align: center;
+}
+
+.serendipity_image_link:hover img,
+.serendipity_image_link:focus img {
+    opacity: .7;
 }
 
 .gallery {
