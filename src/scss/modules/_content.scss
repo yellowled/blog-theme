@@ -141,8 +141,7 @@ main {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    // @include clearfix;
 }
 
 // Figures
