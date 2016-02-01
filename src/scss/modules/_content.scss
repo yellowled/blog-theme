@@ -127,8 +127,9 @@ main {
 
 .serendipity_imageComment_txt {
     border-top: 0;
+    color: $greyed-out;
     margin: 0;
-    padding: 0;
+    padding: .5rem 0 0;
     clear: both;
     font-size: .875rem;
     text-align: center;
@@ -141,6 +142,61 @@ main {
 
 .gallery {
     @include clearfix;
+}
+
+// Figures
+figcaption {
+    color: $greyed-out;
+    font-size: .875rem;
+    text-align: center;
+
+    a {
+        &,
+        &:visited {
+            color: $greyed-out;
+            text-decoration: underline;
+        }
+
+        &:hover,
+        &:focus {
+            color: $off-black;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (min-width: $xl) {
+    figure {
+        position: relative;
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        left: -11rem;
+        text-align: right;
+        width: 10rem;
+    }
+
+    .alt {
+        bottom: auto;
+        left: auto;
+        right: -11rem;
+        top: 0;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: $xx) {
+    figcaption {
+        font-size: 1rem;
+        left: -20rem;
+        width: 18rem;
+    }
+
+    .alt {
+        right: -20rem;
+    }
 }
 
 // Videos/Embeds
