@@ -29,6 +29,12 @@
     }
 }
 
+input[type=checkbox],
+input[type=radio] {
+    position: relative;
+    top: -2px;
+}
+
 .form_buttons {
     margin: 1rem 0;
     text-align: center;
