@@ -84,6 +84,14 @@ input[type=radio] {
     }
 }
 
+// Comment preview
+#c {
+    background-color: $lite-grey;
+    border: 1px dashed $greyed-out;
+    color: $greyed-out;
+    padding: 0 1rem;
+}
+
 // Gravatars
 .comment_avatar {
     border: 1px solid $greyed-out;

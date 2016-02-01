@@ -31,4 +31,7 @@
 
         e.preventDefault();
     });
+
+    // Move comment preview
+    $('#c').insertAfter('#feedback');
 })(jQuery);

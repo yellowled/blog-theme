@@ -40,8 +40,8 @@
         {/if}
     {/if}
         <div class="form_buttons">
-            <input id="serendipity_submit" type="submit" name="serendipity[submit]" value="{$CONST.BT_FORM_SEND}">
             <input id="serendipity_preview" type="submit" name="serendipity[preview]" value="{$CONST.PREVIEW}">
+            <input id="serendipity_submit" type="submit" name="serendipity[submit]" value="{$CONST.BT_FORM_SEND}">
         </div>
     </form>
 </div>
