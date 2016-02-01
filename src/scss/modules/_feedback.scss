@@ -19,6 +19,10 @@
             border-bottom: 0;
         }
     }
+
+    .serendipity_commentDirection + & {
+        margin-top: 1.75rem;
+    }
 }
 
 .form_input {
