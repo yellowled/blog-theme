@@ -6,6 +6,7 @@
         {if $comment.body == 'COMMENT_DELETED'}
             <p class="serendipity_msg_important">{$CONST.COMMENT_IS_DELETED}</p>
         {else}
+            {if $comment.avatar}{$comment.avatar}{/if}
             {$comment.body}
         {/if}
         </div>
