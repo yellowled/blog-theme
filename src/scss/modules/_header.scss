@@ -22,14 +22,13 @@
 
         @media screen and (min-width: $md) {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
         }
     }
 
     li {
         @media screen and (min-width: $md) {
-            flex-basis: 20%;
+            flex: 0 1 20%;
         }
     }
 

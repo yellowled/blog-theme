@@ -69,7 +69,7 @@
     }
 
     li {
-        flex-basis: 33%;
+        flex: 0 1 33%;
         margin-bottom: .5rem;
 
         @media screen and (min-width: $md) {
@@ -95,7 +95,7 @@
         box-sizing: border-box;
 
         @media screen and (min-width: $md) {
-            width: 33%;
+            flex: 0 1 33%;
         }
     }
 }

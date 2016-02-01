@@ -60,7 +60,6 @@ input[type=radio] {
 .comment_meta {
     ul {
         display: flex;
-        flex-wrap: wrap;
         list-style: none;
         padding: 0;
         text-align: left;
@@ -129,11 +128,11 @@ input[type=radio] {
     }
 
     a {
-        flex-basis: 75%;
+        flex: 0 1 75%;
     }
 
     time {
-        flex-basis: 25%;
+        flex: 0 1 25%;
         text-align: right;
     }
 }

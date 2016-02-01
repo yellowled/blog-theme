@@ -152,7 +152,7 @@ audio {
 
         h2,
         > h3 {
-            flex-basis: 100%;
+            flex: 0 1 100%;
         }
 
         h3,
@@ -161,7 +161,7 @@ audio {
         }
 
         > section {
-            flex-basis: 50%;
+            flex: 0 1 50%;
         }
     }
 }
@@ -173,15 +173,14 @@ audio {
 
     li {
         display: flex;
-        flex-wrap: nowrap;
     }
 
     a {
-        flex-basis: 75%;
+        flex: 0 1 75%;
     }
 
     time {
-        flex-basis: 25%;
+        flex: 0 1 75%;
         text-align: right;
     }
 }
