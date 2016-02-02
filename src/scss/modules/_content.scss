@@ -141,7 +141,22 @@ main {
 }
 
 .gallery {
-    // @include clearfix;
+    @include clearfix;
+
+    margin: 1rem 0 -.875rem;
+
+    img {
+        margin: 0 0 1rem;
+
+        @media screen and (min-width: $md) {
+            margin: 0 1rem 1rem 0;
+            max-width: 19.5rem;
+        }
+
+        @media screen and (min-width: $lg) {
+            max-width: 15.5rem;
+        }
+    }
 }
 
 // Figures
