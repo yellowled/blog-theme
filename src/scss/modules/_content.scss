@@ -145,9 +145,15 @@ main {
     text-align: center;
 }
 
-.serendipity_image_link:hover img,
-.serendipity_image_link:focus img {
-    opacity: .7;
+.serendipity_image_link {
+    display: block;
+
+    &:hover,
+    &:focus {
+        img {
+            opacity: .7;
+        }
+    }
 }
 
 .gallery {
