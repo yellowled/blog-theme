@@ -1,6 +1,8 @@
 // ARTICLE STYLES
 // --------------------------------------------------------------------
 .post {
+    @extend %container;
+
     margin-bottom: 2 * $type-rhythm;
 }
 
@@ -35,28 +37,4 @@
             }
         }
     }
-}
-
-// Pagination
-.pagination {
-    min-height: 2.5rem;
-    position: relative;
-
-    a {
-        display: block;
-    }
-}
-
-.prev_page,
-.next_page {
-    position: absolute;
-    top: 0;
-}
-
-.prev_page {
-    left: 0;
-}
-
-.next_page {
-    right: 0;
 }
