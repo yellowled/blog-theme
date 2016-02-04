@@ -28,7 +28,7 @@
 
     @media screen and (min-width: $md) {
         float: left;
-        margin: $type-rhythm $type-rhythm $type-rhythm 0;
+        margin: $type-rhythm 1rem $type-rhythm 0;
     }
 }
 
@@ -46,7 +46,7 @@
 
     @media screen and (min-width: $md) {
         float: right;
-        margin: $type-rhythm 0 $type-rhythm $type-rhythm;
+        margin: $type-rhythm 0 $type-rhythm 1rem;
     }
 }
 
@@ -101,7 +101,7 @@
         margin: 0 0 $type-rhythm;
 
         @media screen and (min-width: $md) {
-            margin: 0 $type-rhythm $type-rhythm 0;
+            margin: 0 1rem $type-rhythm 0;
             max-width: 19.5rem;
         }
 

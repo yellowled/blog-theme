@@ -27,8 +27,8 @@
 main {
     @extend %container;
 
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2 * $type-rhythm;
+    margin-bottom: 2 * $type-rhythm;
 
     h2,
     h3,

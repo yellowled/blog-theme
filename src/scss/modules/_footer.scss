@@ -4,7 +4,7 @@
     text-align: center;
 
     ul {
-        margin: 1rem 0;
+        margin: $type-rhythm 0;
     }
 
     li {
@@ -17,7 +17,7 @@
 
     @media screen and (min-width: $sm) {
         ul {
-            margin: 1rem 0 2rem;
+            margin: $type-rhythm 0 (2 * $type-rhythm);
         }
 
         li {

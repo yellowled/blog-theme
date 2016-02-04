@@ -52,11 +52,11 @@
     background-color: $lite-grey;
     border-top: 1px solid $silver;
     border-bottom: 1px solid $silver;
-    margin: 1rem 0;
+    margin: $type-rhythm 0;
     padding: 1rem 0;
 
     @media screen and (min-width: $md) {
-        margin: 2rem 0;
+        margin: (2 * $type-rhythm) 0;
     }
 }
 

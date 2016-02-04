@@ -58,7 +58,7 @@ input[type=radio] {
 
 // Comments
 #comments {
-    margin-bottom: 2rem;
+    margin-bottom: 2 * $type-rhythm;
 }
 
 .comment_meta {
@@ -80,7 +80,7 @@ input[type=radio] {
 }
 
 .comment {
-    margin: 2rem 0;
+    margin: (2 * $type-rhythm) 0;
 
     h4 {
         text-align: left;
@@ -118,7 +118,7 @@ input[type=radio] {
 
 // Trackbacks
 #trackbacks {
-    margin: 2rem 0;
+    margin: (2 * $type-rhythm) 0;
 
     ul {
         list-style: none;
