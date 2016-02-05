@@ -49,8 +49,8 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
+	padding: 1rem;
+	margin: 1rem 0;
 	overflow: auto;
 }
 
@@ -61,8 +61,8 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+	padding: .125rem;
+	border-radius: .3125rem;
 	white-space: normal;
 }
 
@@ -138,11 +138,11 @@ pre[class*="language-"] {
 }
 
 // Show language plugin
-div.prism-show-language {
+.prism-show-language {
 	position: relative;
 }
 
-div.prism-show-language > div.prism-show-language-label {
+.prism-show-language > .prism-show-language-label {
 	color: black;
 	background-color: #CFCFCF;
 	display: inline-block;
@@ -153,17 +153,11 @@ div.prism-show-language > div.prism-show-language-label {
 	right: 0;
 	width: auto;
 	height: auto;
-	font-size: 0.9em;
+	font-size: .9375rem;
 	border-radius: 0 0 0 5px;
-	padding: 0 0.5em;
+	padding: 0 .5rem;
 	text-shadow: none;
 	z-index: 1;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
-	-webkit-transform: none;
-	-moz-transform: none;
-	-ms-transform: none;
-	-o-transform: none;
 	transform: none;
 }
