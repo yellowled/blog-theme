@@ -109,6 +109,10 @@ pre {
     box-shadow: 0 0 5px rgba($black, .5);
 }
 
+pre code {
+    font-size: 93.75%;
+}
+
 code,
 samp,
 kbd {
