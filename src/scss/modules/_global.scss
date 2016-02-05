@@ -98,6 +98,14 @@ small {
     font-size: 100%;
 }
 
+.no-js pre {
+    background: #f5f2f0;
+    box-shadow: 0 0 5px rgba($black, .5);
+    padding: 1rem;
+	margin: 1rem 0;
+	overflow: auto;
+}
+
 code,
 samp,
 kbd {
