@@ -121,7 +121,7 @@ kbd {
     p &,
     li &,
     td & {
-        background-color: $lite-grey;
+        background: $lite-grey;
         border: 1px solid $silver;
         border-radius: 1px;
         padding: 0 .2rem;
@@ -133,8 +133,8 @@ table {
 }
 
 tr:hover {
-    background-color: $lite-grey;
-    transition: background-color .25s linear;
+    background: $lite-grey;
+    transition: all .25s linear;
 }
 
 // Generic helper classes
