@@ -7,14 +7,6 @@
         margin: $type-rhythm 0;
     }
 
-    li {
-        margin-bottom: .25rem;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
     @media screen and (min-width: $sm) {
         ul {
             margin: $type-rhythm 0 (2 * $type-rhythm);
@@ -22,7 +14,6 @@
 
         li {
             display: inline-block;
-            margin-bottom: 0;
 
             &:after {
                 content: ' • ';
