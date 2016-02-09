@@ -7,9 +7,8 @@ $type-rhythm:       1rem;
 
 // COLORS
 // --------------------------------------------------------------------
-$ci-dark-blue:      #2763a5;
-$ci-lite-blue:      #b8d1ec;
-$ci-orange:         #fdaa2b;
+$ci-bright-red:     #e02b2b;
+$ci-dull-red:       #c43535;
 
 
 // OVERRIDES
@@ -25,3 +24,6 @@ $msg-class-prefix:  serendipity_msg_;
 $msg-class-warning: important;
 $msg-class-success: notice;
 $msg-class-notice:  info;
+
+// Forms
+$input-focus:       $ci-bright-red;

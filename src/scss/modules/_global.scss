@@ -68,6 +68,31 @@ body {
 }
 
 a {
+    &,
+    &:visited {
+        color: $ci-bright-red;
+
+        > [class^="icon-"],
+        > [class*="icon-"] {
+            fill: $ci-bright-red;
+        }
+    }
+
+    &:active,
+    &:hover {
+        color: $ci-dull-red;
+
+        > [class^="icon-"],
+        > [class*="icon-"] {
+            fill: $ci-dull-red;
+        }
+    }
+
+    &:focus {
+        outline-color: $input-focus;
+        text-decoration: none;
+    }
+
     > abbr[title] {
         border-bottom: 0;
     }
