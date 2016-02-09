@@ -15,6 +15,11 @@
 }
 
 #site-nav {
+    background: $lite-grey;
+    border-top: 1px solid $silver;
+    border-bottom: 1px solid $silver;
+    padding: .5rem 0;
+
     ul {
         @extend %container;
 
@@ -32,6 +37,10 @@
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
     span,
     a {
         box-sizing: border-box;
@@ -45,13 +54,12 @@
 
 #search_inputs {
     background: $lite-grey;
-    border-top: 1px solid $silver;
     border-bottom: 1px solid $silver;
-    margin: $type-rhythm 0;
+    margin: 0 0 $type-rhythm;
     padding: 1rem 0;
 
     @media screen and (min-width: $md) {
-        margin: (2 * $type-rhythm) 0;
+        margin: 0 0 (2 * $type-rhythm);
     }
 }
 
