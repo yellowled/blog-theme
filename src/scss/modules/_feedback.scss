@@ -7,6 +7,10 @@
     background: $notice-bg;
     border-color: $notice-bc;
     color: $notice-fg;
+
+    a {
+        color: inherit;
+    }
 }
 
 .form_field {
