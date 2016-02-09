@@ -3,11 +3,15 @@
 // Static pages
 .page {
     @extend %container;
+
+    margin-bottom: 2 * $type-rhythm;
 }
 
 // Archive
 .archive {
     @extend %container;
+
+    margin-bottom: 2 * $type-rhythm;
 
     h2,
     > h3 {
