@@ -63,13 +63,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         list-style: none;
-        margin: 1rem auto .5rem;
+        margin: $type-rhythm auto .5rem;
         max-width: 15rem;
         padding: 0;
 
         @media screen and (min-width: $md) {
             flex-wrap: nowrap;
-            margin: 1rem auto;
+            margin: $type-rhythm 0 (2 * $type-rhythm);
             max-width: 35rem;
         }
     }
