@@ -18,6 +18,13 @@
         text-align: center;
     }
 
+    a {
+        &:hover,
+        &:focus {
+            color: $grey;
+        }
+    }
+
     .content {
         text-align: center;
 
