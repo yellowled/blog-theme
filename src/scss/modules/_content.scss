@@ -2,7 +2,6 @@
 // --------------------------------------------------------------------
 main {
     margin-top: 2 * $type-rhythm;
-    margin-bottom: 2 * $type-rhythm;
 
     h2,
     h3,
@@ -43,6 +42,11 @@ main {
 
 // Pagination
 .pagination {
+    background: $lite-grey;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding: .9375rem 0;
+
     ul {
         @extend %container;
 
@@ -58,7 +62,7 @@ main {
 .prev_page,
 .next_page {
     position: absolute;
-    top: 0;
+    top: -2px;
 }
 
 .prev_page {
