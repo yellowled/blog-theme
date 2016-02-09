@@ -84,9 +84,29 @@
     }
 
     a {
+        background: $off-white;
+        border-radius: 50%;
         display: block;
+        height: 2.75rem;
+        width: 2.75rem;
+
+        > svg {
+            position: relative;
+            left: -.125rem;
+            top: -.125rem;
+        }
     }
 }
+
+.icon-rss { fill: #f26522; }
+.icon-twitter { fill: #55acee; }
+.icon-facebook { fill: #3b5998; }
+.icon-instagram { fill: #3f729b; }
+.icon-github { fill: #4183c4; }
+.icon-xing { fill: #026466; }
+.icon-pinboard { fill: #0000e6; }
+.icon-lastfm { fill: #d51007; }
+.icon-amazon { fill: #f90; }
 
 #sidebar {
     .sidebar {

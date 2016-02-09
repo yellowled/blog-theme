@@ -66,6 +66,24 @@ main {
 
     a {
         display: block;
+
+        &,
+        &:visited {
+            [class^="icon-"],
+            [class*="icon-"] {
+                fill: $ci-bright-red;
+                transition: all .25s linear;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            [class^="icon-"],
+            [class*="icon-"] {
+                fill: $ci-dull-red;
+                transition: all .25s linear;
+            }
+        }
     }
 }
 
