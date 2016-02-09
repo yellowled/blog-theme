@@ -160,4 +160,8 @@ pre[class*="language-"] {
 	z-index: 1;
 	box-shadow: none;
 	transform: none;
+
+    @media screen and (min-width: $xx) {
+        font-size: 1rem;
+    }
 }

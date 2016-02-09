@@ -1,4 +1,4 @@
-// PLUGIN STYLES
+// PLUGIN@media screen and (min-width: $xx) { STYLES
 // --------------------------------------------------------------------
 // Categories
 .serendipity_plugin_categories {
@@ -22,4 +22,12 @@
 .serendipity_freetag_taglist_related {
     font-size: 1.17em;
     font-weight: bold;
+
+    @media screen and (min-width: $lg) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: $xx) {
+        font-size: 1.6875rem;
+    }
 }

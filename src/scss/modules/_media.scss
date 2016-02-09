@@ -78,6 +78,10 @@
     clear: both;
     font-size: .875rem;
     text-align: center;
+
+    @media screen and (min-width: $xx) {
+        font-size: 1rem;
+    }
 }
 
 .serendipity_image_link {
