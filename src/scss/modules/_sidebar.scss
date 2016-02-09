@@ -69,7 +69,7 @@
 
         @media screen and (min-width: $md) {
             flex-wrap: nowrap;
-            margin: $type-rhythm 0 (2 * $type-rhythm);
+            margin: $type-rhythm auto (2 * $type-rhythm);
             max-width: 35rem;
         }
     }
