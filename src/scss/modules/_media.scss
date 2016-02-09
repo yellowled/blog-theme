@@ -85,13 +85,16 @@
 }
 
 .serendipity_image_link {
-    display: block;
-
     &:hover,
     &:focus {
         img {
             opacity: .7;
+            transition: all .25s linear;
         }
+    }
+
+    &:focus {
+        outline: 0;
     }
 }
 

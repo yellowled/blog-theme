@@ -10,11 +10,13 @@
         &:focus {
             color: $off-black;
             text-decoration: none;
+            transition: all .25s linear;
         }
 
         &:hover,
         &:focus {
             color: $ci-greyed-out;
+            transition: all .25s linear;
         }
     }
 }
