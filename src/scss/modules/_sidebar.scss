@@ -4,7 +4,14 @@
     @extend %container;
 }
 
+#site-info {
+    background: $off-black;
+    border-bottom: 1px solid $silver;
+    color: $off-white;
+}
+
 #info {
+    border-bottom: 1px solid #666;
     min-height: 9rem;
 
     h3 {
