@@ -21,6 +21,10 @@ $xx:                100rem;
 $svg-icon-dims:     3rem;
 
 // Messages
+$notice-bg:         $lite-grey;
+$notice-bc:         $silver;
+$notice-fg:         $greyed-out;
+
 $msg-class-prefix:  serendipity_msg_;
 $msg-class-warning: important;
 $msg-class-success: notice;
