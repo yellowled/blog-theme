@@ -8,8 +8,13 @@
         &:visited,
         &:hover,
         &:focus {
-            color: inherit;
+            color: $off-black;
             text-decoration: none;
+        }
+
+        &:hover,
+        &:focus {
+            color: $ci-greyed-out;
         }
     }
 }
