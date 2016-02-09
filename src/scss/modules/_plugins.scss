@@ -11,6 +11,10 @@
 }
 
 // Freetags
+.freetag_cloud {
+    @extend %container;
+}
+
 .serendipity_freetag_taglist {
     text-align: center;
 }

@@ -11,7 +11,7 @@
 }
 
 #info {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid $ci-greyed-out;
     min-height: 9rem;
 
     h3 {
@@ -33,11 +33,10 @@
 
 #info-img {
     background: $off-white;
-    border: 1px solid $greyed-out;
+    border: 1px solid $ci-greyed-out;
     border-radius: 50%;
     box-sizing: border-box;
     height: 96px;
-    padding: .5rem;
     width: 96px;
 
     @media screen and (min-width: $md) {
