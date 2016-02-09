@@ -4,6 +4,20 @@
     @extend %container;
 
     margin-bottom: 2 * $type-rhythm;
+
+    h2 a {
+        text-decoration: none;
+
+        &,
+        &:visited {
+            color: $off-black;
+        }
+
+        &:hover,
+        &:focus {
+            color: $ci-greyed-out;
+        }
+    }
 }
 
 .post_meta {
