@@ -98,6 +98,7 @@
     <p class="serendipity_msg_info">{$CONST.NO_ENTRIES_TO_PRINT}</p>
     {/if}
 {/foreach}
+{serendipity_hookPlugin hook="entries_footer"}
 {if not $is_preview}
     {if $footer_prev_page||$footer_next_page}
     <nav class="pagination">
@@ -112,4 +113,3 @@
     </nav>
     {/if}
 {/if}
-{serendipity_hookPlugin hook="entries_footer"}

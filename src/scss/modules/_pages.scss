@@ -7,6 +7,18 @@
     margin-bottom: 2 * $type-rhythm;
 }
 
+// Pages search
+.search_pages {
+    @extend %container;
+
+    margin-bottom: $type-rhythm;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
 // Archive
 .archive {
     @extend %container;
