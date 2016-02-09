@@ -72,7 +72,7 @@ main {
             [class^="icon-"],
             [class*="icon-"] {
                 fill: $ci-bright-red;
-                transition: all .25s linear;
+                transition: fill .25s linear;
             }
         }
 
@@ -81,7 +81,7 @@ main {
             [class^="icon-"],
             [class*="icon-"] {
                 fill: $ci-dull-red;
-                transition: all .25s linear;
+                transition: fill .25s linear;
             }
         }
     }

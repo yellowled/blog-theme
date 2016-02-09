@@ -11,13 +11,13 @@
         &,
         &:visited {
             color: $off-black;
-            transition: all .25s linear;
+            transition: color .25s linear;
         }
 
         &:hover,
         &:focus {
             color: $ci-greyed-out;
-            transition: all .25s linear;
+            transition: color .25s linear;
         }
     }
 }
