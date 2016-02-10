@@ -80,7 +80,7 @@ main {
         &:focus {
             [class^="icon-"],
             [class*="icon-"] {
-                fill: $ci-dull-red;
+                fill: $ci-greyed-out;
                 transition: fill .25s linear;
             }
         }
