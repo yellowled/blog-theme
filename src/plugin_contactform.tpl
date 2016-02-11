@@ -10,7 +10,7 @@
     {if $is_contactform_error}
     <p class="serendipity_msg_important">{$plugin_contactform_error}</p>
     {foreach from=$comments_messagestack item="message"}
-    <p class="serendipity_msg_info">{$message}</p>
+    <p class="serendipity_msg_important">{$message}</p>
     {/foreach}
     {/if}
     <div class="serendipityCommentForm">
