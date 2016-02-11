@@ -90,18 +90,10 @@
         }
     }
 
-    a {
-        background: $off-white;
+    [class^="icon-"],
+    [class*="icon-"] {
+        background: linear-gradient($off-white, $off-white) 50%/2rem no-repeat;
         border-radius: 50%;
-        display: block;
-        height: 2.75rem;
-        width: 2.75rem;
-
-        > svg {
-            position: relative;
-            left: -.125rem;
-            top: -.125rem;
-        }
     }
 }
 
