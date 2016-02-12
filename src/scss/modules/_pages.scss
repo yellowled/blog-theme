@@ -5,6 +5,10 @@
     @extend %container;
 
     margin-bottom: 2 * $type-rhythm;
+
+    h2 {
+        margin-bottom: 0;
+    }
 }
 
 // Pages search
@@ -25,7 +29,10 @@
 
     margin-bottom: 2 * $type-rhythm;
 
-    h2,
+    h2 {
+        margin: 0;
+    }
+
     > h3 {
         margin-bottom: 0;
     }

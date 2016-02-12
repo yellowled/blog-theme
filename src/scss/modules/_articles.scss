@@ -5,19 +5,23 @@
 
     margin-bottom: 2 * $type-rhythm;
 
-    h2 a {
-        text-decoration: none;
+    h2 {
+        margin-bottom: 0;
 
-        &,
-        &:visited {
-            color: $off-black;
-            transition: color .25s linear;
-        }
+        a {
+            text-decoration: none;
 
-        &:hover,
-        &:focus {
-            color: $ci-greyed-out;
-            transition: color .25s linear;
+            &,
+            &:visited {
+                color: $off-black;
+                transition: color .25s linear;
+            }
+
+            &:hover,
+            &:focus {
+                color: $ci-greyed-out;
+                transition: color .25s linear;
+            }
         }
     }
 }
