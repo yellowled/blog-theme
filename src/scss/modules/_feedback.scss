@@ -77,7 +77,12 @@ input[type=radio] {
     }
 
     > header {
+        min-height: 3rem;
         position: relative;
+
+        @media screen and (min-width: $md) {
+            min-height: 4rem;
+        }
     }
 
     h4 {
@@ -131,14 +136,15 @@ input[type=radio] {
     border: 1px solid $greyed-out;
     border-radius: 50%;
     box-sizing: border-box;
-    height: 64px;
+    height: 48px;
     position: absolute;
     right: 0;
-    top: .5rem;
-    width: 64px;
+    top: 0;
+    width: 48px;
 
     @media screen and (min-width: $md) {
-        top: .75rem;
+        height: 64px;
+        width: 64px;
     }
 }
 
