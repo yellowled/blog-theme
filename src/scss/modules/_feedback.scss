@@ -65,6 +65,33 @@ input[type=radio] {
     margin-bottom: 2 * $type-rhythm;
 }
 
+.comment {
+    border: 1px solid $silver;
+    border-radius: 1px;
+    box-sizing: border-box;
+    margin: (2 * $type-rhythm) 0;
+    padding: 0 1rem;
+
+    &:nth-of-type(even) {
+        background: $lite-grey;
+    }
+
+    > header {
+        position: relative;
+    }
+
+    h4 {
+        margin: 1rem 0 0;
+        text-align: left;
+    }
+
+    time {
+        color: $ci-greyed-out;
+        display: block;
+        margin: 0 0 1rem;
+    }
+}
+
 .comment_meta {
     ul {
         display: flex;
@@ -82,14 +109,6 @@ input[type=radio] {
     }
 }
 
-.comment {
-    margin: (2 * $type-rhythm) 0;
-
-    h4 {
-        text-align: left;
-    }
-}
-
 // Comment preview
 #c {
     background: $lite-grey;
@@ -103,10 +122,15 @@ input[type=radio] {
     border: 1px solid $greyed-out;
     border-radius: 50%;
     box-sizing: border-box;
-    float: right;
     height: 64px;
-    margin: 0 0 .5rem 1rem;
+    position: absolute;
+    right: 0;
+    top: .5rem;
     width: 64px;
+
+    @media screen and (min-width: $md) {
+        top: .75rem;
+    }
 }
 
 .avatar_left {
