@@ -3,6 +3,10 @@
 main {
     margin-top: 2 * $type-rhythm;
 
+    @media screen and (min-width: $xl) {
+        margin-top: 2.5 * $type-rhythm;
+    }
+
     h2,
     h3,
     h4,

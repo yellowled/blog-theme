@@ -3,6 +3,12 @@
 #identity {
     text-align: center;
 
+    h1 {
+        @media screen and (min-width: $xl) {
+            margin: 2.5rem 0 1.5rem;
+        }
+    }
+
     a {
         &,
         &:visited,
