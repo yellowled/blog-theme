@@ -25,7 +25,12 @@
     background: $lite-grey;
     border-top: 1px solid $silver;
     border-bottom: 1px solid $silver;
+    color: $ci-greyed-out;
     padding: .5rem 0;
+
+    @media screen and (min-width: $md) {
+        padding: .25rem 0;
+    }
 
     ul {
         @extend %container;
@@ -40,7 +45,14 @@
 
     li {
         @media screen and (min-width: $md) {
+            border-left: 1px solid $silver;
+            box-sizing: border-box;
             flex: 0 1 20%;
+            padding: .25rem 0;
+
+            &:last-child {
+                border-right: 1px solid $silver;
+            }
         }
     }
 
