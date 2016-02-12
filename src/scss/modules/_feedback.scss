@@ -86,7 +86,7 @@ input[type=radio] {
     }
 
     time {
-        color: $ci-greyed-out;
+        color: $greyed-out;
         display: block;
         margin: 0 0 1rem;
     }
@@ -105,6 +105,15 @@ input[type=radio] {
 
         &:last-child {
             margin-right: 0;
+        }
+    }
+}
+
+// Threaded comments
+@media screen and (min-width: $md) {
+    @for $i from 1 through 9 {
+        .commentlevel_#{$i} {
+            margin-left: 2rem * $i;
         }
     }
 }
