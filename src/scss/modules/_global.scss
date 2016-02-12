@@ -24,28 +24,6 @@
     }
 }
 
-// Hint for live relaunch
-#live-redesign {
-    p {
-        @extend %message;
-
-        background: $lite-grey;
-        border-color: $silver;
-        color: $greyed-out;
-        font-size: 1rem;
-        margin: 0;
-
-        @media screen and (min-width: $md) {
-            border-radius: 0;
-            text-align: center;
-        }
-    }
-
-    a {
-        color: inherit;
-    }
-}
-
 html {
     background: $off-white;
     color: $off-black;

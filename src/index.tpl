@@ -33,10 +33,6 @@
 {serendipity_hookPlugin hook="frontend_header"}
 {/if}
 {if $is_raw_mode != true}
-    <div id="live-redesign">
-        <p><b>Hinweis:</b> Dieses Blog sieht derzeit etwas seltsam aus. Aber nicht, weil es kaputt ist, sondern weil es <a href="http://yellowled.de/archiv/69/LR16-Die-Spielregeln.html">live redesigned</a> wird.</p>
-    </div>
-
     <header id="identity">
         <a href="{$serendipityBaseURL}">
             {$template_option.identity}
