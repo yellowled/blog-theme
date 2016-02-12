@@ -146,6 +146,14 @@ ol {
 
 blockquote {
     @include smart-blockquotes;
+
+    border-left: .5rem solid $silver;
+    margin: 1rem 0;
+    padding-left: .5rem;
+
+    @media screen and (min-width: $md) {
+        margin: 1rem 2.5rem;
+    }
 }
 
 ins {
