@@ -90,22 +90,33 @@
         }
     }
 
+    a {
+        border-radius: 50%;
+        display: block;
+        height: 3rem;
+        text-decoration: none;
+        width: 3rem;
+    }
+
     [class^="icon-"],
     [class*="icon-"] {
-        background: linear-gradient($off-white, $off-white) 50% 50%/1.875rem 1.875rem no-repeat;
-        border-radius: 50%;
+        fill: $off-white;
+        height: 1.875rem;
+        position: relative;
+        top: .5625rem;
+        width: 1.875rem;
     }
 }
 
-.icon-rss { fill: #f26522; }
-.icon-twitter { fill: #55acee; }
-.icon-facebook { fill: #3b5998; }
-.icon-instagram { fill: #3f729b; }
-.icon-github { fill: #4183c4; }
-.icon-xing { fill: #026466; }
-.icon-pinboard { fill: #0000e6; }
-.icon-lastfm { fill: #d51007; }
-.icon-amazon { fill: #f90; }
+.link-rss { background: #f26522; }
+.link-twitter { background: #55acee; }
+.link-facebook { background: #3b5998; }
+.link-instagram { background: #3f729b; }
+.link-github { background: #4183c4; }
+.link-xing { background: #026466; }
+.link-pinboard { background: #0000e6; }
+.link-lastfm { background: #d51007; }
+.link-amazon { background: #f90; }
 
 #sidebar {
     .sidebar {
