@@ -18,10 +18,12 @@ module.exports = {
     },
     copy: {
         src: [
+                    'preview.png',
+                    'preview_fullsize.jpg',
                     '*.php',
+                    'UTF-8/*.php',
                     '*.tpl',
-                    'info.txt',
-                    'UTF-8/*.php'
+                    'info.txt'
               ],
         dest:       'dist/<%= pkg.name %>'
     },
