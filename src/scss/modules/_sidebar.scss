@@ -44,7 +44,13 @@
     border-radius: 50%;
     box-sizing: border-box;
     height: 96px;
+    transition: transform 250ms linear;
     width: 96px;
+
+    &:hover {
+        transform: scale(1.25);
+        transition: transform 250ms linear;
+    }
 
     @media screen and (min-width: $md) {
         float: left;
@@ -95,7 +101,13 @@
         display: block;
         height: 3rem;
         text-decoration: none;
+        transition: transform 375ms linear;
         width: 3rem;
+
+        &:hover {
+            transform: scale(1.25) rotate(360deg);
+            transition: transform 375ms linear;
+        }
     }
 
     [class^="icon-"],
