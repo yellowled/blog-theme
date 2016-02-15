@@ -18,6 +18,7 @@
 @define('BT_SETTINGS', 'Einstellungen');
 @define('BT_MULTIUSER', 'Multiuser-Blog?');
 @define('BT_SHOW_CATEGORIES', 'Kategorie(n) anzeigen?');
+@define('BT_SITE_VERIFICATION', 'Google Site-Verification-ID?');
 @define('BT_HEADER', 'Header');
 @define('BT_IDENTITY', 'Markup für Blog-Header');
 @define('BT_INFOBOX', 'Infobox');
