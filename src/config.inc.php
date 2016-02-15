@@ -57,6 +57,12 @@ $template_config = array(
        'default' => false
     ),
     array(
+       'var' => 'threaded_comments',
+       'name' => BT_THREADED_COMMENTS,
+       'type' => 'boolean',
+       'default' => true
+    ),
+    array(
         'var' => 'siteverification',
         'name' => BT_SITE_VERIFICATION,
         'type' => 'string',
@@ -188,7 +194,7 @@ for ($i = 0; $i < $template_loaded_config['amount']; $i++) {
 }
 
 $template_config_groups = array(
-    BT_SETTINGS      => array('date_format', 'multiuser', 'show_categories', 'siteverification'),
+    BT_SETTINGS      => array('date_format', 'multiuser', 'show_categories', 'threaded_comments', 'siteverification'),
     BT_HEADER        => array('identity'),
     BT_INFOBOX       => array('infobox_title', 'infobox_img', 'infobox_txt', 'infobox_more_txt', 'infobox_more_url'),
     BT_SOCIALLINKS   => array('twitter_url', 'facebook_url', 'instagram_url', 'github_url', 'xing_url', 'pinboard_url', 'lastfm_url', 'amazon_url'),

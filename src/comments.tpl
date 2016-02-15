@@ -1,5 +1,5 @@
 {foreach from=$comments item=comment name="comments"}
-    <article id="c{$comment.id}" class="comment commentlevel_{if $comment.depth > 8}9{else}{$comment.depth}{/if}">
+    <article id="c{$comment.id}" class="comment{if $template_option.threaded_comments} commentlevel_{if $comment.depth > 8}9{else}{$comment.depth}{/if}{/if}">
         <header>
             <h4>{if $comment.url}<a href="{$comment.url}">{/if}{$comment.author|default:$CONST.ANONYMOUS}{if $comment.url}</a>{/if}</h4>
             <time datetime="{$comment.timestamp|serendipity_html5time}">{$comment.timestamp|formatTime:$template_option.date_format}</time>
