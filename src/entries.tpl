@@ -60,11 +60,13 @@
     {if $CONST.DATA_COMMENT_APPROVED}
         <p class="serendipity_msg_notice">{$CONST.DATA_COMMENT_APPROVED|sprintf:$CONST.COMMENT_APPROVED}</p>
     {/if}
+    {if $entry.trackbacks > 0}
     <section id="trackbacks">
         <h3>{$entry.trackbacks} {$entry.label_trackbacks}</h3>
 
         {serendipity_printTrackbacks entry=$entry.id}
     </section>
+    {/if}
 {/if}
 {if $is_single_entry and not $is_preview}
     <section id="comments">
