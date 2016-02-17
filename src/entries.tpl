@@ -69,12 +69,13 @@
     {/if}
 {/if}
 {if $is_single_entry and not $is_preview}
+    {if $entry.comments > 0}
     <section id="comments">
         <h3>{$entry.comments} {$entry.label_comments}</h3>
 
         {serendipity_printComments entry=$entry.id mode=$entry.viewmode}
     </section>
-
+    {/if}
     <a id="feedback"></a>
     {foreach from=$comments_messagestack item="message"}
     <p class="serendipity_msg_important">{$message}</p>
