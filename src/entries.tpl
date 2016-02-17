@@ -27,7 +27,7 @@
                 <li class="post_tags">{foreach from=$entry.freetag.tags.tags item="tag"}{$tag} {/foreach}</li>
             {/if}
             {if $entry.has_comments}
-                <li class="post_comments"><a href="{$entry.link}#comments" title="{$entry.comments} {$entry.label_comments}{if $entry.has_trackbacks}, {$entry.trackbacks} {$entry.label_trackbacks}{/if}">{$entry.comments} {$entry.label_comments}</a></li>
+                <li class="post_comments"><a href="{$entry.link}{if $entry.comments > 0}#comments{else}#reply{/if}" title="{$entry.comments} {$entry.label_comments}{if $entry.has_trackbacks}, {$entry.trackbacks} {$entry.label_trackbacks}{/if}">{if $entry.comments > 0}{$entry.comments} {$entry.label_comments}{else}{$CONST.ADD_COMMENT}{/if}</a></li>
             {/if}
             </ul>
             {$entry.add_footer}
