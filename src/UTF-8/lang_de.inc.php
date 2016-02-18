@@ -19,6 +19,7 @@
 @define('BT_MULTIUSER', 'Multiuser-Blog?');
 @define('BT_SHOW_CATEGORIES', 'Kategorie(n) anzeigen?');
 @define('BT_THREADED_COMMENTS', 'Verschachtelte Kommentare?');
+@define('BT_ADAPTIVE_IMAGES', 'Adaptive-Images-JS?');
 @define('BT_SITE_VERIFICATION', 'Google Site-Verification-ID?');
 @define('BT_HEADER', 'Header');
 @define('BT_IDENTITY', 'Markup für Blog-Header');
