@@ -5,7 +5,15 @@
     // Collapsible search form
     $('#show_search').click(function(e) {
         e.preventDefault();
-        $(this.hash).toggleClass('visuallyhidden');
+        var $target = $(this.hash);
+
+        if ($target.hasClass('visuallyhidden')) {
+            $target.removeClass('visuallyhidden')
+            $('#searchterm').focus();
+        } else {
+            $target.addClass('visuallyhidden')
+            $('#searchterm').blur();
+        }
     });
 
     // Smooth scrolling links in comments
