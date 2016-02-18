@@ -100,20 +100,37 @@
 
 // Image galleries
 .gallery {
-    @include clearfix;
+    margin: 1rem 0 0;
 
-    margin: $type-rhythm 0 (-$type-rhythm);
+    @media screen and (min-width: $sm) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     img {
-        margin: 0 0 $type-rhythm;
+        margin: 0 0 1rem;
+
+        @media screen and (min-width: $sm) {
+            margin: 0 .5rem 1rem 0;
+            max-width: 12rem;
+        }
+
+        @media screen and (min-width: 37.5em) {
+            margin: 0 .6666rem 1rem 0;
+            max-width: 11rem;
+        }
 
         @media screen and (min-width: $md) {
-            margin: 0 1rem $type-rhythm 0;
-            max-width: 19.5rem;
+            margin: 0 1rem 1rem 0;
+            max-width: 13rem;
         }
 
         @media screen and (min-width: $lg) {
             max-width: 15.5rem;
+        }
+
+        @media screen and (min-width: $xx) {
+            max-width: 16.25rem;
         }
     }
 }
