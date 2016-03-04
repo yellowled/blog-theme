@@ -33,7 +33,7 @@
         "grunt-contrib-imagemin":   "^1.0.0",
         "grunt-contrib-uglify":     "^0.11.1",
         "grunt-modernizr":          "^1.0.2",
-        "grunt-postcss":            "^0.7.2",
+        "grunt-postcss":            "^0.8.0",
         "grunt-sass":               "^1.1.0",
         "grunt-svgmin":             "^3.1.2",
         "grunt-svgstore":           "^1.0.0",
