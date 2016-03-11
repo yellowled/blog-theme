@@ -52,14 +52,15 @@
 
         text-align: center;
 
-        @media screen and (min-width: $md) {
+        @media screen and (min-width: $sm) {
             display: flex;
             flex-wrap: wrap;
+            max-width: 28em;
         }
     }
 
     li {
-        @media screen and (min-width: $md) {
+        @media screen and (min-width: $sm) {
             border-left: 1px solid $silver;
             box-sizing: border-box;
             flex: 0 1 20%;
