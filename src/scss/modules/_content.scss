@@ -30,7 +30,12 @@ main {
 .content_message {
     @extend %container;
 
+    padding: 0 1rem;
     text-align: center;
+
+    @media screen and (min-width: $sm) {
+        padding: 0;
+    }
 }
 
 .serendipity_msg_important,
@@ -59,7 +64,12 @@ main {
         @extend %container;
 
         min-height: 2.5rem;
+        padding: 0 1rem;
         position: relative;
+
+        @media screen and (min-width: $sm) {
+            padding: 0;
+        }
     }
 
     a {

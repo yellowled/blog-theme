@@ -5,6 +5,11 @@
     @extend %container;
 
     margin-bottom: 2 * $type-rhythm;
+    padding: 0 1rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 0;
+    }
 
     h2 {
         margin-bottom: 0;
@@ -16,6 +21,11 @@
     @extend %container;
 
     margin-bottom: $type-rhythm;
+    padding: 0 1rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 0;
+    }
 
     ul {
         list-style: none;
@@ -28,6 +38,11 @@
     @extend %container;
 
     margin-bottom: 2 * $type-rhythm;
+    padding: 0 1rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 0;
+    }
 
     h2 {
         margin: 0;

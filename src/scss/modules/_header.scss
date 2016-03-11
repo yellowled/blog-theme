@@ -1,7 +1,12 @@
 // HEADER STYLES
 // --------------------------------------------------------------------
 #identity {
+    padding: 0 1rem;
     text-align: center;
+
+    @media screen and (min-width: $sm) {
+        padding: 0;
+    }
 
     h1 {
         @media screen and (min-width: $xl) {
@@ -32,7 +37,11 @@
     border-top: 1px solid $silver;
     border-bottom: 1px solid $silver;
     color: $ci-greyed-out;
-    padding: .5rem 0;
+    padding: .5rem 1rem;
+
+    @media screen and (min-width: $sm) {
+        padding: .5rem 0;
+    }
 
     @media screen and (min-width: $md) {
         padding: .25rem 0;
