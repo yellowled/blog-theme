@@ -107,12 +107,12 @@
         display: block;
         height: 3rem;
         text-decoration: none;
-        transition: transform 375ms linear;
+        transition: transform 500ms linear;
         width: 3rem;
 
         &:hover {
             transform: scale(1.25) rotate(360deg);
-            transition: transform 375ms linear;
+            transition: transform 500ms linear;
         }
     }
 
