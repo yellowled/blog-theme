@@ -72,7 +72,7 @@
         <article class="archive archive-summary">
             <h2>{$template_option.home_title}</h2>
 
-            <ul>
+            <ul class="post-list">
             {serendipity_fetchPrintEntries full=true fetchDrafts=false noSticky=true limit="0,5" template="teaser.tpl"}
             </ul>
         </article>

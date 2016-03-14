@@ -90,7 +90,7 @@ $template_config = array(
        'var' => 'home_teasers',
        'name' => BT_HOME_TEASERS,
        'type' => 'boolean',
-       'default' => false
+       'default' => true
     ),
     array(
         'var' => 'infobox_title',
