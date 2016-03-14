@@ -68,7 +68,15 @@
     {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
 
     <main>
-    {if $view == '404'}
+    {if $view == "start" && $staticpage_pagetitle == ''}
+        <article class="archive archive-summary">
+            <h2>{$template_option.home_title}</h2>
+
+            <ul>
+            {serendipity_fetchPrintEntries full=true fetchDrafts=false noSticky=true limit="0,5" template="teaser.tpl"}
+            </ul>
+        </article>
+    {elseif $view == '404'}
         <article class="post post-404">
             <h2>{$CONST.BT_404_HEAD}</h2>
 

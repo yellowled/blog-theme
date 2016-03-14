@@ -23,10 +23,16 @@
 @define('BT_SITE_VERIFICATION', 'Google Site-Verification-ID?');
 @define('BT_HEADER', 'Header');
 @define('BT_IDENTITY', 'Markup for blog header');
+@define('BT_HOME', 'Index page');
 @define('BT_INFOBOX', 'Infobox');
 @define('BT_SOCIALLINKS', 'Social Media');
 @define('BT_FOOTERLINKS', 'Footer links');
 @define('BT_NAVIGATION', 'Navigation');
+
+// Home
+@define('BT_HOME_TITLE', 'Index page heading');
+@define('BT_HOME_TITLE_DEFAULT', 'Most recent posts');
+@define('BT_HOME_TEASERS', 'Show teasers?');
 
 // Infobox
 @define('BT_INFOBOX_TITLE', 'Heading');

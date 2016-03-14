@@ -23,10 +23,16 @@
 @define('BT_SITE_VERIFICATION', 'Google Site-Verification-ID?');
 @define('BT_HEADER', 'Header');
 @define('BT_IDENTITY', 'Markup für Blog-Header');
+@define('BT_HOME', 'Startseite');
 @define('BT_INFOBOX', 'Infobox');
 @define('BT_SOCIALLINKS', 'Social Media');
 @define('BT_FOOTERLINKS', 'Links im Footer');
 @define('BT_NAVIGATION', 'Navigation');
+
+// Home
+@define('BT_HOME_TITLE', 'Überschrift Startseite');
+@define('BT_HOME_TITLE_DEFAULT', 'Die neuesten Artikel');
+@define('BT_HOME_TEASERS', 'Teaser anzeigen?');
 
 // Infobox
 @define('BT_INFOBOX_TITLE', 'Überschrift');
