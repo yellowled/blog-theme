@@ -5,7 +5,7 @@
         <time datetime="{$entry.timestamp|serendipity_html5time}">{$entry.timestamp|formatTime:$template_option.date_format}</time>
     {if $template_option.home_teasers}
         <div class="post-teaser">
-            <p>{$entry.body|strip_tags|truncate:250:" [&hellip;]"}{if $entry.comments > 0} (<a href="{$entry.link}#comments" title="{$entry.comments} {$entry.label_comments}{if $entry.has_trackbacks}, {$entry.trackbacks} {$entry.label_trackbacks}{/if}">{$entry.comments} {$entry.label_comments}</a>{/if})</p>
+            <p>{$entry.body|strip_tags|truncate:350:" [&hellip;]"}</p>
         </div>
     {/if}
     </li>
