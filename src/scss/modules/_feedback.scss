@@ -4,9 +4,9 @@
 .serendipity_commentDirection {
     @extend %message;
 
-    background: $notice-bg;
-    border-color: $notice-bc;
-    color: $notice-fg;
+    background: $lite-grey;
+    border-color: $silver;
+    color: $ci-greyed-out;
 
     a {
         color: inherit;
