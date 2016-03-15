@@ -58,6 +58,7 @@
 .post-list {
     li {
         flex-wrap: wrap;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -65,6 +66,6 @@
     flex: 0 1 100%;
 
     p {
-        margin: .5rem 0 1.5rem;
+        margin: .5rem 0 0;
     }
 }

@@ -69,7 +69,7 @@
 
     <main>
     {if $view == "start" && $staticpage_pagetitle == ''}
-        <article class="archive archive-summary">
+        <article class="archive archive-summary archive-index">
             <h2>{$template_option.home_title}</h2>
 
             <ul class="post-list">
