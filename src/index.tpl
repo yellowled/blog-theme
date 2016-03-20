@@ -52,7 +52,7 @@
             <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
         {/if}
         {/foreach}
-            <li><button class="button-unstyled" data-a11y-toggle="search_inputs" type="button">{$CONST.QUICKSEARCH}</a></li>
+            <li><button class="button-unstyled" data-a11y-toggle="search_inputs" aria-expanded="false" type="button">{$CONST.QUICKSEARCH}</a></li>
         </ul>
     </nav>
     {/if}
