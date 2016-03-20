@@ -192,3 +192,27 @@ tr:hover {
 .no-details summary {
     @include hidden;
 }
+
+.button-unstyled {
+    background: transparent;
+    border: 0;
+    color: $ci-bright-red;
+    display: inline-block;
+    line-height: normal;
+    outline: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    width: auto;
+
+    &:active,
+    &:hover {
+        color: $ci-dull-red;
+    }
+
+    &:focus {
+        outline-color: $input-focus;
+        text-decoration: none;
+    }
+}

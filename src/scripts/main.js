@@ -11,20 +11,6 @@
     anchors.add('.post h3, .post h4, .post h5, post h6, .page h3, .page h4, .page h5, page h6, .archive-overview h3, .archive-overview h4');
     anchors.remove('.comment header > h4');
 
-    // Collapsible search form
-    $('#show_search').click(function(e) {
-        e.preventDefault();
-        var $target = $(this.hash);
-
-        if ($target.hasClass('visuallyhidden')) {
-            $target.removeClass('visuallyhidden')
-            $('#searchterm').focus();
-        } else {
-            $target.addClass('visuallyhidden')
-            $('#searchterm').blur();
-        }
-    });
-
     // Smooth scrolling links in comments
     $('.comment_reply').click(function(e) {
         var $el = $(this);

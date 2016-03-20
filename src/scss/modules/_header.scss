@@ -85,6 +85,10 @@
 
 #search {
     text-align: center;
+
+    .js & [aria-hidden='true'] {
+        display: none;
+    }
 }
 
 #search_inputs {
