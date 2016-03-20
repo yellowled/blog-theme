@@ -55,6 +55,7 @@
         @media screen and (min-width: $sm) {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
             max-width: 28em;
         }
     }
