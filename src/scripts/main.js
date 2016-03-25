@@ -4,7 +4,7 @@
 
     // Deep anchor links for headings
     anchors.options = {
-        placement: 'right',
+        placement: 'left',
         visible: 'touch',
         icon: '#'
     }
