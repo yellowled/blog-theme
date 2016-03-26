@@ -68,11 +68,22 @@
     }
 
     li {
+        border-bottom: 1px solid $silver;
+        box-sizing: border-box;
+        padding: .25rem 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
         @media screen and (min-width: $sm) {
             border-left: 1px solid $silver;
-            box-sizing: border-box;
             flex: 0 1 20%;
-            padding: .25rem 0;
 
             &:last-child {
                 border-right: 1px solid $silver;
