@@ -83,10 +83,17 @@
 
         @media screen and (min-width: $sm) {
             border-left: 1px solid $silver;
+            border-bottom: 0;
             flex: 0 1 20%;
+            padding: .25rem 0;
+
+            &:first-child {
+                padding-top: .25rem;
+            }
 
             &:last-child {
                 border-right: 1px solid $silver;
+                padding-bottom: .25rem;
             }
         }
     }
