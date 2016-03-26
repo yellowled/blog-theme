@@ -9,7 +9,18 @@
     }
 
     h1 {
+        font-size: 1.5rem;
+
+        @media screen and (min-width: $md) {
+            font-size: 2rem;
+        }
+
+        @media screen and (min-width: $lg) {
+            font-size: 2.5rem;
+        }
+
         @media screen and (min-width: $xl) {
+            font-size: 3rem;
             margin: 2.5rem 0 1.5rem;
         }
     }
