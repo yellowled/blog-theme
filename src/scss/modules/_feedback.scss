@@ -150,7 +150,7 @@ input[type=radio] {
     width: 48px;
 
     &:hover {
-        transform: scale(1.25);
+        transform: scale(1.25) rotate(5deg);
         transition: transform 250ms linear;
     }
 
