@@ -123,7 +123,7 @@ input[type=radio] {
 // Threaded comments
 @media screen and (min-width: $md) {
     @for $i from 1 through 9 {
-        .commentlevel_#{$i} {
+        #comments .commentlevel_#{$i} {
             margin-left: 2rem * $i;
         }
     }
