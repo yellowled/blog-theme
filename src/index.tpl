@@ -52,14 +52,14 @@
             <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
         {/if}
         {/foreach}
-            <li><button class="button-unstyled" data-a11y-toggle="search_inputs" aria-expanded="false" type="button">{$CONST.QUICKSEARCH}</a></li>
+            <li><button id="toggle-search" class="button-unstyled" aria-expanded="false" aria-controls="search_inputs" type="button">{$CONST.QUICKSEARCH}</a></li>
         </ul>
     </nav>
     {/if}
     <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
         <input type="hidden" name="serendipity[action]" value="search">
 
-        <div id="search_inputs" aria-hidden="true">
+        <div id="search_inputs" aria-hidden="true" aria-labelledby="toggle-search">
             <label for="searchterm" class="visuallyhidden">{$CONST.QUICKSEARCH}</label>
             <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
             <input class="visuallyhidden" type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
