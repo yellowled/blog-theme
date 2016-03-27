@@ -72,9 +72,9 @@
         <article class="archive archive-summary archive-index">
             <h2>{$template_option.home_title}</h2>
 
-            <ul class="post-list">
+            <ol class="post-list">
             {serendipity_fetchPrintEntries full=true fetchDrafts=false noSticky=true limit="0,5" template="teaser.tpl"}
-            </ul>
+            </ol>
         </article>
     {elseif $view == '404'}
         <article class="post post-404">
