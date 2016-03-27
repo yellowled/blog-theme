@@ -38,6 +38,10 @@
         text-align: center;
     }
 
+    time {
+        color: $greyed-out;
+    }
+
     @media screen and (min-width: $md) {
         ul {
             display: flex;
