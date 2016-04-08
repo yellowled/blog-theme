@@ -52,16 +52,9 @@
         margin-bottom: 0;
     }
 
-    ul,
-    ol {
+    ul {
         list-style: none;
         padding: 0;
-    }
-
-    .date {
-        display: inline-block;
-        min-width: 7rem;
-        width: 50%;
     }
 
     @media screen and (min-width: $md) {
@@ -79,8 +72,44 @@
         }
 
         > section {
+            box-sizing: border-box;
             flex: 0 1 50%;
+            padding: 0 1rem 0 0;
+
+            &:nth-of-type(even) {
+                padding: 0 0 0 1rem;
+            }
         }
+    }
+
+    @media screen and (min-width: $xl) {
+        > section {
+            padding: 0 2rem 0 0;
+
+            &:nth-of-type(even) {
+                padding: 0 0 0 2rem;
+            }
+        }
+    }
+}
+
+.archive-year {
+    li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .date,
+    .count {
+        flex: 0 1 50%;
+    }
+
+    .count {
+        text-align: right;
+    }
+
+    @media screen and (min-width: $md) {
+        padding-right: 1rem;
     }
 }
 
@@ -105,4 +134,9 @@
 
 .archive-index {
     margin-bottom: 0;
+
+    ol {
+        list-style: none;
+        padding: 0;
+    }
 }
