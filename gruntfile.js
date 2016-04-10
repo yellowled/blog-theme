@@ -20,7 +20,6 @@ module.exports = function(grunt) {
         'concat',
         'sass',
         'postcss',
-        'cssmin',
         'uglify',
         'svgstore',
         'imagemin',

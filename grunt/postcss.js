@@ -17,14 +17,15 @@ module.exports = function(grunt) {
                 }),
                 require('css-mqpacker')({
                     sort: true
-                })
+                }),
+                require('cssnano')()
             ]
         },
         all: {
             expand: true,
             flatten: true,
             src: 'src/*.css',
-            dest: 'src/'
+            dest: 'dist/<%= pkg.name %>/'
         }
     });
 };
