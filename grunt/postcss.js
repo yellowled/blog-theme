@@ -8,6 +8,7 @@ module.exports = function(grunt) {
             map: false,
             processors: [
                 require('pixrem')({
+                    atrules: true,
                     unitPrecision: 0
                 }),
                 require('autoprefixer')({
