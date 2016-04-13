@@ -1,7 +1,7 @@
 {
     "name":         "blog-theme",
     "description":  "Serendipity theme for my blog",
-    "version":      "0.15.0",
+    "version":      "0.16.0",
     "homepage":     "https://yellowled",
     "author": {
         "name":     "Matthias Mees",
