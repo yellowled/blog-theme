@@ -31,6 +31,7 @@ module.exports = {
         dev:        'src/scripts/modernizr/modernizr.js',
         dest:       'dist/<%= pkg.name %>/scripts/modernizr/modernizr.js',
         srcfiles: [
+                    'node_modules/node-normalize-scss/_normalize.scss',
                     'src/scss/**/*.scss',
                     'src/scripts/master.js'
         ]
