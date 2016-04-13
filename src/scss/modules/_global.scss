@@ -129,7 +129,6 @@ del {
     color: $greyed-out;
 }
 
-pre,
 small {
     font-size: 100%;
 }
@@ -145,14 +144,11 @@ pre {
     box-shadow: 0 0 5px rgba($black, .5);
 }
 
-pre code {
-    font-size: 93.75%;
-}
 
 code,
 samp,
 kbd {
-    font-size: 93.75%;
+    font-size: 100%;
 
     p &,
     li &,
@@ -161,6 +157,20 @@ kbd {
         border: 1px solid $silver;
         border-radius: 1px;
         padding: 0 .2rem;
+    }
+}
+
+pre {
+    @media screen and (min-width: $md) {
+        font-size: .8125rem;
+    }
+
+    @media screen and (min-width: $lg) {
+        font-size: .875rem;
+    }
+
+    @media screen and (min-width: $xl) {
+        font-size: .9375rem;
     }
 }
 
