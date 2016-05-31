@@ -101,6 +101,10 @@ input[type=radio] {
         display: block;
         margin: 0 0 1rem;
     }
+
+    .content {
+        overflow: hidden;
+    }
 }
 
 .comment_meta {
