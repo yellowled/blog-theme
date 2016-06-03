@@ -1,6 +1,6 @@
 // NAV STYLES
 // --------------------------------------------------------------------
-.offcanvas-ready {
+.offcanvas {
     background-color: $lite-grey;
     box-sizing: border-box;
     height: 100%;
@@ -21,12 +21,12 @@
     }
 }
 
-.offcanvas-ready[aria-hidden="false"] {
+.offcanvas[aria-hidden="false"] {
     transform: translateX(100%);
     z-index: 10;
 }
 
-.offcanvas-ready[aria-hidden=true] {
+.offcanvas[aria-hidden=true] {
     transition: transform .2s ease-out,
         visibility .2s;
 }
