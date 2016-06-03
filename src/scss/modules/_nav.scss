@@ -2,9 +2,11 @@
 // --------------------------------------------------------------------
 .offcanvas {
     background-color: $lite-grey;
+    box-shadow: 2px 0 4px rgba($black, .5);
     box-sizing: border-box;
     height: 100%;
-    max-width: 300px;
+    max-width: 320px;
+    outline: 0;
     overflow: auto;
     padding: 1.5rem 1rem;
     position: fixed;
