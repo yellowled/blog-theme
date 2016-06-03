@@ -2,21 +2,13 @@
     // SVG polyfill
     svg4everybody();
 
-    // Search show/hide
-    $('#toggle-search').click(function() {
-        var $el = $(this);
-        var $toggled = '#' + $el.attr('aria-controls');
-        var $target = $($toggled).find('input[type="search"]');
-
-        if ($el.attr('aria-expanded') == 'false') {
-            $el.attr('aria-expanded', 'true');
-            $($toggled).attr('aria-hidden', 'false');
-            $($target).focus();
-        } else {
-            $el.attr('aria-expanded', 'false');
-            $($toggled).attr('aria-hidden', 'true');
-            $($target).blur();
-        }
+    // Off-canvas nav
+    var myOffcanvas = Froffcanvas({
+        selector: '.offcanvas',
+        openSelector: '.open-nav',
+        closeSelector: '.close-nav',
+        readyClass: 'offcanvas-ready',
+        activeClass: 'offcanvas-active'
     });
 
     // Deep anchor links for headings

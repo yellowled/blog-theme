@@ -2,6 +2,10 @@
 // Global
 @define('USE_CORENAV', 'Use global navigation?');
 
+// Navigation
+@define('BT_NAV_OPEN', 'Open navigation');
+@define('BT_NAV_CLOSE', 'Close navigation');
+
 // 404 page
 @define('BT_404_HEAD', 'Error: 404');
 @define('BT_404_TEXT', 'The requested URL was not found on this server.');

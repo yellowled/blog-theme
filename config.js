@@ -6,6 +6,7 @@ module.exports = {
     concat: {
         src: [
                     'node_modules/svg4everybody/dist/svg4everybody.js',
+                    'node_modules/fr-offcanvas/dist/froffcanvas.min.js',
                     'node_modules/anchor-js/anchor.js',
                     'node_modules/prismjs/prism.js',
                     'node_modules/prismjs/plugins/show-language/prism-show-language.js',

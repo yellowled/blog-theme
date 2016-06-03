@@ -43,29 +43,32 @@
         <a href="{$serendipityBaseURL}">
             {$template_option.identity}
         </a>
+
+        <button class="open-nav" type="button" aria-controls="site-nav"><svg class="icon-bars" role="img" title="{$CONST.BT_NAV_OPEN}" viewbox="0 0 1792 1792" width="1792" height="1792"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#bars"></use></svg><span class="svg-fallback">{$CONST.BT_NAV_OPEN}</span></button>
     </header>
+
+    <nav id="site-nav" class="offcanvas">
+        <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
+            <input type="hidden" name="serendipity[action]" value="search">
+
+            <div id="search_inputs" aria-hidden="true" aria-labelledby="toggle-search">
+                <label for="searchterm">{$CONST.QUICKSEARCH}</label>
+                <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
+                <input class="visuallyhidden" type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
+            </div>
+        </form>
+        {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
     {if $template_option.use_corenav}
-    <nav id="site-nav">
         <ul>
         {foreach from=$navlinks item="navlink" name="sbnav"}
         {if $navlink.title!=""&&$navlink.href!=""}
             <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
         {/if}
         {/foreach}
-            <li><button id="toggle-search" class="button-unstyled" aria-expanded="false" aria-controls="search_inputs" type="button">{$CONST.QUICKSEARCH}</a></li>
         </ul>
-    </nav>
     {/if}
-    <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
-        <input type="hidden" name="serendipity[action]" value="search">
-
-        <div id="search_inputs" aria-hidden="true" aria-labelledby="toggle-search">
-            <label for="searchterm" class="visuallyhidden">{$CONST.QUICKSEARCH}</label>
-            <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
-            <input class="visuallyhidden" type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
-        </div>
-    </form>
-    {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
+        <button class="close-nav" type="button"><svg class="icon-times" role="img" title="{$CONST.BT_NAV_CLOSE}" viewbox="0 0 1792 1792" width="1792" height="1792"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#times"></use></svg><span class="svg-fallback">{$CONST.BT_NAV_CLOSE}</span></button>
+    </nav>
 
     <main>
     {if $view == "start" && $staticpage_pagetitle == ''}
