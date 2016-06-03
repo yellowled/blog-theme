@@ -1,24 +1,28 @@
 // NAV STYLES
 // --------------------------------------------------------------------
 .offcanvas-ready {
-	background-color: $lite-grey;
+    background-color: $lite-grey;
     box-sizing: border-box;
-	height: 100%;
-	max-width: 300px;
-	overflow: auto;
-    padding: 1rem;
-	position: fixed;
-	top: 0;
+    height: 100%;
+    max-width: 300px;
+    overflow: auto;
+    padding: 1.5rem 1rem;
+    position: fixed;
+    top: 0;
     right: 100%;
     left: auto;
-	transform: translateX(0);
+    transform: translateX(0);
     transition: transform .2s ease-out;
-	width: 100%;
-	will-change: translateX;
+    width: 100%;
+    will-change: translateX;
+
+    @media screen and (min-width: $md) {
+        padding: 2rem 1rem;
+    }
 }
 
 .offcanvas-ready[aria-hidden="false"] {
-	transform: translateX(100%);
+    transform: translateX(100%);
     z-index: 10;
 }
 
@@ -35,15 +39,51 @@
 
     [class^="icon-"],
     [class*="icon-"] {
+        fill: $ci-bright-red;
         height: 2rem;
         width: 2rem;
+    }
+
+    &:hover [class^="icon-"],
+    &:hover [class*="icon-"] {
+        fill: $ci-dull-red;
+    }
+}
+
+.open-nav {
+    display: inline-block;
+    position: relative;
+    top: .45rem;
+    left: .5rem;
+
+    @media screen and (min-width: $md) {
+        position: absolute;
+        top: 1.75rem;
+        right: 0;
+        left: auto;
+    }
+
+    @media screen and (min-width: $xl) {
+        top: 3.5rem;
+    }
+
+    [class^="icon-"],
+    [class*="icon-"] {
+        @media screen and (min-width: $lg) {
+            height: 3rem;
+            width: 3rem;
+        }
     }
 }
 
 .close-nav {
     position: absolute;
-    top: .5rem;
+    top: 1rem;
     right: 1rem;
+
+    @media screen and (min-width: $md) {
+        top: 1.5rem;
+    }
 }
 
 #search_inputs {
@@ -73,5 +113,6 @@
 
     a {
         display: block;
+        text-decoration: none;
     }
 }

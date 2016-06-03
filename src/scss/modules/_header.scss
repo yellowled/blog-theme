@@ -1,6 +1,8 @@
 // HEADER STYLES
 // --------------------------------------------------------------------
-#identity {
+.masthead {
+    @extend %container;
+
     padding: 0 1rem;
     text-align: center;
 
@@ -8,7 +10,12 @@
         padding: 0;
     }
 
+    @media screen and (min-width: $md) {
+        position: relative;
+    }
+
     h1 {
+        display: inline-block;
         font-size: 1.5rem;
 
         @media screen and (min-width: $md) {
@@ -44,5 +51,11 @@
 }
 
 .blog-version {
-    color: $grey;
+    @include visuallyhidden;
+
+    @media screen and (min-width: $md) {
+        @include not-visuallyhidden;
+
+        color: $grey;
+    }
 }

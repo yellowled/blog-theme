@@ -40,11 +40,11 @@
 {/if}
 {if $is_raw_mode != true}
     <header id="identity">
-        <a href="{$serendipityBaseURL}">
-            {$template_option.identity}
-        </a>
+        <div class="masthead">
+            <a href="{$serendipityBaseURL}">{$template_option.identity}</a>
 
-        <button class="open-nav" type="button" aria-controls="site-nav"><svg class="icon-bars" role="img" title="{$CONST.BT_NAV_OPEN}" viewbox="0 0 1792 1792" width="1792" height="1792"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#bars"></use></svg><span class="svg-fallback">{$CONST.BT_NAV_OPEN}</span></button>
+            <button class="open-nav" type="button" aria-controls="site-nav"><svg class="icon-bars" role="img" title="{$CONST.BT_NAV_OPEN}" viewbox="0 0 1792 1792" width="1792" height="1792"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#bars"></use></svg><span class="svg-fallback">{$CONST.BT_NAV_OPEN}</span></button>
+        </div>
     </header>
 
     <nav id="site-nav" class="offcanvas">
