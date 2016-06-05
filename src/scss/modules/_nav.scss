@@ -2,7 +2,6 @@
 // --------------------------------------------------------------------
 .offcanvas {
     background-color: $lite-grey;
-    box-shadow: 2px 0 4px rgba($black, .5);
     box-sizing: border-box;
     height: 100%;
     max-width: 320px;
@@ -24,6 +23,7 @@
 }
 
 .offcanvas[aria-hidden="false"] {
+    box-shadow: 2px 0 4px rgba($black, .5);
     transform: translateX(100%);
     z-index: 10;
 }
