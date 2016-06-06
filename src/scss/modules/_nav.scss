@@ -67,6 +67,13 @@
 
     @media screen and (min-width: $xl) {
         top: 3.5rem;
+        transition: transform .25s linear;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.25);
+            transition: transform .25s linear;
+        }
     }
 
     [class^="icon-"],
