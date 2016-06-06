@@ -13,7 +13,7 @@
     right: 100%;
     left: auto;
     transform: translateX(0);
-    transition: transform .2s ease-out;
+    transition: transform .25s ease-out;
     width: 100%;
     will-change: translateX;
 
@@ -29,8 +29,8 @@
 }
 
 .offcanvas[aria-hidden=true] {
-    transition: transform .2s ease-out,
-        visibility .2s;
+    transition: transform .25s ease-out,
+        visibility .25s;
 }
 
 .open-nav,
