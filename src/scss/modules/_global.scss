@@ -176,11 +176,14 @@ pre {
 
 table {
     @include simple-table;
+
+    border-collapse: collapse;
+    text-align: left;
 }
 
 tr:hover {
-    background: $lite-grey;
-    transition: background .25s linear;
+    background-color: $lite-grey;
+    transition: background-color .25s linear;
 }
 
 // Generic helper classes
