@@ -195,3 +195,8 @@ video,
 audio {
     margin: $type-rhythm 0;
 }
+
+// Embedded Tweets
+.twitter-tweet {
+    @include center-horizontal;
+}
