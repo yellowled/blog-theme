@@ -39,7 +39,7 @@
 {serendipity_hookPlugin hook="frontend_header"}
 {/if}
 {if $is_raw_mode != true}
-    <header role="banner">
+    <header>
         <div class="masthead">
             <a href="{$serendipityBaseURL}">{$template_option.identity}</a>
 
@@ -47,11 +47,11 @@
         </div>
     </header>
 
-    <nav id="site-nav" class="offcanvas" role="navigation">
-        <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get" role="search">
+    <nav id="site-nav" class="offcanvas">
+        <form id="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
             <input type="hidden" name="serendipity[action]" value="search">
 
-            <div id="search_inputs" aria-hidden="true" aria-labelledby="toggle-search">
+            <div id="search_inputs">
                 <label for="searchterm">{$CONST.QUICKSEARCH}</label>
                 <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
                 <input class="visuallyhidden" type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
@@ -70,7 +70,7 @@
         <button class="close-nav" type="button"><svg class="icon-times" role="img" title="{$CONST.BT_NAV_CLOSE}" viewbox="0 0 1792 1792" width="1792" height="1792"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#times"></use></svg><span class="svg-fallback">{$CONST.BT_NAV_CLOSE}</span></button>
     </nav>
 
-    <main role="main">
+    <main>
     {if $view == "start" && $staticpage_pagetitle == ''}
         <article class="archive archive-summary archive-index">
             <h2>{$template_option.home_title}</h2>
@@ -92,7 +92,7 @@
     {/if}
     </main>
 
-    <aside id="site-info" role="complementary">
+    <aside id="site-info">
         <div class="sidebar clearfix">
             <section id="info" class="widget">
                 <h3>{$template_option.infobox_title}</h3>
@@ -150,8 +150,8 @@
     </aside>
     {/if}
     {if $template_option.privacy_url || $template_option.legal_url}
-    <footer id="service" role="contentinfo">
-        <nav role="navigation">
+    <footer id="service">
+        <nav>
             <ul>
             {if $template_option.privacy_url}
                 <li><a href="{$template_option.privacy_url}">{$template_option.privacy_txt}</a></li>
