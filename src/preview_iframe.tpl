@@ -4,8 +4,6 @@
     <meta charset="{$head_charset}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{$CONST.SERENDIPITY_ADMIN_SUITE}</title>
-    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400italic,700italic,400,700">
     <link rel="stylesheet" href="{$serendipityHTTPPath}{$serendipityRewritePrefix}serendipity.css">
     <script src="{serendipity_getFile file="scripts/modernizr/modernizr.js"}"></script>
 {serendipity_hookPlugin hook="backend_header" hookAll="true"}
