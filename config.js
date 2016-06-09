@@ -19,6 +19,7 @@ module.exports = {
     },
     copy: {
         src: [
+                    'fonts/*',
                     'preview.png',
                     'preview_fullsize.jpg',
                     '*.php',

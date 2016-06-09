@@ -30,15 +30,25 @@ html {
 }
 
 body {
+    font-feature-settings: "kern" 1, "liga" 1, "swsh" 0;
+
     @media screen and (min-width: $lg) {
         font-size: 112.5%;
-        line-height: 1.6666;
+        line-height: 1.6;
     }
 
     @media screen and (min-width: $xx) {
         font-size: 125%;
-        line-height: 1.6;
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-feature-settings: "kern" 1, "liga" 1, "swsh" 1;
 }
 
 a {
@@ -148,8 +158,6 @@ pre {
 code,
 samp,
 kbd {
-    font-size: 100%;
-
     p &,
     li &,
     td & {
@@ -157,20 +165,6 @@ kbd {
         border: 1px solid $silver;
         border-radius: 1px;
         padding: 0 .2rem;
-    }
-}
-
-pre {
-    @media screen and (min-width: $md) {
-        font-size: .8125rem;
-    }
-
-    @media screen and (min-width: $lg) {
-        font-size: .875rem;
-    }
-
-    @media screen and (min-width: $xl) {
-        font-size: .9375rem;
     }
 }
 
