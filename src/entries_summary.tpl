@@ -5,7 +5,7 @@
 	<ul>
 	{foreach from=$entries item="sentries"}
         {foreach from=$sentries.entries item="entry"}
-        <li><a href="{$entry.link}">{$entry.title}</a>
+        <li><span class="summary-title"><a href="{$entry.link}">{$entry.title}</a></span>
             <time datetime="{$entry.timestamp|serendipity_html5time}">{$entry.timestamp|formatTime:$template_option.date_format}</time>
         </li>
         {/foreach}
