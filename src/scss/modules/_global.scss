@@ -31,6 +31,7 @@ html {
 
 body {
     font-feature-settings: "kern" 1, "liga" 1, "swsh" 0;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures no-contextual;
 
     @media screen and (min-width: $lg) {
         font-size: 118.75%;
@@ -49,6 +50,7 @@ h4,
 h5,
 h6 {
     font-feature-settings: "kern" 1, "liga" 1, "swsh" 1;
+    font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
 a {
