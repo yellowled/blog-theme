@@ -13,7 +13,7 @@
 
     // Deep anchor links for headings
     anchors.options = {
-        placement: 'left',
+        placement: 'right',
         visible: 'touch',
         icon: '#'
     };
