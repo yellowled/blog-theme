@@ -107,10 +107,10 @@
     <nav class="pagination">
         <ul>
         {if $footer_prev_page}
-            <li class="prev_page"><a href="{$footer_prev_page}"><svg class="icon-chevron-left" role="img" title="{$CONST.PREVIOUS_PAGE}" viewbox="0 0 2048 2048" width="2048" height="2048"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-left"></use></svg><span class="svg-fallback">{$CONST.PREVIOUS_PAGE}</span></a></li>
+            <li class="prev_page"><a href="{$footer_prev_page}" aria-label="{$CONST.PREVIOUS_PAGE}"><svg class="icon-chevron-left" role="img" title="{$CONST.PREVIOUS_PAGE}" viewbox="0 0 2048 2048" width="2048" height="2048"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-left"></use></svg><span class="svg-fallback">&laquo;</span></a></li>
         {/if}
         {if $footer_next_page}
-            <li class="next_page"><a href="{$footer_next_page}"><svg class="icon-chevron-right" role="img" title="{$CONST.NEXT_PAGE}" viewbox="0 0 2048 2048" width="2048" height="2048"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-right"></use></svg><span class="svg-fallback">{$CONST.NEXT_PAGE}</span></a></li>
+            <li class="next_page"><a href="{$footer_next_page}" aria-label="{$CONST.NEXT_PAGE}"><svg class="icon-chevron-right" role="img" title="{$CONST.NEXT_PAGE}" viewbox="0 0 2048 2048" width="2048" height="2048"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-right"></use></svg><span class="svg-fallback">&raquo;</span></a></li>
         {/if}
         </ul>
     </nav>
