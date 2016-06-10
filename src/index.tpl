@@ -71,21 +71,21 @@
     <main>
     {if $view == "start" && $staticpage_pagetitle == ''}
         {if $template_option.home_greeter_txt}
-        <article class="post post-greeter">
+        <section class="post post-greeter">
             <h2>{$template_option.home_greeter_title}</h2>
 
             <div class="content clearfix">
                 {$template_option.home_greeter_txt}
             </div>
-        </article>
+        </section>
         {/if}
-        <article class="archive archive-summary archive-index">
+        <section class="archive archive-summary archive-index">
             <h2>{$template_option.home_title}</h2>
 
             <ol class="post-list">
             {serendipity_fetchPrintEntries full=true fetchDrafts=false noSticky=true limit="0,5" template="teaser.tpl"}
             </ol>
-        </article>
+        </section>
     {elseif $view == '404'}
         <article class="post post-404">
             <h2>{$CONST.BT_404_HEAD}</h2>
