@@ -5,7 +5,7 @@
         <time datetime="{$entry.timestamp|serendipity_html5time}">{$entry.timestamp|formatTime:$template_option.date_format}</time>
     {if $template_option.home_teasers}
         <div class="post-teaser">
-            <p>{$entry.body|strip_tags|truncate:350:" [&hellip;]"}</p>
+            <!-- TODO -->
         </div>
     {/if}
     </li>

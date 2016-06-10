@@ -70,6 +70,15 @@
 
     <main>
     {if $view == "start" && $staticpage_pagetitle == ''}
+        {if $template_option.home_greeter_txt}
+        <article class="post post-greeter">
+            <h2>{$template_option.home_greeter_title}</h2>
+
+            <div class="content clearfix">
+                {$template_option.home_greeter_txt}
+            </div>
+        </article>
+        {/if}
         <article class="archive archive-summary archive-index">
             <h2>{$template_option.home_title}</h2>
 

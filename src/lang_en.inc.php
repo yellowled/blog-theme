@@ -34,7 +34,10 @@
 @define('BT_NAVIGATION', 'Navigation');
 
 // Home
-@define('BT_HOME_TITLE', 'Index page heading');
+@define('BT_GREETER_TITLE', 'Heading greeter text');
+@define('BT_GREETER_TITLE_DEFAULT', 'About this blog');
+@define('BT_GREETER_TXT', 'Greeter text');
+@define('BT_HOME_TITLE', 'Heading posts list');
 @define('BT_HOME_TITLE_DEFAULT', 'Most recent posts');
 @define('BT_HOME_TEASERS', 'Show teasers?');
 
