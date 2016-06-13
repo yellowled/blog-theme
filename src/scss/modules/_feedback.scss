@@ -21,11 +21,15 @@
     margin: .75rem 0;
 
     label {
+        box-sizing: border-box;
         display: block;
+        font-weight: bold;
+        padding: 0 3px;
+    }
 
-        > abbr[title] {
-            border-bottom: 0;
-        }
+    abbr[title] {
+        border-bottom: 0;
+        text-decoration: none;
     }
 
     .serendipity_commentDirection + & {
