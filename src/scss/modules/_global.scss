@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    font-feature-settings: "kern" 1, "liga" 1, "swsh" 0;
+    font-feature-settings: "kern" 1, "liga" 1, "swsh" 0, "frac";
     font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures no-contextual;
 
     @media screen and (min-width: $lg) {
