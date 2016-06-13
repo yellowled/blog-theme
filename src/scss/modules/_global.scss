@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    font-feature-settings: "kern" 1, "liga" 1, "swsh" 0, "frac";
+    font-feature-settings: "frac" 1, "kern" 1, "liga" 1, "swsh" 0;
     font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures contextual;
 
     @media screen and (min-width: $lg) {
@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-feature-settings: "kern" 1, "liga" 1, "swsh" 1;
+    font-feature-settings: "frac" 1, "kern" 1, "liga" 1, "swsh" 1;
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
