@@ -39,7 +39,6 @@
 @define('BT_GREETER_TXT', 'Einleitungstext');
 @define('BT_HOME_TITLE', 'Überschrift Artikelliste');
 @define('BT_HOME_TITLE_DEFAULT', 'Die neuesten Artikel');
-@define('BT_HOME_TEASERS', 'Teaser anzeigen?');
 
 // Infobox
 @define('BT_INFOBOX_TITLE', 'Überschrift');

@@ -39,7 +39,6 @@
 @define('BT_GREETER_TXT', 'Greeter text');
 @define('BT_HOME_TITLE', 'Heading posts list');
 @define('BT_HOME_TITLE_DEFAULT', 'Most recent posts');
-@define('BT_HOME_TEASERS', 'Show teasers?');
 
 // Infobox
 @define('BT_INFOBOX_TITLE', 'Heading');
