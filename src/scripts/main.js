@@ -11,16 +11,6 @@
         activeClass: 'offcanvas-active'
     });
 
-    // Deep anchor links for headings
-    anchors.options = {
-        placement: 'right',
-        visible: 'touch',
-        icon: '#'
-    };
-
-    anchors.add('.post h3, .post h4, .post h5, post h6, .page h3, .page h4, .page h5, page h6, .archive-overview h3, .archive-overview h4');
-    anchors.remove('.comment header > h4');
-
     // Smooth scrolling links in comments
     $('.comment_reply').click(function(e) {
         var $el = $(this);
