@@ -191,10 +191,6 @@ tr:hover {
     @include visuallyhidden;
 }
 
-.no-details summary {
-    @include hidden;
-}
-
 .button-unstyled {
     background: transparent;
     border: 0;
