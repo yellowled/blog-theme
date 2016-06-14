@@ -98,20 +98,31 @@
         }
     }
 
+    .no-js & ul,
+    .no-svg & ul {
+        @media screen and (min-width: $md) {
+            max-width: none;
+        }
+    }
+
     li {
         flex: 0 1 33%;
         margin-bottom: .5rem;
 
         @media screen and (min-width: $md) {
+            flex: 0 1 auto;
             margin-bottom: 0;
         }
     }
 
     a {
-        border-radius: 50%;
         display: block;
-        height: 3rem;
         margin: auto;
+    }
+
+    .svg & a {
+        border-radius: 50%;
+        height: 3rem;
         text-decoration: none;
         transition: transform 500ms linear;
         width: 3rem;
@@ -132,15 +143,15 @@
     }
 }
 
-.link-rss { background: #f26522; }
-.link-twitter { background: #55acee; }
-.link-facebook { background: #3b5998; }
-.link-instagram { background: #3f729b; }
-.link-github { background: #4183c4; }
-.link-xing { background: #026466; }
-.link-pinboard { background: #0000e6; }
-.link-lastfm { background: #d51007; }
-.link-amazon { background: #f90; }
+.svg .link-rss { background: #f26522; }
+.svg .link-twitter { background: #55acee; }
+.svg .link-facebook { background: #3b5998; }
+.svg .link-instagram { background: #3f729b; }
+.svg .link-github { background: #4183c4; }
+.svg .link-xing { background: #026466; }
+.svg .link-pinboard { background: #0000e6; }
+.svg .link-lastfm { background: #d51007; }
+.svg .link-amazon { background: #f90; }
 
 #sidebar {
     .sidebar {
