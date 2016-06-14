@@ -1,4 +1,4 @@
-// NAV STYLES
+// NAV
 // --------------------------------------------------------------------
 .offcanvas {
     background-color: $lite-grey;
@@ -33,6 +33,7 @@
         visibility .25s;
 }
 
+// Nav buttons
 .open-nav,
 .close-nav {
     @include unstyled-button();
@@ -94,6 +95,7 @@
     }
 }
 
+// Search
 #search_inputs {
     margin-bottom: 1rem;
 
@@ -108,6 +110,7 @@
     }
 }
 
+// Nav links
 #site-nav {
     ul {
         border-top: 1px dashed $grey;

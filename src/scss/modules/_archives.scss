@@ -1,4 +1,4 @@
-// ARCHIVES STYLES
+// ARCHIVES
 // --------------------------------------------------------------------
 .archive {
     @extend %container;
@@ -79,6 +79,7 @@
     }
 }
 
+// List of posts
 .archive-summary {
     ul {
         margin-bottom: 0;
@@ -110,6 +111,7 @@
     }
 }
 
+// Recent posts on start page
 .archive-index {
     ol {
         list-style: none;

@@ -1,4 +1,4 @@
-// ARTICLE STYLES
+// ARTICLES
 // --------------------------------------------------------------------
 .post {
     @extend %container;
@@ -31,6 +31,7 @@
     }
 }
 
+// Article meta data
 .post_meta {
     ul {
         list-style: none;
