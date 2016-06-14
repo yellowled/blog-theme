@@ -115,11 +115,22 @@
 
 .archive-summary {
     ul {
+        margin-bottom: 0;
         width: 100%;
     }
 
     li {
+        border-bottom: 2px solid $silver;
         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: .9375rem;
+        padding-bottom: .9375rem;
+
+        &:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
     }
 
     .summary-title {
@@ -134,10 +145,9 @@
 }
 
 .archive-index {
-    margin-bottom: 0;
-
     ol {
         list-style: none;
+        margin-bottom: 0;
         padding: 0;
         width: 100%;
     }

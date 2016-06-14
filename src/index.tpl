@@ -82,7 +82,7 @@
         <section class="archive archive-summary archive-index">
             <h2>{$template_option.home_title}</h2>
 
-            <ol class="post-list">
+            <ol>
             {serendipity_fetchPrintEntries full=true fetchDrafts=false noSticky=true limit="0,5" template="teaser.tpl"}
             </ol>
         </section>

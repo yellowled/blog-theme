@@ -58,18 +58,3 @@
         }
     }
 }
-
-.post-list {
-    li {
-        border-bottom: 2px solid $silver;
-        flex-wrap: wrap;
-        margin-bottom: .9375rem;
-        padding-bottom: .9375rem;
-
-        &:last-child {
-            border-bottom: 0;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0;
-        }
-    }
-}
