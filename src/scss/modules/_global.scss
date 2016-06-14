@@ -74,42 +74,41 @@ a {
     }
 }
 
-@media screen and (min-width: $lg) {
-    h2 {
-        font-size: 1.875rem;
-    }
+h1 {
+    font-size: 1.5rem;
 
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.3125rem;
-    }
-
-    h5,
-    h6 {
-        font-size: 1.1875rem;
-    }
+    @media screen and (min-width: $md) { font-size: 2.25rem; }
+    @media screen and (min-width: $lg) { font-size: 2.5rem; }
+    @media screen and (min-width: $xl) { font-size: 3rem; }
 }
 
-@media screen and (min-width: $xx) {
-    h2 {
-        font-size: 2rem;
-    }
+h2 {
+    font-size: 1.5rem;
 
-    h3 {
-        font-size: 1.6875rem;
-    }
+    @media screen and (min-width: $lg) { font-size: 2rem; }
+    @media screen and (min-width: $xx) { font-size: 2.5rem; }
+}
 
-    h4 {
-        font-size: 1.5rem;
-    }
+h3 {
+    font-size: 1.25rem;
 
-    h5,
-    h6 {
-        font-size: 1.375rem;
-    }
+    @media screen and (min-width: $lg) { font-size: 1.625rem; }
+    @media screen and (min-width: $xx) { font-size: 2rem; }
+}
+
+h4 {
+    font-size: 1.125rem;
+
+    @media screen and (min-width: $lg) { font-size: 1.375rem; }
+    @media screen and (min-width: $xx) { font-size: 1.625rem; }
+}
+
+h5,
+h6 {
+    font-size: 1rem;
+
+    @media screen and (min-width: $lg) { font-size: 1.1875rem; }
+    @media screen and (min-width: $xx) { font-size: 1.375rem; }
 }
 
 ul {
