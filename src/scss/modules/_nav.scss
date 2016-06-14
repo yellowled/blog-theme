@@ -8,6 +8,15 @@
     .no-js & {
         padding: 1rem;
     }
+
+    .js & {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        left: auto;
+        transform: translateX(0);
+        will-change: translateX;
+    }
 }
 
 .offcanvas-ready {
@@ -16,13 +25,7 @@
     outline: 0;
     overflow: auto;
     padding: 1.5rem 1rem;
-    position: fixed;
-    top: 0;
-    right: 100%;
-    left: auto;
-    transform: translateX(0);
     transition: transform .25s ease-out;
-    will-change: translateX;
 
     @media screen and (min-width: $md) {
         padding: 2rem 1rem;
@@ -129,6 +132,19 @@
 
 // Nav links
 #site-nav {
+    .no-js & {
+        text-align: center;
+    }
+
+    .no-js & li {
+        display: inline-block;
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
     .js & ul {
         border-top: 1px dashed $grey;
     }
@@ -142,18 +158,5 @@
     .js & a {
         display: block;
         text-decoration: none;
-    }
-
-    .no-js & {
-        text-align: center;
-    }
-
-    .no-js & li {
-        display: inline-block;
-        margin-right: 1rem;
-
-        &:last-child {
-            margin-right: 0;
-        }
     }
 }
