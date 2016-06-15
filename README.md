@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/yellowled/blog-theme.svg)](https://david-dm.org/yellowled/blog-theme)
 [![devDependency Status](https://david-dm.org/yellowled/blog-theme/dev-status.svg)](https://david-dm.org/yellowled/blog-theme#info=devDependencies)
 
-This is the [Serendipity](http://s9y.org) (s9y) blog theme for [my blog](http://yellowled.de). It is currently undergoing a [live redesign](http://yellowled.de/archiv/69/LR16-Die-Spielregeln.html) (blog post in German).
+This is the [Serendipity](http://s9y.org) (s9y) blog theme for [my blog](http://yellowled.de).
 
 ## Requirements
 
