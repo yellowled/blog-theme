@@ -24,7 +24,7 @@
 {if $template_option.adaptive_images}
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
 {/if}
-    <script src="{serendipity_getFile file="scripts/modernizr/modernizr.js"}?v={$last_template_change}"></script>
+    <script src="{serendipity_getFile file="scripts/modernizr/modernizr.js"}?v={$theme_version}"></script>
     <link rel="alternate" type="application/rss+xml" title="{$blogTitle} RSS feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2">
     <link rel="alternate" type="application/x.atom+xml" title="{$blogTitle} Atom feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/atom.xml">
 {if $entry_id}
@@ -171,7 +171,7 @@
     </footer>
     {/if}
 
-    <script src="{serendipity_getFile file="scripts/master.js"}?v={$last_template_change}"></script>
+    <script src="{serendipity_getFile file="scripts/master.js"}?v={$theme_version}"></script>
 {/if}
 {$raw_data}
 {serendipity_hookPlugin hook="frontend_footer"}
