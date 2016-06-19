@@ -21,7 +21,7 @@
 
         <div class="form_field form_input">
             <label for="serendipity_commentform_url"><abbr title="Uniform Resource Locator" lang="en">URL</abbr>{if $required_fields.url}*{/if}</label>
-            <input id="serendipity_commentform_url" type="url" name="serendipity[url]" value="{$commentform_url}">
+            <input id="serendipity_commentform_url" type="url" name="serendipity[url]" value="{$commentform_url}"{if $required_fields.url} required{/if}>
         </div>
 
         <div class="form_field form_select">
