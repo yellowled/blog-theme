@@ -14,7 +14,7 @@
     }
 }
 
-#reply {
+.feedback {
     margin: (2 * $type-rhythm) 0;
 }
 
@@ -70,23 +70,17 @@ input[type=radio] {
 }
 
 // Comments
-#comments {
-    margin: (2 * $type-rhythm) 0;
-
-    .comment {
-        border: 1px solid $silver;
-        border-radius: 1px;
-        box-sizing: border-box;
-        margin: (2 * $type-rhythm) 0;
-        padding: 0 1rem;
-
-        &:nth-of-type(even) {
-            background: $lite-grey;
-        }
-    }
-}
-
 .comment {
+    border: 1px solid $silver;
+    border-radius: 1px;
+    box-sizing: border-box;
+    margin: (2 * $type-rhythm) 0;
+    padding: 0 1rem;
+
+    &:nth-of-type(even) {
+        background: $lite-grey;
+    }
+
     > header {
         min-height: 3rem;
         position: relative;
@@ -181,8 +175,6 @@ input[type=radio] {
 
 // Trackbacks
 #trackbacks {
-    margin: (2 * $type-rhythm) 0;
-
     ul {
         list-style: none;
         padding: 0;
