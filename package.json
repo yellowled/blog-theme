@@ -25,7 +25,7 @@
         "svg4everybody":            "^2.1.0"
     },
     "devDependencies":  {
-        "autoprefixer":             "^6.3.6",
+        "autoprefixer":             "^6.3.7",
         "css-mqpacker":             "^5.0.1",
         "cssnano":                  "^3.7.1",
         "grunt":                    "^1.0.1",
