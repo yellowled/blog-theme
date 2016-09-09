@@ -1,5 +1,5 @@
 {serendipity_hookPlugin hook="entries_header" addData="$entry_id"}
-{if $footer_info}<p class="content_message">{$footer_info}</p>{/if}
+{if $footer_info and not $searchresult_results}<p class="content_message">{$footer_info}</p>{/if}
 {foreach from=$entries item="dategroup"}
     {foreach from=$dategroup.entries item="entry"}
     {assign var="entry" value=$entry scope=parent}
