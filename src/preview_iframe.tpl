@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="{$lang}">
+<html id="preview_iframe" class="no-js" lang="{$lang}">
 <head>
     <meta charset="{$head_charset}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,18 +9,16 @@
 {serendipity_hookPlugin hook="backend_header" hookAll="true"}
     <script src="{serendipity_getFile file='admin/js/plugins.js'}"></script>
     <script src="{serendipity_getFile file='admin/serendipity_editor.js'}"></script>
-<script>
-window.onload = function() {ldelim} parent.document.getElementById('serendipity_iframe').style.height = document.getElementById('main').offsetHeight + parseInt(document.getElementById('main').style.marginTop) + parseInt(document.getElementById('main').style.marginBottom) + 'px';
+<script>window.onload = function() {ldelim}
+    parent.document.getElementById('serendipity_iframe').style.height = document.getElementById('preview_iframe').offsetHeight + 'px';
     parent.document.getElementById('serendipity_iframe').scrolling    = 'no';
-    parent.document.getElementById('serendipity_iframe').style.border = 0; {rdelim}
-</script>
+    parent.document.getElementById('serendipity_iframe').style.border = 0;
+{rdelim}</script>
 </head>
 <body>
-    <div id="main" class="clearfix" style="padding: 0; margin: 0 auto; width: 98%;">
-        <main>
-        {$preview}
-        </main>
-    </div>
+    <main>
+    {$preview}
+    </main>
 
     <script src="{serendipity_getFile file="scripts/master.js" frontend=true}"></script>
 </body>
