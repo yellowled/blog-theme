@@ -99,7 +99,9 @@
     {/foreach}
 {foreachelse}
     {if not $plugin_clean_page}
-    <p class="serendipity_msg_notice">{$CONST.NO_ENTRIES_TO_PRINT}</p>
+    <div class="post">
+        <p class="serendipity_msg_notice">{$CONST.NO_ENTRIES_TO_PRINT}</p>
+    </div>
     {/if}
 {/foreach}
 {serendipity_hookPlugin hook="entries_footer"}
