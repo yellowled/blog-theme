@@ -30,6 +30,7 @@ main {
 .content_message {
     @extend %container;
 
+    color: $ci-greyed-out;
     padding: 0 1rem;
     text-align: center;
 
