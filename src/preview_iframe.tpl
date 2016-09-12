@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{$CONST.SERENDIPITY_ADMIN_SUITE}</title>
     <link rel="stylesheet" href="{$serendipityHTTPPath}{$serendipityRewritePrefix}serendipity.css">
-    <script src="{serendipity_getFile file="scripts/modernizr/modernizr.js" frontend=true}"></script>
+    <script src="{serendipity_getFile file="scripts/modernizr/modernizr.js" frontend=true}?v={$theme_version}"></script>
 {serendipity_hookPlugin hook="backend_header" hookAll="true"}
 <script>window.onload = function() {ldelim}
     parent.document.getElementById('serendipity_iframe').style.height = document.querySelector('html').offsetHeight + 'px';
@@ -34,6 +34,6 @@
     {$preview}
     </main>
 
-    <script src="{serendipity_getFile file="scripts/master.js" frontend=true}"></script>
+    <script src="{serendipity_getFile file="scripts/master.js" frontend=true}?v={$theme_version}"></script>
 </body>
 </html>
