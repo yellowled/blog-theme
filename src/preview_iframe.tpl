@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="{$serendipityHTTPPath}{$serendipityRewritePrefix}serendipity.css">
     <script src="{serendipity_getFile file="scripts/modernizr/modernizr.js" frontend=true}"></script>
 {serendipity_hookPlugin hook="backend_header" hookAll="true"}
-    <script src="{serendipity_getFile file='admin/js/plugins.js'}"></script>
-    <script src="{serendipity_getFile file='admin/serendipity_editor.js'}"></script>
 <script>window.onload = function() {ldelim}
     parent.document.getElementById('serendipity_iframe').style.height = document.getElementById('preview_iframe').offsetHeight + 'px';
     parent.document.getElementById('serendipity_iframe').scrolling    = 'no';
