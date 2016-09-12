@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="preview_iframe" class="no-js" lang="{$lang}">
+<html class="no-js" lang="{$lang}">
 <head>
     <meta charset="{$head_charset}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
     <script src="{serendipity_getFile file="scripts/modernizr/modernizr.js" frontend=true}"></script>
 {serendipity_hookPlugin hook="backend_header" hookAll="true"}
 <script>window.onload = function() {ldelim}
-    parent.document.getElementById('serendipity_iframe').style.height = document.getElementById('preview_iframe').offsetHeight + 'px';
+    parent.document.getElementById('serendipity_iframe').style.height = document.querySelector('html').offsetHeight + 'px';
     parent.document.getElementById('serendipity_iframe').scrolling    = 'no';
     parent.document.getElementById('serendipity_iframe').style.border = 0;
 {rdelim}</script>
