@@ -40,6 +40,7 @@
         "grunt-svgmin":             "^4.0.0",
         "grunt-svgstore":           "^1.0.0",
         "jit-grunt":                "^0.10.0",
-        "pixrem":                   "^3.0.2"
+        "pixrem":                   "^3.0.2",
+        "postcss-flexbugs-fixes":   "^2.0.0"
     }
 }

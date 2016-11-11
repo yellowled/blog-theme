@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                     cascade: false,
                     remove: true
                 }),
+                require('postcss-flexbugs-fixes')(),
                 require('css-mqpacker')({
                     sort: true
                 }),
