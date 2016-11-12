@@ -2,6 +2,14 @@
     // SVG polyfill
     svg4everybody();
 
+    // Font face observer
+    var font = new FontFaceObserver('calendas_plus');
+
+    font.load().then(function () {
+        console.log('calendas_plus loaded');
+        document.documentElement.className += " fonts-loaded";
+    });
+
     // Off-canvas nav
     var myOffcanvas = Froffcanvas({
         selector: '.offcanvas',

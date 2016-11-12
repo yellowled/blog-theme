@@ -75,9 +75,15 @@ img {
 }
 
 html {
-    @extend %primary-font;
-
     font-size: 100%;
+}
+
+body {
+    font-family: serif;
+
+    .fonts-loaded & {
+        @extend %primary-font;
+    }
 }
 
 @if $use-form-styles {
