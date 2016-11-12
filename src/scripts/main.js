@@ -5,7 +5,7 @@
     // Font face observer
     var font = new FontFaceObserver('calendas_plus');
 
-    font.load().then(function () {
+    font.load(null, 5000).then(function () {
         document.documentElement.className += " fonts-loaded";
     });
 
