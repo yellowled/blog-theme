@@ -39,8 +39,9 @@
 
         > section {
             box-sizing: border-box;
-            flex: 0 1 50%;
+            flex: 0 1 auto;
             padding: 0 1rem 0 0;
+            width: 50%;
 
             &:nth-of-type(even) {
                 padding: 0 0 0 1rem;
