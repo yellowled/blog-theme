@@ -2,12 +2,18 @@
     // SVG polyfill
     svg4everybody();
 
-    // Font face observer
-    var font = new FontFaceObserver('calendas_plus');
+    // If webfonts cookie is NOT set
+    if(!cookie('webfonts')) {
+        // Generate a font face observer
+        var font = new FontFaceObserver('calendas_plus');
 
-    font.load(null, 5000).then(function () {
-        document.documentElement.className += " fonts-loaded";
-    });
+        font.load(null, 5000).then(function () {
+            // Add webfonts class to html element
+            document.documentElement.className += " fonts-loaded";
+            // Set webfonts cookie
+            cookie('webfonts', '1', 7);
+        });
+    }
 
     // Off-canvas nav
     var myOffcanvas = Froffcanvas({

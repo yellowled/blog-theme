@@ -19,6 +19,7 @@
         "node":     ">=4.0.0"
     },
     "dependencies": {
+        "fg-cookie":                "^1.0.0",
         "fr-offcanvas":             "^1.0.4",
         "fontfaceobserver":         "^2.0.5",
         "node-normalize-scss":      "^1.4.0",

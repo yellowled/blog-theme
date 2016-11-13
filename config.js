@@ -6,6 +6,7 @@ module.exports = {
     concat: {
         src: [
                     'node_modules/svg4everybody/dist/svg4everybody.js',
+                    'node_modules/fg-cookie/cookie.js',
                     'node_modules/fontfaceobserver/fontfaceobserver.js',
                     'node_modules/fr-offcanvas/dist/froffcanvas.min.js',
                     'node_modules/prismjs/prism.js',
