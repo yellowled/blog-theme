@@ -21,7 +21,7 @@
     "dependencies": {
         "fg-cookie":                "^1.0.0",
         "fr-offcanvas":             "^1.0.4",
-        "fontfaceobserver":         "^2.0.5",
+        "fontfaceobserver":         "^2.0.6",
         "node-normalize-scss":      "^1.4.0",
         "prismjs":                  "^1.5.1",
         "svg4everybody":            "^2.1.3"
