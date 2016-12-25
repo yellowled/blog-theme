@@ -115,30 +115,30 @@
                 <h3>{$CONST.BT_SOCIALLINKS}</h3>
 
                 <ul>
-                    <li><a class="link-rss" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2" aria-label="RSS"><svg class="icon-rss" role="img" title="RSS" viewbox="0 0 14 14" width="14" height="14"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#rss"></use></svg><span class="svg-fallback">RSS</span></a></li>
+                    <li><a class="link-rss" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2" aria-label="RSS"><svg class="icon-rss" viewbox="0 0 14 14" width="14" height="14" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#rss"></use></svg></a></li>
                 {if $template_option.twitter_url}
-                    <li><a class="link-twitter" href="{$template_option.twitter_url}" aria-label="Twitter"><svg class="icon-twitter" role="img" title="Twitter" viewbox="0 0 19 16" width="19" height="16"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#twitter"></use></svg><span class="svg-fallback">Twitter</span></a></li>
+                    <li><a class="link-twitter" href="{$template_option.twitter_url}" aria-label="Twitter"><svg class="icon-twitter" viewbox="0 0 19 16" width="19" height="16" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#twitter"></use></svg></a></li>
                 {/if}
                 {if $template_option.facebook_url}
-                    <li><a class="link-facebook" href="{$template_option.facebook_url}" aria-label="Facebook"><svg class="icon-facebook" role="img" title="Facebook" viewbox="0 0 9 19" width="9" height="19"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#facebook"></use></svg><span class="svg-fallback">Facebook</span></a></li>
+                    <li><a class="link-facebook" href="{$template_option.facebook_url}" aria-label="Facebook"><svg class="icon-facebook" viewbox="0 0 9 19" width="9" height="19" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#facebook"></use></svg></a></li>
                 {/if}
                 {if $template_option.instagram_url}
-                    <li><a class="link-instagram" href="{$template_option.instagram_url}" aria-label="Instagram"><svg class="icon-instagram" role="img" title="Instagram" viewbox="0 0 15 16" width="15" height="16"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#instagram"></use></svg><span class="svg-fallback">Instagram</span></a></li>
+                    <li><a class="link-instagram" href="{$template_option.instagram_url}" aria-label="Instagram"><svg class="icon-instagram" viewbox="0 0 15 16" width="15" height="16" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#instagram"></use></svg></a></li>
                 {/if}
                 {if $template_option.github_url}
-                    <li><a class="link-github" href="{$template_option.github_url}" aria-label="GitHub"><svg class="icon-github" role="img" title="Github" viewbox="0 0 21 17" width="21" height="17"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#github"></use></svg><span class="svg-fallback">GitHub</span></a></li>
+                    <li><a class="link-github" href="{$template_option.github_url}" aria-label="GitHub"><svg class="icon-github" viewbox="0 0 21 17" width="21" height="17" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#github"></use></svg></a></li>
                 {/if}
                 {if $template_option.xing_url}
-                    <li><a class="link-xing" href="{$template_option.xing_url}" aria-label="Xing"><svg class="icon-xing" role="img" title="Xing" viewbox="0 0 15 16" width="15" height="16"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#xing"></use></svg><span class="svg-fallback">Xing</span></a></li>
+                    <li><a class="link-xing" href="{$template_option.xing_url}" aria-label="Xing"><svg class="icon-xing" viewbox="0 0 15 16" width="15" height="16" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#xing"></use></svg></a></li>
                 {/if}
                 {if $template_option.pinboard_url}
-                    <li><a class="link-pinboard" href="{$template_option.pinboard_url}" aria-label="Pinboard"><svg class="icon-pinboard" role="img" title="Pinboard" viewbox="0 0 17 18" width="17" height="18"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#pinboard"></use></svg><span class="svg-fallback">Pinboard</span></a></li>
+                    <li><a class="link-pinboard" href="{$template_option.pinboard_url}" aria-label="Pinboard"><svg class="icon-pinboard" viewbox="0 0 17 18" width="17" height="18" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#pinboard"></use></svg></a></li>
                 {/if}
                 {if $template_option.lastfm_url}
-                    <li><a class="link-lastfm" href="{$template_option.lastfm_url}" aria-label="Last.fm"><svg class="icon-lastfm" role="img" title="Last.fm" viewbox="0 0 19 11" width="19" height="11"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#lastfm"></use></svg><span class="svg-fallback">Last.fm</span></a></li>
+                    <li><a class="link-lastfm" href="{$template_option.lastfm_url}" aria-label="Last.fm"><svg class="icon-lastfm" viewbox="0 0 19 11" width="19" height="11" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#lastfm"></use></svg></a></li>
                 {/if}
                 {if $template_option.amazon_url}
-                    <li><a class="link-amazon" href="{$template_option.amazon_url}" aria-label="Amazon"><svg class="icon-amazon" role="img" title="Amazon" viewbox="0 0 19 18" width="19" height="18"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#amazon"></use></svg><span class="svg-fallback">Amazon</span></a></li>
+                    <li><a class="link-amazon" href="{$template_option.amazon_url}" aria-label="Amazon"><svg class="icon-amazon" viewbox="0 0 19 18" width="19" height="18" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#amazon"></use></svg></a></li>
                 {/if}
                 </ul>
             </section>
