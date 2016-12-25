@@ -41,7 +41,7 @@
         <div class="masthead">
             <a href="{$serendipityBaseURL}">{$template_option.identity}</a>
 
-            <button class="open-nav" type="button" aria-controls="site-nav" aria-label="{$CONST.BT_NAV_OPEN}"><svg class="icon-bars" role="img" title="{$CONST.BT_NAV_OPEN}" viewbox="0 0 1792 1792" width="1792" height="1792"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#bars"></use></svg><span class="svg-fallback">+</span></button>
+            <button class="open-nav" type="button" aria-controls="site-nav" aria-label="{$CONST.BT_NAV_OPEN}"><svg class="icon-bars" viewbox="0 0 1792 1792" width="1792" height="1792" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#bars"></use></svg></button>
         </div>
     </header>
 
@@ -65,7 +65,7 @@
         {/foreach}
         </ul>
     {/if}
-        <button class="close-nav" type="button" aria-label="{$CONST.BT_NAV_CLOSE}"><svg class="icon-times" role="img" title="{$CONST.BT_NAV_CLOSE}" viewbox="0 0 1792 1792" width="1792" height="1792"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#times"></use></svg><span class="svg-fallback">x</span></button>
+        <button class="close-nav" type="button" aria-label="{$CONST.BT_NAV_CLOSE}"><svg class="icon-times" role="img" viewbox="0 0 1792 1792" width="1792" height="1792" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#times"></use></svg></button>
     </nav>
 
     <main role="main">
