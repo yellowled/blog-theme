@@ -84,7 +84,6 @@ main {
         &:visited {
             [class^="icon-"],
             [class*="icon-"] {
-                fill: $ci-bright-red;
                 transition: fill .25s linear;
             }
         }
