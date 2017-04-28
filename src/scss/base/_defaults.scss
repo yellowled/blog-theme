@@ -11,6 +11,14 @@ $hint-fg:       $off-black !default;
     text-shadow: none;
 }
 
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
 dt {
     font-weight: bold;
 }
