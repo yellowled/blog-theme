@@ -22,7 +22,7 @@
         "fg-cookie":                "^1.0.0",
         "fr-offcanvas":             "^1.0.4",
         "fontfaceobserver":         "^2.0.9",
-        "node-normalize-scss":      "^1.4.0",
+        "node-normalize-scss":      "^2.0.0",
         "prismjs":                  "^1.6.0",
         "svg4everybody":            "^2.1.8"
     },
