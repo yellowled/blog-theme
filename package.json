@@ -1,48 +1,48 @@
 {
-    "name":         "blog-theme",
-    "description":  "Serendipity theme for my blog",
-    "version":      "1.1.15",
-    "homepage":     "https://yellowled",
+    "name": "blog-theme",
+    "description": "Serendipity theme for my blog",
+    "version": "1.1.16",
+    "homepage": "https://yellowled",
     "author": {
-        "name":     "Matthias Mees",
-        "url":      "http://yellowled.de"
+        "name": "Matthias Mees",
+        "url": "http://yellowled.de"
     },
-    "license":      "MIT",
+    "license": "MIT",
     "repository": {
-        "type":     "git",
-        "url":      "git://github.com/yellowled/blog-theme.git"
+        "type": "git",
+        "url": "git://github.com/yellowled/blog-theme.git"
     },
     "bugs": {
-        "url":      "https://github.com/yellowled/blog-theme/issues/"
+        "url": "https://github.com/yellowled/blog-theme/issues/"
     },
     "engines": {
-        "node":     ">=4.0.0"
+        "node": ">=4.0.0"
     },
     "dependencies": {
-        "fg-cookie":                "^1.0.0",
-        "fr-offcanvas":             "^1.0.4",
-        "fontfaceobserver":         "^2.0.9",
-        "node-normalize-scss":      "^3.0.0",
-        "prismjs":                  "^1.6.0",
-        "svg4everybody":            "^2.1.8"
+        "fg-cookie": "^1.0.0",
+        "fr-offcanvas": "^1.0.4",
+        "fontfaceobserver": "^2.0.9",
+        "node-normalize-scss": "^3.0.0",
+        "prismjs": "^1.6.0",
+        "svg4everybody": "^2.1.8"
     },
-    "devDependencies":  {
-        "autoprefixer":             "^7.1.1",
-        "css-mqpacker":             "^6.0.0",
-        "cssnano":                  "^3.10.0",
-        "grunt":                    "^1.0.1",
-        "grunt-contrib-clean":      "^1.1.0",
-        "grunt-contrib-concat":     "^1.0.1",
-        "grunt-contrib-copy":       "^1.0.0",
-        "grunt-contrib-imagemin":   "^1.0.1",
-        "grunt-contrib-uglify":     "^3.0.1",
-        "grunt-modernizr":          "^1.0.2",
-        "grunt-postcss":            "^0.8.0",
-        "grunt-sass":               "^2.0.0",
-        "grunt-svgmin":             "^4.0.0",
-        "grunt-svgstore":           "^1.0.0",
-        "jit-grunt":                "^0.10.0",
-        "pixrem":                   "^3.0.2",
-        "postcss-flexbugs-fixes":   "^3.0.0"
+    "devDependencies": {
+        "autoprefixer": "^7.1.1",
+        "css-mqpacker": "^6.0.1",
+        "cssnano": "^3.10.0",
+        "grunt": "^1.0.1",
+        "grunt-contrib-clean": "^1.1.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-imagemin": "^1.0.1",
+        "grunt-contrib-uglify": "^3.0.1",
+        "grunt-modernizr": "^1.0.2",
+        "grunt-postcss": "^0.8.0",
+        "grunt-sass": "^2.0.0",
+        "grunt-svgmin": "^4.0.0",
+        "grunt-svgstore": "^1.0.0",
+        "jit-grunt": "^0.10.0",
+        "pixrem": "^3.0.2",
+        "postcss-flexbugs-fixes": "^3.0.0"
     }
 }
