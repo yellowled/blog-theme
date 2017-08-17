@@ -19,30 +19,30 @@
         "node": ">=4.0.0"
     },
     "dependencies": {
-        "fg-cookie": "^1.0.0",
-        "fontfaceobserver": "^2.0.13",
-        "fr-offcanvas": "^1.0.4",
-        "node-normalize-scss": "^3.0.0",
-        "prismjs": "^1.6.0",
-        "svg4everybody": "^2.1.9"
+        "fg-cookie": "~1.0.0",
+        "fontfaceobserver": "~2.0.13",
+        "fr-offcanvas": "^1.0.5",
+        "node-normalize-scss": "~3.0.0",
+        "prismjs": "~1.6.0",
+        "svg4everybody": "~2.1.9"
     },
     "devDependencies": {
-        "autoprefixer": "^7.1.2",
-        "css-mqpacker": "^6.0.1",
-        "cssnano": "^3.10.0",
-        "grunt": "^1.0.1",
-        "grunt-contrib-clean": "^1.1.0",
-        "grunt-contrib-concat": "^1.0.1",
-        "grunt-contrib-copy": "^1.0.0",
-        "grunt-contrib-imagemin": "^2.0.1",
-        "grunt-contrib-uglify": "^3.0.1",
-        "grunt-modernizr": "^1.0.2",
-        "grunt-postcss": "^0.8.0",
-        "grunt-sass": "^2.0.0",
-        "grunt-svgmin": "^4.0.0",
-        "grunt-svgstore": "^1.0.0",
-        "jit-grunt": "^0.10.0",
-        "pixrem": "^4.0.1",
-        "postcss-flexbugs-fixes": "^3.2.0"
+        "autoprefixer": "~7.1.2",
+        "css-mqpacker": "~6.0.1",
+        "cssnano": "~3.10.0",
+        "grunt": "~1.0.1",
+        "grunt-contrib-clean": "~1.1.0",
+        "grunt-contrib-concat": "~1.0.1",
+        "grunt-contrib-copy": "~1.0.0",
+        "grunt-contrib-imagemin": "~2.0.1",
+        "grunt-contrib-uglify": "~3.0.1",
+        "grunt-modernizr": "~1.0.2",
+        "grunt-postcss": "~0.8.0",
+        "grunt-sass": "~2.0.0",
+        "grunt-svgmin": "~4.0.0",
+        "grunt-svgstore": "~1.0.0",
+        "jit-grunt": "~0.10.0",
+        "pixrem": "~4.0.1",
+        "postcss-flexbugs-fixes": "~3.2.0"
     }
 }
