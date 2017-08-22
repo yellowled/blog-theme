@@ -157,7 +157,7 @@
     </aside>
     {/if}
     {if $template_option.privacy_url || $template_option.legal_url}
-    <footer>
+    <footer class="page-footer">
         <nav>
             <ul>
             {if $template_option.privacy_url}
