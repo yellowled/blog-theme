@@ -106,7 +106,7 @@
 {serendipity_hookPlugin hook="entries_footer"}
 {if not $is_preview}
     {if $footer_prev_page||$footer_next_page}
-    <nav class="pagination" role="navigation">
+    <nav class="pagination">
         <ul>
         {if $footer_prev_page}
             <li class="prev_page"><a href="{$footer_prev_page}" aria-label="{$CONST.PREVIOUS_PAGE}"><svg class="icon-chevron-left" viewbox="0 0 2048 2048" width="2048" height="2048" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-left"></use></svg></a></li>

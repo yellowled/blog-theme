@@ -37,7 +37,7 @@
 {serendipity_hookPlugin hook="frontend_header"}
 {/if}
 {if $is_raw_mode != true}
-    <header role="banner">
+    <header>
         <div class="masthead">
             <a href="{$serendipityBaseURL}">{$template_option.identity}</a>
 
@@ -45,7 +45,7 @@
         </div>
     </header>
 
-    <nav id="site-nav" class="offcanvas" role="navigation">
+    <nav id="site-nav" class="offcanvas">
         <form id="search" role="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
             <input type="hidden" name="serendipity[action]" value="search">
 
@@ -68,7 +68,7 @@
         <button class="close-nav" type="button" aria-label="{$CONST.BT_NAV_CLOSE}"><svg class="icon-times" role="img" viewbox="0 0 1792 1792" width="1792" height="1792" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#times"></use></svg></button>
     </nav>
 
-    <main role="main">
+    <main>
     {if $view == "start" && $staticpage_pagetitle == ''}
         {if $template_option.home_greeter_txt}
         <section class="post post-greeter">
@@ -99,7 +99,7 @@
     {/if}
     </main>
 
-    <aside id="site-info" role="complementary">
+    <aside id="site-info">
         <div class="sidebar clearfix">
             <section id="info" class="widget">
                 <h3>{$template_option.infobox_title}</h3>
@@ -145,7 +145,7 @@
         </div>
     </aside>
     {if $leftSidebarElements > 0 || $rightSidebarElements > 0}
-    <aside id="sidebar" role="complementary">
+    <aside id="sidebar">
         <div class="sidebar clearfix">
         {if $leftSidebarElements > 0}
             {serendipity_printSidebar side="left"}
@@ -157,8 +157,8 @@
     </aside>
     {/if}
     {if $template_option.privacy_url || $template_option.legal_url}
-    <footer role="contentinfo">
-        <nav role="navigation">
+    <footer>
+        <nav>
             <ul>
             {if $template_option.privacy_url}
                 <li><a href="{$template_option.privacy_url}">{$template_option.privacy_txt}</a></li>
