@@ -1,7 +1,7 @@
 {
     "name": "blog-theme",
     "description": "Serendipity theme for my blog",
-    "version": "1.1.18",
+    "version": "1.1.19",
     "homepage": "https://yellowled",
     "author": {
         "name": "Matthias Mees",
@@ -21,7 +21,7 @@
     "dependencies": {
         "fg-cookie": "~1.0.0",
         "fontfaceobserver": "~2.0.13",
-        "fr-offcanvas": "^1.0.4",
+        "fr-offcanvas": "~1.0.4",
         "node-normalize-scss": "~3.0.0",
         "prismjs": "~1.6.0",
         "svg4everybody": "~2.1.9"
