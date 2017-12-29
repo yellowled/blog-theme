@@ -16,7 +16,7 @@
         "url": "https://github.com/yellowled/blog-theme/issues/"
     },
     "engines": {
-        "node": ">=4.0.0"
+        "node": ">=8.0.0"
     },
     "dependencies": {
         "fg-cookie": "~1.0.0",
