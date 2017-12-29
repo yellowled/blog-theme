@@ -109,10 +109,10 @@
     <nav class="pagination">
         <ul>
         {if $footer_prev_page}
-            <li class="prev_page"><a href="{$footer_prev_page}" aria-label="{$CONST.PREVIOUS_PAGE}"><svg class="icon-chevron-left" viewbox="0 0 2048 2048" width="2048" height="2048" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-left"></use></svg></a></li>
+            <li class="prev_page"><a href="{$footer_prev_page}" aria-label="{$CONST.PREVIOUS_PAGE}"><svg class="icon-chevron-left" viewbox="0 0 320 512" width="320" height="512" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-left"></use></svg></a></li>
         {/if}
         {if $footer_next_page}
-            <li class="next_page"><a href="{$footer_next_page}" aria-label="{$CONST.NEXT_PAGE}"><svg class="icon-chevron-right" viewbox="0 0 2048 2048" width="2048" height="2048" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-right"></use></svg></a></li>
+            <li class="next_page"><a href="{$footer_next_page}" aria-label="{$CONST.NEXT_PAGE}"><svg class="icon-chevron-right" viewbox="0 0 320 512" width="320" height="512" aria-hidden="true"><use xlink:href="{$serendipityHTTPPath}templates/{$template}/img/sprite.svg#chevron-right"></use></svg></a></li>
         {/if}
         </ul>
     </nav>
