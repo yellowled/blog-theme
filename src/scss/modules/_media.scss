@@ -196,6 +196,10 @@ audio {
     margin: $type-rhythm 0;
 }
 
+.responsive-video {
+    @include responsive-object;
+}
+
 // Embedded Tweets
 .twitter-tweet {
     @include center-horizontal;
