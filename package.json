@@ -1,7 +1,7 @@
 {
     "name": "blog-theme",
     "description": "Serendipity theme for my blog",
-    "version": "1.1.27",
+    "version": "1.1.28",
     "homepage": "https://yellowled",
     "author": {
         "name": "Matthias Mees",
@@ -27,7 +27,7 @@
         "svg4everybody": "~2.1.9"
     },
     "devDependencies": {
-        "autoprefixer": "~8.1.0",
+        "autoprefixer": "~8.2.0",
         "css-mqpacker": "~6.0.2",
         "cssnano": "~3.10.0",
         "grunt": "~1.0.2",
