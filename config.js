@@ -12,6 +12,7 @@ module.exports = {
                     'node_modules/prismjs/prism.js',
                     'node_modules/prismjs/plugins/toolbar/prism-toolbar.js',
                     'node_modules/prismjs/plugins/show-language/prism-show-language.js',
+                    'node_modules/prismjs/components/prism-markup-templating.js',
                     'node_modules/prismjs/components/prism-php.js',
                     'node_modules/prismjs/components/prism-scss.js',
                     'node_modules/prismjs/components/prism-smarty.js',
