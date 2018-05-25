@@ -156,6 +156,14 @@ small {
 	overflow: auto;
 }
 
+pre,
+code,
+samp,
+kbd {
+    font-family: 'Fire Code', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-feature-settings: "frac" 0, "kern" 1, "swsh" 0;
+}
+
 pre {
     box-shadow: 0 0 5px rgba($black, .5);
 }
