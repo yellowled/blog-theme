@@ -1,7 +1,7 @@
 {
     "name": "blog-theme",
     "description": "Serendipity theme for my blog",
-    "version": "1.1.36",
+    "version": "1.1.37",
     "homepage": "https://yellowled",
     "author": {
         "name": "Matthias Mees",
@@ -23,11 +23,11 @@
         "fontfaceobserver": "^2.0.13",
         "fr-offcanvas": "^1.0.4",
         "node-normalize-scss": "^8.0.0",
-        "prismjs": "^1.14.0",
+        "prismjs": "^1.15.0",
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {
-        "autoprefixer": "^8.6.2",
+        "autoprefixer": "^8.6.4",
         "css-mqpacker": "^6.0.2",
         "cssnano": "^3.10.0",
         "grunt": "^1.0.3",
@@ -38,10 +38,11 @@
         "grunt-contrib-uglify": "^3.3.0",
         "grunt-modernizr": "^1.0.3",
         "grunt-postcss": "^0.9.0",
-        "grunt-sass": "^2.1.0",
+        "grunt-sass": "^3.0.0",
         "grunt-svgmin": "^5.0.0",
         "grunt-svgstore": "^1.0.0",
         "jit-grunt": "^0.10.0",
+        "node-sass": "^4.9.0",
         "pixrem": "^4.0.1",
         "postcss-flexbugs-fixes": "^3.3.1"
     }
