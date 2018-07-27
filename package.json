@@ -21,15 +21,15 @@
     "dependencies": {
         "fg-cookie": "^1.0.0",
         "fontfaceobserver": "^2.0.13",
-        "fr-offcanvas": "^1.0.5",
+        "fr-offcanvas": "^1.0.4",
         "node-normalize-scss": "^8.0.0",
         "prismjs": "^1.15.0",
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {
-        "autoprefixer": "^9.0.0",
+        "autoprefixer": "^9.0.1",
         "css-mqpacker": "^7.0.0",
-        "cssnano": "^4.0.3",
+        "cssnano": "^4.0.4",
         "grunt": "^1.0.3",
         "grunt-contrib-clean": "^1.1.0",
         "grunt-contrib-concat": "^1.0.1",
