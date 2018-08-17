@@ -27,7 +27,7 @@
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {
-        "autoprefixer": "^9.1.0",
+        "autoprefixer": "^9.1.1",
         "css-mqpacker": "^7.0.0",
         "cssnano": "^4.0.5",
         "grunt": "^1.0.3",
@@ -42,7 +42,7 @@
         "grunt-svgmin": "^5.0.0",
         "grunt-svgstore": "^1.0.0",
         "jit-grunt": "^0.10.0",
-        "node-sass": "^4.9.2",
+        "node-sass": "^4.9.3",
         "pixrem": "^4.0.1",
         "postcss-flexbugs-fixes": "^4.1.0"
     }
