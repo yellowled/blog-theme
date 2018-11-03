@@ -33,6 +33,6 @@
     {$preview}
     </main>
 
-    <script src="{serendipity_getFile file="scripts/master.js" frontend=true}?v={$theme_version}"></script>
+    <script src="{serendipity_getFile file="js/master.js" frontend=true}?v={$theme_version}"></script>
 </body>
 </html>

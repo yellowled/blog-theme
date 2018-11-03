@@ -8,7 +8,7 @@
     // If webfonts cookie is NOT set
     if (!cookie('webfonts')) {
         // Generate a font face observer
-        var font = new FontFaceObserver('calendas_plus');
+        const font = new FontFaceObserver('calendas_plus');
 
         font.load(null, 5000).then(function () {
             // Add webfonts class to html element
@@ -19,7 +19,7 @@
     }
 
     // Off-canvas nav
-    var myOffcanvas = Froffcanvas({
+    const myOffcanvas = Froffcanvas({
         selector: '.offcanvas',
         openSelector: '.open-nav',
         closeSelector: '.close-nav',
@@ -29,8 +29,8 @@
 
     // Smooth scrolling links in comments
     $('.comment_reply').click(function (e) {
-        var $el = $(this);
-        var target, replyTo;
+        const $el = $(this);
+        let target, replyTo;
 
         target = '#reply';
         replyTo = $el.attr("id").replace(/serendipity_reply_/g, "");

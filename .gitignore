@@ -8,5 +8,6 @@ node_modules/
 dist/
 src/*.html
 src/img/sprite.svg
+src/js/bundle.*
+src/js/master.*
 src/style.css*
-src/scripts/master.*

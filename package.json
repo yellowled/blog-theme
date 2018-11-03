@@ -28,10 +28,11 @@
         "css:compile": "node-sass --output-style expanded --precision 5 src/style.scss src/style.css",
         "css:minify": "cleancss --level 1 --skip-rebase --output dist/${npm_package_name}/style.css src/style.css",
         "css:prefix": "postcss --config .postcssrc --replace \"src/style.css\"",
-        "js:build": "npm-run-all --sequential js:compile js:minify",
-        "js:compile": "uglifyjs --comments \"/^!/\" --source-map \"url=master.js.map\" --output src/scripts/master.js -- node_modules/svg4everybody/dist/svg4everybody.js node_modules/fg-cookie/cookie.js node_modules/fontfaceobserver/fontfaceobserver.js node_modules/fr-offcanvas/dist/froffcanvas.min.js node_modules/prismjs/prism.js node_modules/prismjs/plugins/toolbar/prism-toolbar.js node_modules/prismjs/plugins/show-language/prism-show-language.js node_modules/prismjs/components/prism-markup-templating.js node_modules/prismjs/components/prism-php.js node_modules/prismjs/components/prism-scss.js node_modules/prismjs/components/prism-smarty.js src/scripts/main.js",
-        "js:minify": "uglifyjs --compress --mangle --comments \"/^!/\" --source-map \"content=src/scripts/master.js.map,includeSources,url=master.js.map\" --output dist/${npm_package_name}/scripts/master.js -- src/scripts/master.js",
-        "prep:build": "del-cli dist/ && mkdirp dist/${npm_package_name} dist/${npm_package_name}/img dist/${npm_package_name}/scripts",
+        "js:build": "npm-run-all --sequential js:prefix js:compile js:minify",
+        "js:compile": "uglifyjs --comments \"/^!/\" --source-map \"url=master.js.map\" --output src/js/master.js -- node_modules/svg4everybody/dist/svg4everybody.js node_modules/fg-cookie/cookie.js node_modules/fontfaceobserver/fontfaceobserver.js node_modules/fr-offcanvas/dist/froffcanvas.min.js node_modules/prismjs/prism.js node_modules/prismjs/plugins/toolbar/prism-toolbar.js node_modules/prismjs/plugins/show-language/prism-show-language.js node_modules/prismjs/components/prism-markup-templating.js node_modules/prismjs/components/prism-php.js node_modules/prismjs/components/prism-scss.js node_modules/prismjs/components/prism-smarty.js src/js/bundle.js",
+        "js:minify": "uglifyjs --compress --mangle --comments \"/^!/\" --source-map \"content=src/js/master.js.map,includeSources,url=master.js.map\" --output dist/${npm_package_name}/js/master.js -- src/js/master.js",
+        "js:prefix": "babel src/js/main.js --out-file src/js/bundle.js",
+        "prep:build": "del-cli dist/ && mkdirp dist/${npm_package_name} dist/${npm_package_name}/img dist/${npm_package_name}/js",
         "svg:build": "npm-run-all --sequential svg:compile svg:minify",
         "svg:compile": "svg-sprite-generate -d src/icons/ -o src/img/sprite.svg",
         "svg:minify": "svgo --config=.svgorc src/img/sprite.svg -o dist/${npm_package_name}/img/sprite.svg"
@@ -45,6 +46,9 @@
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {
+        "@babel/cli": "^7.1.2",
+        "@babel/core": "^7.1.2",
+        "@babel/preset-env": "^7.1.0",
         "autoprefixer": "^9.3.1",
         "clean-css-cli": "^4.2.1",
         "copyfiles": "^2.1.0",

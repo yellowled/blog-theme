@@ -170,7 +170,7 @@
     </footer>
     {/if}
 
-    <script src="{serendipity_getFile file="scripts/master.js"}?v={$theme_version}"></script>
+    <script src="{serendipity_getFile file="js/master.js"}?v={$theme_version}"></script>
 {/if}
 {$raw_data}
 {serendipity_hookPlugin hook="frontend_footer"}
