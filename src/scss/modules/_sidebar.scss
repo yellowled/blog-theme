@@ -98,8 +98,7 @@
         }
     }
 
-    .no-js & ul,
-    .no-svg & ul {
+    .no-js & ul {
         @media screen and (min-width: $md) {
             max-width: none;
         }
@@ -116,13 +115,10 @@
     }
 
     a {
-        display: block;
-        margin: auto;
-    }
-
-    .svg & a {
         border-radius: 50%;
+        display: block;
         height: 3rem;
+        margin: auto;
         text-decoration: none;
         transition: transform 500ms linear;
         width: 3rem;
@@ -143,15 +139,15 @@
     }
 }
 
-.svg .link-rss { background: #f26522; }
-.svg .link-twitter { background: #1da1f2; }
-.svg .link-facebook { background: #3b5998; }
-.svg .link-instagram { background: #e4405f; }
-.svg .link-github { background: #4183c4; }
-.svg .link-xing { background: #005a5f; }
-.svg .link-pinboard { background: #00f; }
-.svg .link-lastfm { background: #d51007; }
-.svg .link-amazon { background: #f90; }
+.link-rss { background: #f26522; }
+.link-twitter { background: #1da1f2; }
+.link-facebook { background: #3b5998; }
+.link-instagram { background: #e4405f; }
+.link-github { background: #4183c4; }
+.link-xing { background: #005a5f; }
+.link-pinboard { background: #00f; }
+.link-lastfm { background: #d51007; }
+.link-amazon { background: #f90; }
 
 #sidebar {
     .sidebar {

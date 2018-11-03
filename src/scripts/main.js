@@ -1,9 +1,12 @@
-(function($) {
+(function ($) {
+    // Obviously, we have JS
+    $('html').addClass('js').removeClass('no-js');
+
     // SVG polyfill
     svg4everybody();
 
     // If webfonts cookie is NOT set
-    if(!cookie('webfonts')) {
+    if (!cookie('webfonts')) {
         // Generate a font face observer
         var font = new FontFaceObserver('calendas_plus');
 
@@ -25,7 +28,7 @@
     });
 
     // Smooth scrolling links in comments
-    $('.comment_reply').click(function(e) {
+    $('.comment_reply').click(function (e) {
         var $el = $(this);
         var target, replyTo;
 
