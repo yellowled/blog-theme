@@ -1,15 +1,12 @@
 # blog-theme
 
-[![Dependency Status](https://david-dm.org/yellowled/blog-theme.svg)](https://david-dm.org/yellowled/blog-theme)
-[![devDependency Status](https://david-dm.org/yellowled/blog-theme/dev-status.svg)](https://david-dm.org/yellowled/blog-theme#info=devDependencies)
-
 [Serendipity](https://s9y.org) (s9y) blog theme for [my blog](https://yellowled.de)
 
 ## Requirements
 
-* [node.js](http://nodejs.org)
-* `npm i`
-* `npm run build`
+-   [node.js](http://nodejs.org)
+-   `npm i`
+-   `npm run build`
 
 ## Deployment
 
