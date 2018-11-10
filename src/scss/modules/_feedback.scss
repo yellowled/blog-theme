@@ -19,7 +19,7 @@
 }
 
 .form_field {
-    margin: .75rem 0;
+    margin: 0.75rem 0;
 
     label {
         box-sizing: border-box;
@@ -50,8 +50,8 @@
     }
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type='checkbox'],
+input[type='radio'] {
     position: relative;
     top: -2px;
 }
@@ -65,7 +65,7 @@ input[type=radio] {
     }
 
     input + input {
-        margin-left: .4rem;
+        margin-left: 0.4rem;
     }
 }
 
@@ -165,12 +165,12 @@ input[type=radio] {
 
 .avatar_left {
     float: left;
-    margin: 0 1rem .5rem 0;
+    margin: 0 1rem 0.5rem 0;
 }
 
 .avatar_right {
     float: right;
-    margin: 0 0 .5rem 1rem;
+    margin: 0 0 0.5rem 1rem;
 }
 
 // Trackbacks

@@ -15,11 +15,11 @@
         li {
             display: inline-block;
 
-            &:after {
+            &::after {
                 content: ' • ';
             }
 
-            &:last-child:after {
+            &:last-child::after {
                 content: '';
             }
         }

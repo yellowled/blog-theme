@@ -30,8 +30,9 @@ html {
 }
 
 body {
-    font-feature-settings: "frac" 1, "kern" 1, "swsh" 0;
-    font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures contextual;
+    font-feature-settings: 'frac' 1, 'kern' 1, 'swsh' 0;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures
+        no-historical-ligatures contextual;
 
     @media screen and (min-width: $lg) {
         font-size: 118.75%;
@@ -49,45 +50,68 @@ h3,
 h4,
 h5,
 h6 {
-    font-feature-settings: "frac" 1, "kern" 1, "swsh" 1;
-    font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+    font-feature-settings: 'frac' 1, 'kern' 1, 'swsh' 1;
+    font-variant-ligatures: common-ligatures discretionary-ligatures
+        historical-ligatures contextual;
 }
 
 h1 {
     font-size: 1.5rem;
 
-    @media screen and (min-width: $md) { font-size: 2.25rem; }
-    @media screen and (min-width: $lg) { font-size: 2.5rem; }
-    @media screen and (min-width: $xl) { font-size: 3rem; }
+    @media screen and (min-width: $md) {
+        font-size: 2.25rem;
+    }
+    @media screen and (min-width: $lg) {
+        font-size: 2.5rem;
+    }
+    @media screen and (min-width: $xl) {
+        font-size: 3rem;
+    }
 }
 
 h2 {
     font-size: 1.5rem;
 
-    @media screen and (min-width: $lg) { font-size: 2rem; }
-    @media screen and (min-width: $xx) { font-size: 2.5rem; }
+    @media screen and (min-width: $lg) {
+        font-size: 2rem;
+    }
+    @media screen and (min-width: $xx) {
+        font-size: 2.5rem;
+    }
 }
 
 h3 {
     font-size: 1.25rem;
 
-    @media screen and (min-width: $lg) { font-size: 1.625rem; }
-    @media screen and (min-width: $xx) { font-size: 2rem; }
+    @media screen and (min-width: $lg) {
+        font-size: 1.625rem;
+    }
+    @media screen and (min-width: $xx) {
+        font-size: 2rem;
+    }
 }
 
 h4 {
     font-size: 1.125rem;
 
-    @media screen and (min-width: $lg) { font-size: 1.375rem; }
-    @media screen and (min-width: $xx) { font-size: 1.625rem; }
+    @media screen and (min-width: $lg) {
+        font-size: 1.375rem;
+    }
+    @media screen and (min-width: $xx) {
+        font-size: 1.625rem;
+    }
 }
 
 h5,
 h6 {
     font-size: 1rem;
 
-    @media screen and (min-width: $lg) { font-size: 1.1875rem; }
-    @media screen and (min-width: $xx) { font-size: 1.375rem; }
+    @media screen and (min-width: $lg) {
+        font-size: 1.1875rem;
+    }
+    @media screen and (min-width: $xx) {
+        font-size: 1.375rem;
+    }
 }
 
 a {
@@ -105,15 +129,15 @@ a {
         outline-color: $input-focus;
         text-decoration: none;
     }
-
-    > abbr[title] {
-        border-bottom: 0;
-    }
 }
 
 abbr[title] {
     cursor: help;
     text-decoration: none;
+
+    a > & {
+        border-bottom: 0;
+    }
 }
 
 ul {
@@ -127,9 +151,9 @@ ol {
 blockquote {
     @include smart-blockquotes;
 
-    border-left: .5rem solid $silver;
+    border-left: 0.5rem solid $silver;
     margin: 1rem 0;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 
     @media screen and (min-width: $md) {
         margin: 1rem 2.5rem;
@@ -149,23 +173,17 @@ small {
     font-size: 100%;
 }
 
-.no-js pre {
-    background: #f5f2f0;
-    padding: 1rem;
-	margin: 1rem 0;
-	overflow: auto;
-}
-
 pre,
 code,
 samp,
 kbd {
-    font-family: 'Fira Code', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-    font-feature-settings: "frac" 0, "kern" 1, "swsh" 0;
+    font-family: 'Fira Code', Menlo, Monaco, Consolas, 'Liberation Mono',
+        'Courier New', monospace;
+    font-feature-settings: 'frac' 0, 'kern' 1, 'swsh' 0;
 }
 
 pre {
-    box-shadow: 0 0 5px rgba($black, .5);
+    box-shadow: 0 0 5px rgba($black, 0.5);
 }
 
 code,
@@ -177,8 +195,15 @@ kbd {
         background: $lite-grey;
         border: 1px solid $silver;
         border-radius: 1px;
-        padding: 0 .2rem;
+        padding: 0 0.2rem;
     }
+}
+
+.no-js pre {
+    background: #f5f2f0;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow: auto;
 }
 
 table {
@@ -190,7 +215,7 @@ table {
 
 tr:hover {
     background-color: $lite-grey;
-    transition: background-color .25s linear;
+    transition: background-color 0.25s linear;
 }
 
 // Generic helper classes

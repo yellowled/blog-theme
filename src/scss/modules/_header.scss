@@ -31,13 +31,13 @@
         &:focus {
             color: $off-black;
             text-decoration: none;
-            transition: color .25s linear;
+            transition: color 0.25s linear;
         }
 
         &:hover,
         &:focus {
             color: $ci-greyed-out;
-            transition: color .25s linear;
+            transition: color 0.25s linear;
         }
     }
 }

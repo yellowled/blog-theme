@@ -15,9 +15,7 @@
 .serendipity_image_left,
 .serendipity_image_right,
 .serendipity_image_center {
-    box-shadow: 0 0 5px rgba($black, .8);
-
-    .no-boxshadow & { border: 1px solid $greyed-out;}
+    box-shadow: 0 0 5px rgba($black, 0.8);
 }
 
 .serendipity_image_left,
@@ -28,7 +26,7 @@
 
     @media screen and (min-width: $md) {
         float: left;
-        margin: 1.5rem 1.25rem .5rem 0;
+        margin: 1.5rem 1.25rem 0.5rem 0;
     }
 }
 
@@ -46,7 +44,7 @@
 
     @media screen and (min-width: $md) {
         float: right;
-        margin: 1.5rem 0 .5rem 1.25rem;
+        margin: 1.5rem 0 0.5rem 1.25rem;
     }
 }
 
@@ -74,27 +72,13 @@
     border-top: 0;
     color: $greyed-out;
     margin: 0;
-    padding: .5rem 0 0;
+    padding: 0.5rem 0 0;
     clear: both;
-    font-size: .875rem;
+    font-size: 0.875rem;
     text-align: center;
 
     @media screen and (min-width: $xx) {
         font-size: 1rem;
-    }
-}
-
-.serendipity_image_link {
-    &:hover,
-    &:focus {
-        img {
-            opacity: .7;
-            transition: all .25s linear;
-        }
-    }
-
-    &:focus {
-        outline: 0;
     }
 }
 
@@ -111,12 +95,12 @@
         margin: 0 0 1rem;
 
         @media screen and (min-width: $sm) {
-            margin: 0 .5rem 1rem 0;
+            margin: 0 0.5rem 1rem 0;
             max-width: 12rem;
         }
 
         @media screen and (min-width: 37.5em) {
-            margin: 0 .6666rem 1rem 0;
+            margin: 0 0.6666rem 1rem 0;
             max-width: 11rem;
         }
 
@@ -135,10 +119,24 @@
     }
 }
 
+.serendipity_image_link {
+    &:hover,
+    &:focus {
+        img {
+            opacity: 0.7;
+            transition: all 0.25s linear;
+        }
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
 // Figures
 figcaption {
     color: $greyed-out;
-    font-size: .875rem;
+    font-size: 0.875rem;
     text-align: center;
 
     a {

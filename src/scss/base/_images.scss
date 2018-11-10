@@ -1,12 +1,12 @@
 // RESPONSIVE FLOATED IMAGES
 // --------------------------------------------------------------------
 // Defaults
-$img-breakpoint:    $md !default; // Breakpoint for floated images
-$img-margin:        $type-rhythm 0 !default;   // Margins for images
-$img-left-margin:   .25rem $type-rhythm .75rem 0 !default;
-$img-right-margin:  .25rem 0 .75rem $type-rhythm !default;
-$img-left-class:    align_left !default;
-$img-right-class:   align_right !default;
+$img-breakpoint: $md !default; // Breakpoint for floated images
+$img-margin: $type-rhythm 0 !default; // Margins for images
+$img-left-margin: 0.25rem $type-rhythm 0.75rem 0 !default;
+$img-right-margin: 0.25rem 0 0.75rem $type-rhythm !default;
+$img-left-class: align_left !default;
+$img-right-class: align_right !default;
 
 %image-block {
     display: block;
@@ -41,18 +41,16 @@ figure {
     @extend %image-block;
 }
 
-
 // SVG SPRITES
 // --------------------------------------------------------------------
 // Defaults
-$svg-icon-dims:         1rem !default;
-
+$svg-icon-dims: 1rem !default;
 
 @if $use-svg-sprites {
     // 1. Set fill color for SVG icons
     // 2. Set dimensions of SVG icons
-    [class^="icon-"],
-    [class*="icon-"] {
+    [class^='icon-'],
+    [class*='icon-'] {
         fill: currentColor;
         height: $svg-icon-dims;
         width: $svg-icon-dims;

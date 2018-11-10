@@ -1,7 +1,10 @@
-(function ($) {
+(function($) {
     // Obviously, we have JS
-    $('html').addClass('js').removeClass('no-js');
+    $('html')
+        .addClass('js')
+        .removeClass('no-js');
 
+    /* eslint-disable no-undef */
     // SVG polyfill
     svg4everybody();
 
@@ -10,35 +13,35 @@
         // Generate a font face observer
         const font = new FontFaceObserver('calendas_plus');
 
-        font.load(null, 5000).then(function () {
+        font.load(null, 5000).then(function() {
             // Add webfonts class to html element
-            document.documentElement.className += " fonts-loaded";
+            document.documentElement.className += ' fonts-loaded';
             // Set webfonts cookie
             cookie('webfonts', '1', 7);
         });
     }
 
     // Off-canvas nav
+    // eslint-disable-next-line no-unused-vars
     const myOffcanvas = Froffcanvas({
         selector: '.offcanvas',
         openSelector: '.open-nav',
         closeSelector: '.close-nav',
         readyClass: 'offcanvas-ready',
-        activeClass: 'offcanvas-active'
+        activeClass: 'offcanvas-active',
     });
+    /* eslint-enable no-undef */
 
     // Smooth scrolling links in comments
-    $('.comment_reply').click(function (e) {
+    $('.comment_reply').click(function(e) {
         const $el = $(this);
         let target, replyTo;
 
         target = '#reply';
-        replyTo = $el.attr("id").replace(/serendipity_reply_/g, "");
-        $("#serendipity_replyTo").val(replyTo);
+        replyTo = $el.attr('id').replace(/serendipity_reply_/g, '');
+        $('#serendipity_replyTo').val(replyTo);
 
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 250);
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 250);
 
         e.preventDefault();
     });

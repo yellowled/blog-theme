@@ -1,29 +1,27 @@
 // TYPOGRAPHY
 // --------------------------------------------------------------------
-$primary-font:      'calendas_plus', serif;
-$type-height:       1.5;
-$type-rhythm:       1rem;
-
+$primary-font: 'calendas_plus', serif;
+$type-height: 1.5;
+$type-rhythm: 1rem;
 
 // COLORS
 // --------------------------------------------------------------------
-$ci-bright-red:     #e22;
-$ci-dull-red:       #a00;
-$ci-greyed-out:     #666;
-
+$ci-bright-red: #e22;
+$ci-dull-red: #a00;
+$ci-greyed-out: #666;
 
 // OVERRIDES
 // --------------------------------------------------------------------
 // Breakpoints
-$xx:                100rem;
+$xx: 100rem;
 
 // SVG icons
-$svg-icon-dims:     3rem;
+$svg-icon-dims: 3rem;
 
 // Messages
-$msg-class-prefix:  serendipity_msg_;
+$msg-class-prefix: serendipity_msg_;
 $msg-class-warning: important;
 $msg-class-success: notice;
 
 // Forms
-$input-focus:       $ci-bright-red;
+$input-focus: $ci-bright-red;

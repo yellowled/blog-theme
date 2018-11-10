@@ -3,7 +3,6 @@
 // Defaults
 $tables-breakpoint: $md !default; // Breakpoint for responsive tables
 
-
 // Simple table
 @mixin simple-table($border-color: $grey) {
     border-bottom: 1px solid $border-color;
@@ -14,9 +13,24 @@ $tables-breakpoint: $md !default; // Breakpoint for responsive tables
 }
 
 // Striped table
-@mixin striped-table($border-color: $grey, $odd-color: $lite-grey, $even-color: $silver, $head-color: $silver, $foot-color: $head-color) {
+@mixin striped-table(
+    $border-color: $grey,
+    $odd-color: $lite-grey,
+    $even-color: $silver,
+    $head-color: $silver,
+    $foot-color: $head-color
+) {
     border: 1px solid $border-color;
     border-top: 0 none;
+
+    tr {
+        border-top: 1px solid $border-color;
+    }
+
+    th,
+    td {
+        padding: 0 0.25rem;
+    }
 
     thead {
         background-color: $head-color;
@@ -35,22 +49,13 @@ $tables-breakpoint: $md !default; // Breakpoint for responsive tables
             background-color: $even-color;
         }
     }
-
-    tr {
-        border-top: 1px solid $border-color;
-    }
-
-    th,
-    td {
-        padding: 0 .25rem;
-    }
 }
 
 // Responsive table
 //
 // Note: mixin needs to be applied to a div containing the table
 @mixin responsive-table() {
-    min-height: .01%;
+    min-height: 0.01%;
     overflow-x: auto;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;

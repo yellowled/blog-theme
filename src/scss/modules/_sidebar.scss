@@ -63,91 +63,17 @@
         float: left;
         margin: 0 1rem 0 0;
         position: relative;
-        top: -.75rem;
+        top: -0.75rem;
     }
 
     @media screen and (min-width: $xl) {
         float: none;
         margin: 0;
         position: absolute;
-        top: -.25rem;
+        top: -0.25rem;
         left: -8rem;
     }
 }
-
-#social {
-    text-align: center;
-
-    h3 {
-        text-transform: uppercase;
-    }
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        list-style: none;
-        margin: $type-rhythm auto .5rem;
-        max-width: 15rem;
-        padding: 0;
-
-        @media screen and (min-width: $md) {
-            flex-wrap: nowrap;
-            margin: $type-rhythm auto (2 * $type-rhythm);
-            max-width: 36rem;
-        }
-    }
-
-    .no-js & ul {
-        @media screen and (min-width: $md) {
-            max-width: none;
-        }
-    }
-
-    li {
-        flex: 0 1 33%;
-        margin-bottom: .5rem;
-
-        @media screen and (min-width: $md) {
-            flex: 0 1 auto;
-            margin-bottom: 0;
-        }
-    }
-
-    a {
-        border-radius: 50%;
-        display: block;
-        height: 3rem;
-        margin: auto;
-        text-decoration: none;
-        transition: transform 500ms linear;
-        width: 3rem;
-
-        &:hover {
-            transform: scale(1.25) rotate(360deg);
-            transition: transform 500ms linear;
-        }
-    }
-
-    [class^="icon-"],
-    [class*="icon-"] {
-        fill: $off-white;
-        height: 1.875rem;
-        position: relative;
-        top: .5625rem;
-        width: 1.875rem;
-    }
-}
-
-.link-rss { background: #f26522; }
-.link-twitter { background: #1da1f2; }
-.link-facebook { background: #3b5998; }
-.link-instagram { background: #e4405f; }
-.link-github { background: #4183c4; }
-.link-xing { background: #005a5f; }
-.link-pinboard { background: #00f; }
-.link-lastfm { background: #d51007; }
-.link-amazon { background: #f90; }
 
 #sidebar {
     .sidebar {

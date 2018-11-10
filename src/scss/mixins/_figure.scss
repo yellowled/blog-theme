@@ -20,17 +20,17 @@
     position: relative;
 
     img {
-        box-shadow: 0 0 4px rgba($black, .7);
+        box-shadow: 0 0 4px rgba($black, 0.7);
     }
 
     figcaption {
         background: $off-black;
-        background: rgba($black, .7);
+        background: rgba($black, 0.7);
         bottom: 0;
         box-sizing: border-box;
         color: $white;
         left: 0;
-        padding: .125rem .625rem;
+        padding: 0.125rem 0.625rem;
         position: absolute;
         text-align: center;
         width: 100%;

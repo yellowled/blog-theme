@@ -51,10 +51,10 @@ main {
     border-top: 1px solid $silver;
     border-bottom: 1px solid $silver;
     box-sizing: border-box;
-    padding: .5rem;
+    padding: 0.5rem;
 
     @media screen and (min-width: $lg) {
-        padding: .75rem 1rem;
+        padding: 0.75rem 1rem;
     }
 }
 
@@ -63,7 +63,7 @@ main {
     background: $lite-grey;
     border-top: 1px solid $silver;
     border-bottom: 1px solid $silver;
-    padding: .9375rem 0;
+    padding: 0.9375rem 0;
 
     ul {
         @extend %container;
@@ -82,18 +82,18 @@ main {
 
         &,
         &:visited {
-            [class^="icon-"],
-            [class*="icon-"] {
-                transition: fill .25s linear;
+            [class^='icon-'],
+            [class*='icon-'] {
+                transition: fill 0.25s linear;
             }
         }
 
         &:hover,
         &:focus {
-            [class^="icon-"],
-            [class*="icon-"] {
+            [class^='icon-'],
+            [class*='icon-'] {
                 fill: $ci-greyed-out;
-                transition: fill .25s linear;
+                transition: fill 0.25s linear;
             }
         }
     }

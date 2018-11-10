@@ -1,0 +1,5 @@
+dist/**/*.js
+node_modules/**/*.js
+src/js/bundle.js
+src/js/master.js
+src/js/*.map
