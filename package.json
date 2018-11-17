@@ -49,8 +49,8 @@
     },
     "devDependencies": {
         "@babel/cli": "^7.1.5",
-        "@babel/core": "^7.1.5",
-        "@babel/preset-env": "^7.1.5",
+        "@babel/core": "^7.1.6",
+        "@babel/preset-env": "^7.1.6",
         "autoprefixer": "^9.3.1",
         "clean-css-cli": "^4.2.1",
         "copyfiles": "^2.1.0",
