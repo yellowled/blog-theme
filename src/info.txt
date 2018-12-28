@@ -1,4 +1,4 @@
 Name: blog-theme
 Author: Matthias Mees
-Date: 2018-11-03
+Date: 2018-12-28
 Require Serendipity: 2.0
