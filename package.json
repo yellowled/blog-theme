@@ -1,7 +1,7 @@
 {
     "name": "blog-theme",
     "description": "Serendipity theme for my blog",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "homepage": "https://yellowled",
     "author": {
         "name": "Matthias Mees",
@@ -42,32 +42,32 @@
     "dependencies": {
         "fg-cookie": "^1.0.0",
         "fontfaceobserver": "^2.1.0",
-        "fr-offcanvas": "^1.0.4",
+        "fr-offcanvas": "^1.1.1",
         "node-normalize-scss": "^8.0.0",
         "prismjs": "^1.15.0",
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {
         "@babel/cli": "^7.2.3",
-        "@babel/core": "^7.2.2",
-        "@babel/preset-env": "^7.3.1",
-        "autoprefixer": "^9.4.7",
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "autoprefixer": "^9.4.9",
         "clean-css-cli": "^4.2.1",
         "copyfiles": "^2.1.0",
         "del-cli": "^1.1.0",
-        "eslint": "^5.13.0",
+        "eslint": "^5.14.1",
         "mkdirp": "^0.5.1",
         "node-sass": "^4.11.0",
         "npm-run-all": "^4.1.5",
-        "postcss-cli": "^6.1.1",
+        "postcss-cli": "^6.1.2",
         "postcss-flexbugs-fixes": "^4.1.0",
         "stylelint": "^9.10.1",
-        "stylelint-config-prettier": "^4.0.0",
+        "stylelint-config-prettier": "^5.0.0",
         "stylelint-config-recommended-scss": "^3.2.0",
         "stylelint-config-standard": "^18.2.0",
-        "stylelint-scss": "^3.5.3",
+        "stylelint-scss": "^3.5.4",
         "svg-sprite-generator": "^0.0.7",
-        "svgo": "^1.1.1",
+        "svgo": "^1.2.0",
         "uglify-js": "^3.4.9"
     }
 }
