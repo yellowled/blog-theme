@@ -16,7 +16,7 @@
         "url": "https://github.com/yellowled/blog-theme/issues/"
     },
     "engines": {
-        "node": ">=8.0.0"
+        "node": ">=10.0.0"
     },
     "scripts": {
         "build": "npm-run-all --sequential prep:build copy:build css:build js:build svg:build",
@@ -55,7 +55,7 @@
         "clean-css-cli": "^4.2.1",
         "copyfiles": "^2.1.0",
         "del-cli": "^1.1.0",
-        "eslint": "^5.14.1",
+        "eslint": "^5.15.0",
         "mkdirp": "^0.5.1",
         "node-sass": "^4.11.0",
         "npm-run-all": "^4.1.5",
