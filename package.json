@@ -48,26 +48,26 @@
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {
-        "@babel/cli": "^7.4.3",
-        "@babel/core": "^7.4.3",
-        "@babel/preset-env": "^7.4.3",
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.4",
+        "@babel/preset-env": "^7.4.4",
         "autoprefixer": "^9.5.1",
         "clean-css-cli": "^4.3.0",
         "copyfiles": "^2.1.0",
         "del-cli": "^1.1.0",
         "eslint": "^5.16.0",
         "mkdirp": "^0.5.1",
-        "node-sass": "^4.11.0",
+        "node-sass": "^4.12.0",
         "npm-run-all": "^4.1.5",
         "postcss-cli": "^6.1.2",
         "postcss-flexbugs-fixes": "^4.1.0",
         "stylelint": "^10.0.1",
-        "stylelint-config-prettier": "^5.1.0",
+        "stylelint-config-prettier": "^5.2.0",
         "stylelint-config-recommended-scss": "^3.3.0",
         "stylelint-config-standard": "^18.3.0",
-        "stylelint-scss": "^3.6.0",
+        "stylelint-scss": "^3.6.1",
         "svgstore-cli": "^1.3.1",
         "svgo": "^1.2.2",
-        "uglify-js": "^3.5.6"
+        "uglify-js": "^3.5.13"
     }
 }
