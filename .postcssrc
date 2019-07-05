@@ -8,6 +8,9 @@
         "autoprefixer": {
             "grid": true
         },
-        "postcss-flexbugs-fixes": {}
+        "postcss-flexbugs-fixes": {},
+        "cssnano": {
+            "preset": "default"
+        }
     }
 }
