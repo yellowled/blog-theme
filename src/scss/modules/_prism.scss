@@ -141,9 +141,10 @@ code[class*='language-'] ::selection {
     > .toolbar {
         opacity: 0;
         position: absolute;
-        top: 0.3125rem;
+        bottom: 0;
         right: 0.1875rem;
         transition: opacity 0.3s ease-in-out;
+        text-transform: uppercase;
 
         .toolbar-item {
             display: inline-block;
