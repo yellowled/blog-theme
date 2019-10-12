@@ -3,8 +3,13 @@
 {foreach from=$entries item="dategroup"}
     {foreach from=$dategroup.entries item="entry"}
     {assign var="entry" value=$entry scope=parent}
+    {assign var="age" value=$smarty.now - $entry.timestamp}
     <article class="post{if $dategroup.is_sticky} is_sticky{/if}">
         <h2>{if not $is_single_entry}<a href="{$entry.link}">{/if}{$entry.title}{if not $is_single_entry}</a>{/if}</h2>
+
+    {if $age >= 31556926}
+        <p class="outdated"><strong>Vorsicht:</strong> Dieser Artikel ist mindestens ein Jahr alt. Wenn es ein Artikel über Webentwicklung ist, kann es gut sein, dass er inzwischen überholt oder veraltet ist.</p>
+    {/if}
 
         <div class="content clearfix">
         {$entry.body}

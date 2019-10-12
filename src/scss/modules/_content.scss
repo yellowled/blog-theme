@@ -58,6 +58,19 @@ main {
     }
 }
 
+.outdated {
+    background: #fff3cd;
+    border-top: 1px solid #ffeeba;
+    border-bottom: 1px solid #ffeeba;
+    box-sizing: border-box;
+    color: #856404;
+    padding: 0.5rem;
+
+    @media screen and (min-width: $lg) {
+        padding: 0.75rem 1rem;
+    }
+}
+
 // Pagination
 .pagination {
     background: $lite-grey;
