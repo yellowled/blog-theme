@@ -50,7 +50,7 @@
         "@babel/cli": "^7.6.4",
         "@babel/core": "^7.6.4",
         "@babel/preset-env": "^7.6.3",
-        "autoprefixer": "^9.7.0",
+        "autoprefixer": "^9.7.1",
         "copyfiles": "^2.1.1",
         "cssnano": "^4.1.10",
         "del-cli": "^3.0.0",
@@ -67,6 +67,6 @@
         "stylelint-scss": "^3.12.0",
         "svgo": "^1.3.2",
         "svgstore-cli": "^1.3.1",
-        "uglify-js": "^3.6.5"
+        "uglify-js": "^3.6.6"
     }
 }
