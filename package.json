@@ -1,7 +1,7 @@
 {
     "name": "blog-theme",
     "description": "Serendipity theme for my blog",
-    "version": "2.0.15",
+    "version": "2.0.16",
     "homepage": "https://yellowled",
     "author": {
         "name": "Matthias Mees",
@@ -49,7 +49,7 @@
     "devDependencies": {
         "@babel/cli": "^7.7.5",
         "@babel/core": "^7.7.5",
-        "@babel/preset-env": "^7.7.5",
+        "@babel/preset-env": "^7.7.6",
         "autoprefixer": "^9.7.3",
         "copyfiles": "^2.1.1",
         "cssnano": "^4.1.10",
@@ -67,6 +67,6 @@
         "stylelint-scss": "^3.13.0",
         "svgo": "^1.3.2",
         "svgstore-cli": "^1.3.1",
-        "uglify-js": "^3.7.1"
+        "uglify-js": "^3.7.2"
     }
 }
