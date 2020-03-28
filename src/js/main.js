@@ -5,9 +5,6 @@
         .removeClass('no-js');
 
     /* eslint-disable no-undef */
-    // SVG polyfill
-    svg4everybody();
-
     // If webfonts cookie is NOT set
     if (!cookie('webfonts')) {
         // Generate a font face observer
