@@ -1,62 +1,19 @@
 // NAV
 // --------------------------------------------------------------------
-.offcanvas {
-    background-color: $lite-grey;
-    box-sizing: border-box;
-    width: 100%;
-
-    .no-js & {
-        padding: 1rem;
-    }
-
-    .js & {
-        position: fixed;
-        top: 0;
-        left: 100%;
-        right: auto;
-        transform: translateX(0);
-        will-change: translateX;
-    }
-}
-
-.offcanvas-ready {
-    height: 100%;
-    max-width: 20rem;
-    outline: 0;
-    overflow: auto;
-    padding: 1.5rem 1rem;
-    transition: transform 0.25s ease-out;
-
-    @media screen and (min-width: $md) {
-        padding: 2rem 1rem;
-    }
-}
-
-.offcanvas[aria-hidden='false'] {
-    box-shadow: -2px 0 4px rgba($black, 0.5);
-    transform: translateX(-100%);
-    z-index: 10;
-}
-
-.offcanvas[aria-hidden='true'] {
-    transition: transform 0.25s ease-out, visibility 0.25s;
-}
-
 // Nav buttons
-.open-nav {
+.open-nav,
+.close-nav {
     @include unstyled-button();
 
     cursor: pointer;
     display: inline-block;
-    position: relative;
-    top: 0.45rem;
-    left: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
 
     @media screen and (min-width: $md) {
-        position: absolute;
-        top: 1.75rem;
+        top: 1.5rem;
         right: 0;
-        left: auto;
     }
 
     @media screen and (min-width: $xl) {
@@ -80,30 +37,7 @@
             width: 3rem;
         }
     }
-}
 
-.close-nav {
-    @include unstyled-button();
-
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-
-    @media screen and (min-width: $md) {
-        top: 1.5rem;
-    }
-
-    [class^='icon-'],
-    [class*='icon-'] {
-        fill: $ci-bright-red;
-        height: 2rem;
-        width: 2rem;
-    }
-}
-
-.open-nav,
-.close-nav {
     .no-js & {
         @include hidden;
     }
@@ -117,6 +51,10 @@
 // Search
 #search_inputs {
     margin-bottom: 1rem;
+
+    @media screen and (min-width: $xl) {
+        margin-bottom: 3rem;
+    }
 
     .no-js & {
         @include center-horizontal;
@@ -136,7 +74,48 @@
 }
 
 // Nav links
-#site-nav {
+.site-nav {
+    background-color: $lite-grey;
+    box-sizing: border-box;
+
+    &[aria-hidden='true'] {
+        display: none;
+        visibility: hidden;
+    }
+
+    .no-js &[aria-hidden='true'],
+    &[aria-hidden='false'] {
+        display: block;
+        visibility: visible;
+    }
+
+    .js & {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 500;
+
+        > div {
+            @extend %container;
+
+            padding: 3rem 1rem;
+
+            @media screen and (min-width: $md) {
+                padding: 3.5rem 0;
+                position: relative;
+            }
+
+            @media screen and (min-width: $lg) {
+                padding: 5rem 0;
+            }
+
+            @media screen and (min-width: $xl) {
+                padding: 7rem 0;
+            }
+        }
+    }
+
     .js & ul {
         border-top: 1px dashed $grey;
     }
@@ -145,6 +124,10 @@
         border-bottom: 1px dashed $grey;
         margin-bottom: 0.25rem;
         padding: 0.25rem 0;
+
+        @media screen and (min-width: $xl) {
+            padding: 0.5rem 0;
+        }
     }
 
     .js & a {
@@ -153,6 +136,7 @@
     }
 
     .no-js & {
+        padding: 1rem;
         text-align: center;
     }
 

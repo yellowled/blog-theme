@@ -40,31 +40,33 @@
         <div class="masthead">
             <a href="{$serendipityBaseURL}">{$template_option.identity}</a>
 
-            <button class="open-nav" type="button" aria-controls="site-nav" aria-label="{$CONST.BT_NAV_OPEN}"><svg class="icon-bars" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="448" height="512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button>
+            <button id="open-nav" class="open-nav" type="button" aria-controls="site-nav" aria-label="{$CONST.BT_NAV_OPEN}"><svg class="icon-bars" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="448" height="512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button>
         </div>
     </header>
 
-    <nav id="site-nav" class="offcanvas">
-        <form id="search" role="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
-            <input type="hidden" name="serendipity[action]" value="search">
+    <nav id="site-nav" class="site-nav" aria-hidden="true">
+        <div>
+            <form id="search" role="search" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
+                <input type="hidden" name="serendipity[action]" value="search">
 
-            <div id="search_inputs">
-                <label for="searchterm">{$CONST.QUICKSEARCH}</label>
-                <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
-                <input class="visuallyhidden" type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
-            </div>
-        </form>
-        {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
-    {if $template_option.use_corenav}
-        <ul>
-        {foreach from=$navlinks item="navlink" name="sbnav"}
-        {if $navlink.title!=""&&$navlink.href!=""}
-            <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
+                <div id="search_inputs">
+                    <label for="searchterm">{$CONST.QUICKSEARCH}</label>
+                    <input id="searchterm" type="search" name="serendipity[searchTerm]" value="">
+                    <input class="visuallyhidden" type="submit" name="serendipity[searchButton]" value="{$CONST.GO}">
+                </div>
+            </form>
+            {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
+        {if $template_option.use_corenav}
+            <ul>
+            {foreach from=$navlinks item="navlink" name="sbnav"}
+            {if $navlink.title!="" && $navlink.href!=""}
+                <li>{if $currpage==$navlink.href or $currpage2==$navlink.href}<span>{else}<a href="{$navlink.href}">{/if}{$navlink.title}{if $currpage==$navlink.href or $currpage2==$navlink.href}</span>{else}</a>{/if}</li>
+            {/if}
+            {/foreach}
+            </ul>
         {/if}
-        {/foreach}
-        </ul>
-    {/if}
-        <button class="close-nav" type="button" aria-label="{$CONST.BT_NAV_CLOSE}"><svg class="icon-times" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" width="352" height="512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg></button>
+            <button id="close-nav" class="close-nav" type="button"  aria-controls="site-nav" aria-label="{$CONST.BT_NAV_CLOSE}"><svg class="icon-times" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" width="352" height="512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg></button>
+        </div>
     </nav>
 
     <main>

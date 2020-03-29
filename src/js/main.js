@@ -17,17 +17,24 @@
             cookie('webfonts', '1', 7);
         });
     }
-
-    // Off-canvas nav
-    // eslint-disable-next-line no-unused-vars
-    const myOffcanvas = Froffcanvas({
-        selector: '.offcanvas',
-        openSelector: '.open-nav',
-        closeSelector: '.close-nav',
-        readyClass: 'offcanvas-ready',
-        activeClass: 'offcanvas-active',
-    });
     /* eslint-enable no-undef */
+
+    // Navigation toggle
+    const navContainer = $('#site-nav');
+    const navOpen = $('#open-nav');
+    const navClose = $('#close-nav');
+
+    navOpen.click(function() {
+        navContainer.attr('aria-hidden', 'false');
+        navOpen.attr('aria-expanded', 'true');
+        navClose.attr('aria-expanded', 'true');
+    });
+
+    navClose.click(function() {
+        navContainer.attr('aria-hidden', 'true');
+        navOpen.attr('aria-expanded', 'false');
+        navClose.attr('aria-expanded', 'false');
+    });
 
     // Smooth scrolling links in comments
     $('.comment_reply').click(function(e) {
