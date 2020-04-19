@@ -22,7 +22,9 @@ main {
     }
 
     @media screen and (min-width: $md) {
-        text-align: justify;
+        p {
+            text-align: justify;
+        }
     }
 }
 
