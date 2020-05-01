@@ -34,7 +34,6 @@
         "prep:build": "del-cli dist/ && mkdirp dist/${npm_package_name} dist/${npm_package_name}/img dist/${npm_package_name}/js"
     },
     "dependencies": {
-        "core-js": "^3.6.5",
         "fg-cookie": "^1.0.0",
         "fontfaceobserver": "^2.1.0",
         "node-normalize-scss": "^8.0.1",
