@@ -27,13 +27,14 @@
         "css:build": "npm-run-all --sequential css:compile css:minify",
         "css:compile": "node-sass --output-style expanded --precision 5 src/style.scss src/style.css",
         "css:minify": "postcss --config .postcssrc src/style.css --output dist/${npm_package_name}/style.css",
-        "js:build": "npm-run-all --sequential js:lint js:prefix js:compile js:minify",
+        "js:build": "npm-run-all --sequential js:prefix js:compile js:minify",
         "js:compile": "uglifyjs --comments \"/^!/\" --source-map \"url=master.js.map\" --output src/js/master.js -- node_modules/fg-cookie/cookie.js node_modules/fontfaceobserver/fontfaceobserver.js node_modules/prismjs/prism.js node_modules/prismjs/plugins/toolbar/prism-toolbar.js node_modules/prismjs/plugins/show-language/prism-show-language.js node_modules/prismjs/components/prism-markup-templating.js node_modules/prismjs/components/prism-php.js node_modules/prismjs/components/prism-scss.js node_modules/prismjs/components/prism-smarty.js src/js/bundle.js",
         "js:minify": "uglifyjs --compress --mangle --comments \"/^!/\" --source-map \"content=src/js/master.js.map,includeSources,url=master.js.map\" --output dist/${npm_package_name}/js/master.js -- src/js/master.js",
         "js:prefix": "babel src/js/main.js --out-file src/js/bundle.js",
         "prep:build": "del-cli dist/ && mkdirp dist/${npm_package_name} dist/${npm_package_name}/img dist/${npm_package_name}/js"
     },
     "dependencies": {
+        "core-js": "^3.6.5",
         "fg-cookie": "^1.0.0",
         "fontfaceobserver": "^2.1.0",
         "node-normalize-scss": "^8.0.1",
